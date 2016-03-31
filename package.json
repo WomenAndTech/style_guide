@@ -1,0 +1,23 @@
+{
+  "name": "waat_style_guide",
+  "version": "0.1.0",
+  "description": "Women&&Tech style guide.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WomenAndTech/style_guide.git"
+  },
+  "author": "Women&&Tech Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WomenAndTech/style_guide/issues"
+  },
+  "homepage": "https://github.com/WomenAndTech/style_guide#readme"
+}
