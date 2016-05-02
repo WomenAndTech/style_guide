@@ -1,9 +1,8 @@
-*, *:before, *:after {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-body {
-  background: #fff;
-}
+// ------------------------------
+// GLOBAL
+// ------------------------------
+@import 'settings'; // variables & mixins
+@import 'base'; // default page styles
+@import 'layout'; // major page layout styles
+@import 'modules'; // standalone components
+@import 'pages'; // page specific

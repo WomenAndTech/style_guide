@@ -1,0 +1,81 @@
+// ------------------------------
+// BASE STYLES
+// ------------------------------
+// Global & shared page styles
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: $font-size-body;
+  font-family: $typeface-default;
+
+  &.coral {
+    background: $coral;
+  }
+  &.purple {
+    background: $purple;
+  }
+}
+main {
+  margin: 0 20px;
+  padding: 20px;
+  background: white;
+}
+
+
+// Typography
+//------------
+h2 {
+  font-size: $font-size-h2;
+  margin: 0 0 44px 0;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+article h1 {
+  font-size: $font-size-h1;
+}
+
+
+// Main page heading
+//-------------------
+// Contains logo, nav & optional text
+header.global {
+  color: white;
+  margin-bottom: 66px;
+  padding-top: 32px;
+  
+  // may change based on responsive
+  position: relative;
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding-left: 26px;
+    display: inline-block;
+  }
+  h1 {
+    margin: 0 0 95px;
+  }
+  h2, p {
+    text-align: center;
+  }
+  p {
+    font-size: $font-size-body-sm;
+    line-height: 1.5;
+  }
+}
+
+

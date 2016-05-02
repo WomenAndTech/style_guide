@@ -1,0 +1,37 @@
+// ------------------------------
+// PAGE SPECIFIC
+// ------------------------------
+
+// Style Guide
+// ------------
+.style-guide {
+  section {
+    margin-bottom: 100px;
+  }
+  .title {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  button {
+    border: 0;
+    padding: 10px 20px;
+    font-size: $font-size-body-sm;
+    color: white;
+    
+    &.coral {
+      background: $coral;
+    }
+    &.purple {
+      background: $purple;
+    }
+    &.yellow {
+      background: $yellow;
+    }
+    &.green {
+      background: $green;
+    }
+    &.blue {
+      background: $blue;
+    }
+  }
+}
