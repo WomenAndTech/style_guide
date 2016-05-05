@@ -4,7 +4,8 @@
   "description": "Women&&Tech style guide.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-clean": "^0.3.2"
+    "gulp-clean": "^0.3.2",
+    "gulp-sourcemaps": "^1.6.0"
   },
   "devDependencies": {
     "browser-sync": "^2.11.2",

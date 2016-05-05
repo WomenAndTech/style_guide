@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync');
@@ -16,7 +17,9 @@ gulp.task('clean-tmp', function(){
 // Convert all *.sass files in project src to CSS files into the dev folder (tmp)
 gulp.task('sass-dev', ['clean-tmp'],function(){
   return gulp.src(srcFolder + '/sass/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(destFolder + '/css'))
 });
 
@@ -33,12 +36,12 @@ gulp.task('copy-assets-dev', ['clean-tmp'], function(){
 });
 
 // Runs all the development build requirements, then just returns true when they're finished
-gulp.task('dev-build', ['copy-index-dev', 'sass-dev', 'copy-assets-dev'], function(){
+gulp.task('build-dev', ['copy-index-dev', 'sass-dev', 'copy-assets-dev'], function(){
   return true;
 });
 
 // Observes a series of folder observations and then runs a corresponding task
-gulp.task('watch', ['dev-build'], function(){
+gulp.task('watch', function(){
   // watch for sass file changes in directory and run 'sass-dev'
   gulp.watch(srcFolder + '/sass/**/*.scss', ['sass-dev']);
   // watch for html file changes in directory and run 'copy-index-dev'
@@ -48,7 +51,7 @@ gulp.task('watch', ['dev-build'], function(){
 });
 
 // Auto updates the browser when the dev folder (tmp) gets updated
-gulp.task('browserSync', ['dev-build'], function(){
+gulp.task('browserSync', ['build-dev'], function(){
   browserSync.init({
     server: {
       baseDir: destFolder
@@ -61,4 +64,4 @@ gulp.task('browserSync', ['dev-build'], function(){
 });
 
 // The main gulp task - runs in order based on any dependencies (if any) on each task
-gulp.task('default', ['clean-tmp', 'dev-build', 'watch', 'browserSync']);
+gulp.task('default', ['clean-tmp', 'build-dev', 'watch', 'browserSync']);
