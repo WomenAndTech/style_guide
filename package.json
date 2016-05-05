@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Women&&Tech style guide.",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-clean": "^0.3.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.11.2",
     "del": "^2.2.0",
