@@ -1,3 +1,5 @@
+//npm install gulp gulp-sourcemaps gulp-sass gulp-clean browser-sync --save-dev
+
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
@@ -35,13 +37,19 @@ gulp.task('copy-assets-dev', function(){
     .pipe(gulp.dest(destFolder + '/assets'));
 });
 
+// Copy all assets over to dev folder (tmp)
+gulp.task('copy-scripts-dev', function(){
+  return gulp.src(srcFolder + '/scripts/**/*.*')
+    .pipe(gulp.dest(destFolder + '/scripts'));
+});
+
 // Runs all the development build requirements, then just returns true when they're finished
 gulp.task('wait-clean-temp', ['clean-tmp'], function(){
   return true;
 });
 
 gulp.task('build-dev', ['wait-clean-temp'], function(){
-  gulp.start(['copy-index-dev', 'copy-assets-dev', 'sass-dev']);
+  gulp.start(['copy-index-dev', 'copy-assets-dev', 'copy-scripts-dev', 'sass-dev']);
 });
 
 // Auto updates the browser when the dev folder (tmp) gets updated
