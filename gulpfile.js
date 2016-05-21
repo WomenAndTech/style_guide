@@ -68,4 +68,4 @@ gulp.task('watch', function(){
 });
 
 // The main gulp task - runs in order based on any dependencies (if any) on each task
-gulp.task('default', ['clean-tmp', 'build-dev', 'watch', 'browserSync']);
+gulp.task('default', ['clean-tmp', 'build-dev', 'browserSync', 'watch']);
