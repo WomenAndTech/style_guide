@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync');
+var runSequence = require('run-sequence');
 
 var srcFolder = "./src";
 var destFolder = "./tmp";
@@ -26,7 +27,7 @@ gulp.task('sass-dev', function(){
 });
 
 // Copy all *.html files in project src into the dev folder (tmp)
-gulp.task('copy-index-dev', function(){
+gulp.task('copy-html-dev', function(){
   return gulp.src(srcFolder + '/**/*.html')
     .pipe(gulp.dest(destFolder));
 });
@@ -43,17 +44,12 @@ gulp.task('copy-scripts-dev', function(){
     .pipe(gulp.dest(destFolder + '/scripts'));
 });
 
-// Runs all the development build requirements, then just returns true when they're finished
-gulp.task('wait-clean-temp', ['clean-tmp'], function(){
-  return true;
-});
-
-gulp.task('build-dev', ['wait-clean-temp'], function(){
-  gulp.start(['copy-index-dev', 'copy-assets-dev', 'copy-scripts-dev', 'sass-dev']);
+gulp.task('build-dev', ['clean-tmp'], function(resolve){
+  runSequence(['copy-html-dev', 'copy-assets-dev', 'copy-scripts-dev', 'sass-dev'], resolve);
 });
 
 // Auto updates the browser when the dev folder (tmp) gets updated
-gulp.task('browserSync', function(){
+gulp.task('serve', ['build-dev'], function(){
   browserSync.init({
     server: {
       baseDir: destFolder
@@ -61,19 +57,21 @@ gulp.task('browserSync', function(){
     // Don't auto open a new browser window...just open it yourself!
     open: false
   });
-
-  gulp.watch(destFolder + "/**/*.*", browserSync.reload);
 });
 
+gulp.task('html-watch', ['copy-html-dev'], browserSync.reload);
+gulp.task('sass-watch', ['sass-dev'], browserSync.reload);
+gulp.task('assets-watch', ['copy-assets-dev'], browserSync.reload);
+
 // Observes a series of folder observations and then runs a corresponding task
-gulp.task('watch', function(){
+gulp.task('watch', ['build-dev'], function(){
+  // watch for html file changes in directory and run 'copy-html-dev'
+  gulp.watch(srcFolder + '/**/*.html', ['html-watch']);
   // watch for sass file changes in directory and run 'sass-dev'
-  gulp.watch(srcFolder + '/sass/**/*.scss', ['sass-dev']);
-  // watch for html file changes in directory and run 'copy-index-dev'
-  gulp.watch(srcFolder + '/**/*.html', ['copy-index-dev']);
+  gulp.watch(srcFolder + '/sass/**/*.scss', ['sass-watch']);
   // watch for asset changes
-  gulp.watch(srcFolder + '/assets/**/*.*', ['copy-assets-dev']);
+  gulp.watch(srcFolder + '/assets/**/*.*', ['assets-watch']);
 });
 
 // The main gulp task - runs in order based on any dependencies (if any) on each task
-gulp.task('default', ['clean-tmp', 'build-dev', 'browserSync', 'watch']);
+gulp.task('default', ['serve', 'watch']);
