@@ -59,9 +59,15 @@ gulp.task('serve', ['build-dev'], function(){
   });
 });
 
-gulp.task('html-watch', ['copy-html-dev'], browserSync.reload);
-gulp.task('sass-watch', ['sass-dev'], browserSync.reload);
-gulp.task('assets-watch', ['copy-assets-dev'], browserSync.reload);
+gulp.task('html-watch', ['copy-html-dev'], function(){
+  browserSync.reload();
+});
+gulp.task('sass-watch', ['sass-dev'], function(){
+  browserSync.reload();
+});
+gulp.task('assets-watch', ['copy-assets-dev'], function(){
+  browserSync.reload();
+});
 
 // Observes a series of folder observations and then runs a corresponding task
 gulp.task('watch', ['build-dev'], function(){
