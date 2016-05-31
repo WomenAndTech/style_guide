@@ -1,0 +1,1 @@
+$(function(){$("[data-theme]").click(function(){var t=$(this).data("theme");$("body").removeClass(function(t,e){return(e.match(/\btheme-\S+/g)||[]).join(" ")}).addClass("theme-"+t)})});
