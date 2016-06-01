@@ -1,24 +1,32 @@
 // ------------------------------
 // THEME STYLES
 // ------------------------------
+// A class of "theme-color" needs to be added to 
+// the body element for the theme styles to work.
 
-.theme-coral {
-  background: $coral;
+// http://sass-lang.com/documentation/file.SASS_REFERENCE.html#each-directive
+@each $theme, $color in ('coral', $coral),
+                        ('purple', $purple),
+                        ('yellow', $yellow),
+                        ('green', $green),
+                        ('blue', $blue) 
+{
+  .theme-#{$theme} {
+    background-color: $color;
+    
+    a:hover,
+    a:focus {
+      color: $color;
+    }
+  }
+  
+  // Style guide
+  button.#{$theme} {
+    background: $color;
+    
+    // http://sass-lang.com/documentation/Sass/Script/Functions.html#darken-instance_method
+    &:focus {
+      outline: 1px solid darken($color, 10%);
+    }
+  }
 }
-
-.theme-purple {
-  background: $purple;
-}
-
-.theme-yellow {
-  background: $yellow;
-}
-
-.theme-green {
-  background: $green;
-}
-
-.theme-blue {
-  background: $blue;
-}
-

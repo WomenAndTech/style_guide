@@ -22,7 +22,15 @@ main {
   padding: 20px;
   background: white;
 }
-
+button {
+  border: 0;
+  padding: 10px 20px;
+  font-size: $font-size-body-sm;
+  cursor: pointer;
+}
+a {
+  outline: none;
+}
 
 
 // TYPOGRAPHY
@@ -37,7 +45,18 @@ h3 {
 article h1 {
   font-size: $font-size-h1;
 }
-
+main a {
+  text-decoration: none;
+  color: $black;
+  // adds underline
+  background: linear-gradient(to bottom, $black 0, $black 100%) repeat-x 0 96% / 1px 1px;
+  // adds bg on letters of go over the line
+  text-shadow: 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff;  
+  
+  &:hover {
+    background: none;
+  }
+}
 
 
 // GLOBAL HEADER
@@ -62,7 +81,7 @@ header.global {
     display: inline-block;
   }
   h1.logo {
-    background: url(../assets/logo.png) no-repeat;
+    background: url(../img/W&&T-full-logo-outline.svg) no-repeat;
     text-indent: -9999px;
     width: 230px;
     height: 64px;

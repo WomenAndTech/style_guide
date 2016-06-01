@@ -14,29 +14,8 @@
     padding-bottom: 10px;
   }
   button {
-    border: 0;
-    padding: 10px 20px;
-    font-size: $font-size-body-sm;
     color: white;
-    cursor: pointer;
-    
-    &.coral {
-      background: $coral;
-    }
-    &.purple {
-      background: $purple;
-    }
-    &.yellow {
-      background: $yellow;
-    }
-    &.green {
-      background: $green;
-    }
-    &.blue {
-      background: $blue;
-    }
   }
-  
   .example {
     border: 1px solid #ccc;
     padding-top: 40px;
@@ -77,5 +56,9 @@
   .name {
     font-family: $typeface-strong;
     text-transform: uppercase;
+    background: none;
+    text-shadow: none;
+    //temp until font added
+    font-weight: 700;
   }
 }

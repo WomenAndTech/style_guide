@@ -10,11 +10,11 @@ $green:                #0ab070;
 $blue:                 #105ac6;
 $black:                #010101;
 
-// typography (to be added)
-$typeface-default:    'avenir-next-regular', arial, sans-serif;
-$typeface-heading:    'avenir-next-demibold', arial, sans-serif;
-$typeface-strong:     'avenir-next-demibold', arial, sans-serif;
-$typeface-italic:     'avenir-next-regular-italic', arial, sans-serif;
+// typography (temporarity using Lato until font is purchased)
+$typeface-default:    'avenir-next-regular', "Lato", arial, sans-serif;
+$typeface-heading:    'avenir-next-demibold', "Lato", sans-serif;
+$typeface-strong:     'avenir-next-demibold', "Lato", sans-serif;
+$typeface-italic:     'avenir-next-regular-italic', "Lato", sans-serif;
 
 // using 62.5% method to calculate rem
 $font-size-h1:         6.0rem;
