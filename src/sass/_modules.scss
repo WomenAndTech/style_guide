@@ -1,3 +1,128 @@
-// ------------------------------
-// MODULES, STANDALONE COMPONENTS
-// ------------------------------
+// -------------------------------
+// MODULES & STANDALONE COMPONENTS
+// -------------------------------
+
+
+// MODULE BORDERS
+//----------------
+.border {
+  // padding and margin are not the same on
+  // all sides of the element so independent 
+  // modules & content sections can stack on 
+  // top of eachother
+  margin: 0 20px;
+  padding: 20px 20px 0;
+  background: white;
+}
+
+
+// HEADERS
+//---------
+// Global site header, contains logo & nav
+.header-primary {
+  color: white;
+  margin: 20px 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .logo {
+    background: url(../img/W&&T-full-logo-outline.svg) no-repeat;
+    text-indent: -9999px;
+    width: 50%;
+    height: 64px;
+    margin: 0;
+  }
+  nav {
+    width: 50%;
+    text-align: right;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding-left: 26px;
+    display: inline-block;
+  }
+}
+
+// Optional page header, contained in <main> tag
+.header-secondary {
+  color: white;
+  text-align: center;
+  
+  h2 {
+    margin: 95px 0 44px;
+  }
+  .intro {
+    font-size: $font-size-body-sm;
+    line-height: 1.5;
+    margin: 0 auto 66px;
+  }
+}
+
+// Interview header
+.header-interview {
+  h2 {
+    font-size: $font-size-heading;
+    margin-top: 70px;
+  }
+  .intro {
+    font-size: $font-size-intro;
+    line-height: 34px;
+  }
+  .author {
+    font-size: 16px;
+  }
+  .name {
+    font-family: $typeface-strong;
+    text-transform: uppercase;
+    background: none;
+    text-shadow: none;
+    //temp until font added
+    font-weight: 700;
+  }
+}
+
+
+
+// IMAGES
+//---------
+// Interview images
+[class*="img-"] {
+  text-align: center;
+  
+  img {
+    width: 100%;
+  }  
+}
+// Interview feature image
+.img-feature {
+  // gets rid of extra space under image
+  font-size: 0;
+}
+// Interview side by side images
+.img-side-by-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  figure {
+    margin: 0 10px;
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+  }
+}
+// Interview single images
+.img-portrait img {
+  max-width: 620px;
+}
+
+
+
+
+
+
+

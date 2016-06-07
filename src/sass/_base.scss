@@ -18,9 +18,15 @@ body {
   font-family: $typeface-default;
 }
 main {
-  margin: 0 20px;
-  padding: 20px;
-  background: white;
+  // margin: 0 20px;
+  // padding: 20px;
+  // background: white;
+}
+section,
+article {
+  // margin: 0 20px;
+  // padding: 20px;
+  // background: white;
 }
 button {
   border: 0;
@@ -35,16 +41,16 @@ a {
 
 // TYPOGRAPHY
 //------------
-h2 {
-  font-size: $font-size-h2;
-  margin: 0 0 44px 0;
-}
-h3 {
-  font-size: $font-size-h3;
-}
-article h1 {
-  font-size: $font-size-h1;
-}
+// h2 {
+//   font-size: $font-size-h2;
+//   margin: 0 0 44px 0;
+// }
+// h3 {
+//   font-size: $font-size-h3;
+// }
+// article h1 {
+//   font-size: $font-size-h1;
+// }
 main a {
   text-decoration: none;
   color: $black;
@@ -58,43 +64,3 @@ main a {
   }
 }
 
-
-// GLOBAL HEADER
-//---------------
-// Contains logo, nav & optional heading text
-header.global {
-  color: white;
-  margin-bottom: 66px;
-  padding-top: 32px;
-  
-  // may change based on responsive
-  position: relative;
-  nav {
-    position: absolute;
-    top: 60px;
-    right: 0;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    padding-left: 26px;
-    display: inline-block;
-  }
-  h1.logo {
-    background: url(../img/W&&T-full-logo-outline.svg) no-repeat;
-    text-indent: -9999px;
-    width: 230px;
-    height: 64px;
-    margin: 0;
-  }
-  h2 {
-    margin-top: 95px;
-  }
-  h2, p {
-    text-align: center;
-  }
-  p {
-    font-size: $font-size-body-sm;
-    line-height: 1.5;
-  }
-}
