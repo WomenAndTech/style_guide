@@ -13,9 +13,6 @@
   padding: 20px 20px 1px;
   background: white;
 }
-.no-border {
-  // margin: 0 -20px;
-}
 
 
 // Headers
@@ -29,15 +26,27 @@
   justify-content: center;
   
   .logo {
+    // Setting logo as bg image, text contained in link.
     background: url(../img/W&&T-full-logo-outline.svg) no-repeat;
-    text-indent: -9999px;
     width: 50%;
     height: 64px;
     margin: 0;
+    
+    // Hiding link text but making area clickable.
+    // Font color change according to theme.
+    a {
+      padding-left: 220px;
+    }
   }
   nav {
     width: 50%;
     text-align: right;
+    
+    a:hover,
+    .active {
+      font-weight: $type-bold;
+      color: white;
+    }
   }
   a {
     color: white;
@@ -54,21 +63,21 @@
   margin-top: 80px;
   
   h2 {
-    margin: 0 0 44px;
+    margin: 0 0 40px;
+    font-size: $font-size-heading;
+    font-weight: $type-bold;
   }
   .intro {
-    line-height: 1.5;
     margin: 0 auto 66px;
   }
 }
 
 // Interview header
 .header-interview {
-  padding-top: 70px;
+  padding-top: 63px;
   
-  h2 {
-    font-size: $font-size-heading;
-    // padding-top: 70px;
+  .heading-lg {
+    font-size: $font-size-heading-lg;
     margin: 0 0 35px;
   }
   .wrapper-sm {
@@ -77,19 +86,24 @@
   }
   .intro {
     font-size: $font-size-intro;
-    line-height: 34px;
+    line-height: $line-height;
   }
   .author {
-    font-size: 16px;
+    font-size: $font-size-subtext;
   }
   .name {
-    font-family: $typeface-strong;
+    font-weight: $type-bold;
     text-transform: uppercase;
     background: none;
     text-shadow: none;
-    //temp until font added
-    font-weight: 700;
   }
+}
+
+// Page heading
+.heading {
+  font-size: $font-size-heading;
+  font-weight: $type-bold;
+  margin: 62px 0 42px;
 }
 
 
@@ -119,14 +133,17 @@
   justify-content: center;
   
   figure {
-    // margin: 0 10px;
+    margin: 0 10px;
     position: relative;
-    
   }
   figcaption {
     position: absolute;
     bottom: 0;
     font-size: $font-size-body;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 12px;
+    text-align: left;
   }
 }
 
@@ -143,6 +160,7 @@
 // Interview share icons
 .social-list {
   @include list-reset-inline;
+  margin-top: 35px;
   
   li {
     margin-right: 10px;
@@ -158,15 +176,15 @@
 // https://www.w3.org/TR/html/grouping-content.html#the-dl-element
 .interview-q {
   font-size: $font-size-questions;
-  font-family: $typeface-strong;
-  padding: 25px 0;
+  font-weight: $type-bold;
+  margin-bottom: 25px;
 }
 
 // Pull quotes
 .pull-quote {
-  font-family: $typeface-strong;
+  font-weight: $type-bold;
   font-size: $font-size-pullquote;
-  padding: 62px 0;
+  padding: 77px 0 57px;
   
   p {    
     &:before {
@@ -192,7 +210,7 @@
     }
   }
   a {
-    font-family: $typeface-strong;
+    font-weight: $type-bold;
     text-transform: uppercase;
     background: none;
     text-shadow: none;

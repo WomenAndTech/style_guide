@@ -14,9 +14,12 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: $typeface-default;
+  font-family: $type-default;
+  font-weight: 400; 
+  font-style: normal;
   font-size: $font-size-body;
-  line-height: $line-height;
+  line-height: $line-height-compact;
+  color: $black;
 }
 main {
   // Adds space to the bottom of the page modules. See 
@@ -33,8 +36,15 @@ main {
 figure {
   margin: 0;
 }
+h1, h2, h3 {
+  line-height: 1;
+}
 p {
   margin: 0 0 25px;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 a {
   outline: none;

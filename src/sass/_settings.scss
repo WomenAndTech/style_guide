@@ -4,30 +4,33 @@
 
 // Colours
 // ------------------------------------------------------------
-$coral:                #ff5e69;
-$purple:               #b385dd;
-$yellow:               #eaaf1d;
-$green:                #0ab070;
-$blue:                 #105ac6;
-$black:                #010101;
-$gray:                 #d2d2d2;
+$coral:                  #ff5e69;
+$purple:                 #b385dd;
+$yellow:                 #eaaf1d;
+$green:                  #0ab070;
+$blue:                   #105ac6;
+$black:                  #2b2b2b;
+$gray:                   #d2d2d2;
 
-// Typography (temporarity using Lato until font is purchased)
+
+// Typography
 // ------------------------------------------------------------
-$typeface-default:    'avenir-next-regular', "Lato", arial sans-serif;
-$typeface-heading:    'avenir-next-demibold', "Lato", sans-serif;
-$typeface-strong:     'avenir-next-demibold', "Lato", sans-serif;
-$typeface-italic:     'avenir-next-regular-italic', "Lato", sans-serif;
+$type-default:           'Avenir Next W01', arial, sans-serif;
+$type-normal:            400;
+$type-bold:              700;
 
-// using 62.5% method to calculate rem
-$font-size-heading:    6.0rem;
-$font-size-h2:         2.4rem;
-$font-size-intro:      2.2rem;
-$font-size-pullquote:  2.9rem;
-$font-size-questions:  2.0rem; // lh 28pt
-$font-size-body:       1.8rem; // lh 26pt
-$font-size-subtext:    1.4rem;
-$line-height:          1.4;
+// Using the 62.5% method to calculate rem.
+// http://snook.ca/archives/html_and_css/font-size-with-rem
+$font-size-heading-lg:   6.0rem;
+$font-size-heading:      2.4rem;
+$font-size-intro:        2.2rem; // lh 34pt = 1.54
+$font-size-pullquote:    2.9rem; // lh 42pt = 1.45
+$font-size-questions:    2.0rem; // lh 28pt = 1.4
+$font-size-body:         1.8rem; // lh 26pt = 1.44
+$font-size-subtext:      1.4rem;
+$line-height:            1.55;
+$line-height-compact:    1.45;
+
 
 
 // ------------------------------------------------------------
@@ -46,6 +49,10 @@ $line-height:          1.4;
 .italic {
   font-style: italic;
 }
+.bold {
+  font-weight: $type-bold;
+}
+
 
 
 // ------------------------------------------------------------
@@ -94,7 +101,11 @@ $line-height:          1.4;
 }
 
 
-// Media Queries - placeholder sizes - to be updated
+
+// ------------------------------------------------------------
+// MEDIA QUERIES
+// ------------------------------------------------------------
+// placeholder sizes - to be updated
 $screen-sm: 800px;
 $screen-med: 1024px;
 $screen-lrg: 1400px;

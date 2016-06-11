@@ -4,17 +4,16 @@
     <title>Page Template - Women&amp;&amp;Tech Style Guide</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-    <!-- temp until font is purchased -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="theme-coral">
+  <body class="theme-coral page-template">
     
     <!-- global header -->
     <header class="header-primary">
-      <h1 class="logo">Women&&Tech</h1>
+      <h1 class="logo"><a href="index.html">Women&&Tech</a></h1>
       <nav>
-        <a href="/">Interviews</a>
+        <a href="/" class="active">Interviews</a>
         <a href="/">About Us</a>
         <a href="/">Contribute</a>
         <a href="/">Nominate</a>
@@ -22,7 +21,7 @@
     </header>
     
     <main>
-      <article class="interview">
+      <article>
         <!-- // Optional secondary header content -->
         <header class="header-secondary">
           <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
@@ -31,10 +30,11 @@
         
         <section class="border">
           <div class="wrapper-sm">
-            <h3 class="centered">Letter to our Readers</h3>
+            <h2 class="heading centered">Letter to our Readers</h2>
+            
             <p>A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why...</p>
             
-            <p>This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded Women&&Tech, it was to challege the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
+            <p>This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded Women&&Tech, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
             
             <p>After the momentum of the first few months of publishing, we hit a few roadblocks. We sprinted, grounded to a halt, sprinted again to catch up and halted again. The project changed hands, team members and sponsors and unfortunately, it had become inconsistent and stale. </p>
             
@@ -47,8 +47,13 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
   <script>!window.jQuery && document.write('<script src="js/jquery-2.2.3.min.js"><\/script>')</script>
+  <!-- Fonts -->
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.js"></script>
+  <!-- Syntax highlighter -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
   <script src="js/global-min.js"></script>
+  
+  <!-- Initialize syntax highlighter -->
   <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
