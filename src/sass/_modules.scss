@@ -1,27 +1,27 @@
-// -------------------------------
+// ------------------------------------------------------------
 // MODULES & STANDALONE COMPONENTS
-// -------------------------------
+// ------------------------------------------------------------
 
 
-// MODULE BORDERS
-//----------------
+// Module borders
+// ------------------------------------------------------------
 .border {
   // padding and margin are not the same on
   // all sides of the element so independent 
   // modules & content sections can stack on 
   // top of eachother
   margin: 0 20px;
-  padding: 20px 20px 0;
+  padding: 20px 20px 1px;
   background: white;
 }
 
 
-// HEADERS
-//---------
+// Headers
+// ------------------------------------------------------------
 // Global site header, contains logo & nav
 .header-primary {
   color: white;
-  margin: 20px 40px 0;
+  margin: 20px 40px 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,9 +49,10 @@
 .header-secondary {
   color: white;
   text-align: center;
+  margin-top: 80px;
   
   h2 {
-    margin: 95px 0 44px;
+    margin: 0 0 44px;
   }
   .intro {
     font-size: $font-size-body-sm;
@@ -85,8 +86,8 @@
 
 
 
-// IMAGES
-//---------
+// Images
+// ------------------------------------------------------------
 // Interview images
 [class*="img-"] {
   text-align: center;
@@ -95,11 +96,13 @@
     width: 100%;
   }  
 }
+
 // Interview feature image
 .img-feature {
   // gets rid of extra space under image
   font-size: 0;
 }
+
 // Interview side by side images
 .img-side-by-side {
   display: flex;
@@ -115,6 +118,7 @@
     bottom: 0;
   }
 }
+
 // Interview single images
 .img-portrait img {
   max-width: 620px;

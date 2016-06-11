@@ -1,8 +1,9 @@
-// ------------------------------
+// ------------------------------------------------------------
 // VARIABLES
-// ------------------------------
+// ------------------------------------------------------------
 
-// colours
+// Colours
+// ------------------------------------------------------------
 $coral:                #ff5e69;
 $purple:               #b385dd;
 $yellow:               #eaaf1d;
@@ -10,7 +11,9 @@ $green:                #0ab070;
 $blue:                 #105ac6;
 $black:                #010101;
 
-// typography (temporarity using Lato until font is purchased)
+
+// Typography (temporarity using Lato until font is purchased)
+// ------------------------------------------------------------
 $typeface-default:    'avenir-next-regular', "Lato", arial, sans-serif;
 $typeface-heading:    'avenir-next-demibold', "Lato", sans-serif;
 $typeface-strong:     'avenir-next-demibold', "Lato", sans-serif;
@@ -21,23 +24,24 @@ $font-size-heading:    6.0rem;
 $font-size-h2:         2.4rem;
 $font-size-intro:      2.2rem;
 $font-size-pullquote:  2.9rem;
-$font-size-questions:  2.0rem;
-$font-size-body:       1.8rem;
+$font-size-questions:  2.0rem; // lh 28pt
+$font-size-body:       1.8rem; // lh 26pt
 $font-size-body-sm:    1.6rem;
 $font-size-subtext:    1.4rem;
+$line-height:          1.4;
 
 
-// ------------------------------
+// ------------------------------------------------------------
 // HELPER CLASSES
-// ------------------------------
+// ------------------------------------------------------------
 .nowrap {
   white-space: nowrap;
 }
 
 
-// ------------------------------
+// ------------------------------------------------------------
 // MIXINS
-// ------------------------------
+// ------------------------------------------------------------
 @mixin list-reset {
   margin: 0;
   padding: 0;
@@ -117,8 +121,4 @@ $screen-lrg: 1400px;
     @media only screen and (min-width: $screen-sm) and (max-width: $screen-lrg) { @content; }
   }
 }
-
-
-
-
 

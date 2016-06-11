@@ -1,32 +1,26 @@
-// ------------------------------
+// ------------------------------------------------------------
 // BASE STYLES
-// ------------------------------
+// ------------------------------------------------------------
 // Global and site-wide styles
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html {
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 html {
   font-size: 62.5%;
 }
 body {
   padding: 0;
   margin: 0;
-  font-size: $font-size-body;
   font-family: $typeface-default;
-}
-main {
-  // margin: 0 20px;
-  // padding: 20px;
-  // background: white;
-}
-section,
-article {
-  // margin: 0 20px;
-  // padding: 20px;
-  // background: white;
+  font-size: $font-size-body;
+  line-height: $line-height;
 }
 button {
   border: 0;
@@ -39,18 +33,11 @@ a {
 }
 
 
-// TYPOGRAPHY
-//------------
-// h2 {
-//   font-size: $font-size-h2;
-//   margin: 0 0 44px 0;
-// }
-// h3 {
-//   font-size: $font-size-h3;
-// }
-// article h1 {
-//   font-size: $font-size-h1;
-// }
+// Typography
+// ------------------------------------------------------------
+p {
+  margin: 0 0 35px;
+}
 main a {
   text-decoration: none;
   color: $black;
