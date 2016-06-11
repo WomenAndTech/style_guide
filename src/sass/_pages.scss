@@ -6,7 +6,14 @@
 // Style Guide
 // ------------------------------------------------------------
 .style-guide {
-
+  .logo {
+    width: 20%;
+  }
+  nav {
+    width: 80%;
+    font-size: 3.5rem;
+    text-align: left;
+  }
   .title {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
