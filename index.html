@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Women&amp;&amp;Tech Style Guide - Kitchen Sink</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
     <!-- temp until font is purchased -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
@@ -39,8 +40,6 @@
         <ul>
           <li>page background</li>
           <li>link hover</li>
-          <li></li>
-          <li></li>
         </ul>
       </section>
       
@@ -50,17 +49,21 @@
         <h3>Interview: Header</h3>
         
         <div class="example">
-          <header class="wrapper-sm interview">
-            <h2>Biying Miao</h2>
-            <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
-            <p class="author">An interview with <a href="/" class="name">Ruby Watson</a></p>
+          <header class="border header-interview">
+            <div class="wrapper-sm">
+              <h2>Biying Miao</h2>
+              <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
+              <p class="author">An interview with <a href="/" class="name">Ruby Watson</a></p>
+            </div>
           </header>
 <pre><code>
-  &#x3C;header&#x3E;
+&#x3C;header class=&#x22;border header-interview&#x22;&#x3E;
+  &#x3C;div class=&#x22;wrapper-sm&#x22;&#x3E;
     &#x3C;h2&#x3E;Biying Miao&#x3C;/h2&#x3E;
-    &#x3C;p class=&#x22;intro&#x22;&#x3E;Biying Miao is the co-founder of Hot Pop Factory, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the Textile Museum of Canada and the Art Gallery of Ontario.&#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;intro&#x22;&#x3E;Biying Miao is the co-founder of &#x3C;a href=&#x22;/&#x22;&#x3E;Hot Pop Factory&#x3C;/a&#x3E;, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the &#x3C;a href=&#x22;/&#x22;&#x3E;Textile Museum of Canada&#x3C;/a&#x3E; and the Art Gallery of Ontario.&#x3C;/p&#x3E;
     &#x3C;p class=&#x22;author&#x22;&#x3E;An interview with &#x3C;a href=&#x22;/&#x22; class=&#x22;name&#x22;&#x3E;Ruby Watson&#x3C;/a&#x3E;&#x3C;/p&#x3E;
-  &#x3C;/header&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/header&#x3E;
 </code></pre>
         </div>
       </section>
@@ -68,6 +71,27 @@
       <!-- Images -->
       <section class="border">
         <h2 class="title">Images</h2>
+        
+        <figure class="border img-feature">
+          <img src="img/image-featured.jpg" alt="Biying Miao">
+        </figure>
+        
+        <div class="border img-side-by-side">
+          <figure>
+            <img src="img/image-side-left.jpg" alt="Biying Miao">
+          </figure>
+          <figure>
+            <img src="img/image-side-right.jpg" alt="Biying Miao">
+            <figcaption>
+              Optional caption goes here.
+            </figcaption>
+          </figure>
+        </div>
+        
+        <figure class="border img-portrait">
+          <img src="img/image-single-portrait.jpg" alt="Biying Miao">
+        </figure>
+        
       </section>
       
       <!-- Components -->

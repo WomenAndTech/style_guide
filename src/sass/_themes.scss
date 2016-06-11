@@ -21,11 +21,10 @@
     }
   }
   
-  // Style guide
+  // Style guide page
   button.#{$theme} {
     background: $color;
     
-    // http://sass-lang.com/documentation/Sass/Script/Functions.html#darken-instance_method
     &:focus {
       outline: 1px solid darken($color, 10%);
     }
