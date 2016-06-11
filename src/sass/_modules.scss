@@ -13,6 +13,9 @@
   padding: 20px 20px 1px;
   background: white;
 }
+.no-border {
+  // margin: 0 -20px;
+}
 
 
 // Headers
@@ -54,7 +57,6 @@
     margin: 0 0 44px;
   }
   .intro {
-    font-size: $font-size-body-sm;
     line-height: 1.5;
     margin: 0 auto 66px;
   }
@@ -62,9 +64,12 @@
 
 // Interview header
 .header-interview {
+  padding-top: 70px;
+  
   h2 {
     font-size: $font-size-heading;
-    margin-top: 70px;
+    // padding-top: 70px;
+    margin: 0 0 35px;
   }
   .wrapper-sm {
     border-bottom: 1px solid $gray;
@@ -94,6 +99,8 @@
 // Interview images
 [class*="img-"] {
   text-align: center;
+  // gets rid of extra space under image
+  font-size: 0;
   
   img {
     width: 100%;
@@ -102,8 +109,7 @@
 
 // Interview feature image
 .img-feature {
-  // gets rid of extra space under image
-  font-size: 0;
+  
 }
 
 // Interview side by side images
@@ -113,12 +119,14 @@
   justify-content: center;
   
   figure {
-    margin: 0 10px;
+    // margin: 0 10px;
     position: relative;
+    
   }
   figcaption {
     position: absolute;
     bottom: 0;
+    font-size: $font-size-body;
   }
 }
 
@@ -176,8 +184,13 @@
   
   ul {
     @include list-reset;
+    border-top: 1px solid $gray;
+    padding-top: 55px;
+    
+    li {
+      margin-bottom: 10px;
+    }
   }
-  
   a {
     font-family: $typeface-strong;
     text-transform: uppercase;
@@ -187,6 +200,9 @@
     &:hover {
       color: $black;
     }
+  }
+  p {
+    margin-top: 30px;
   }
 }
 

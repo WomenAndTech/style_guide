@@ -18,28 +18,49 @@ body {
   font-size: $font-size-body;
   line-height: $line-height;
 }
-button {
-  border: 0;
-  padding: 10px 20px;
-  font-size: $font-size-body-sm;
-  cursor: pointer;
+main {
+  // Adds space to the bottom of the page modules. See 
+  // comments for .border in _modules.scss for more info.
+  margin-bottom: 20px;
+  &:after {
+    content: "";
+    display: block;
+    height: 85px;
+    background: white;
+    margin: 0 20px;
+  }
+}
+figure {
+  margin: 0;
 }
 p {
   margin: 0 0 25px;
 }
 a {
   outline: none;
-}
-main a {
-  text-decoration: none;
-  color: $black;
-  // adds underline
-  background: linear-gradient(to bottom, $black 0, $black 100%) repeat-x 0 96% / 1px 1px;
-  // adds bg on letters of go over the line
-  text-shadow: 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff;  
   
-  &:hover {
-    background: none;
+  main & {
+    text-decoration: none;
+    color: $black;
+    // adds underline
+    background: linear-gradient(to bottom, $black 0, $black 100%) repeat-x 0 96% / 1px 1px;
+    // adds bg on letters of go over the line
+    text-shadow: 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff;  
+    
+    &:hover {
+      background: none;
+    }
   }
 }
+dl {
+  margin: 0;
+}
+button {
+  border: 0;
+  border-radius: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: $font-size-body;
+}
+
 
