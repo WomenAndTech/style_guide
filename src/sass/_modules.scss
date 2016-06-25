@@ -76,6 +76,9 @@
 .header-interview {
   padding-top: 63px;
   
+  + dl {
+    padding-top: 45px;
+  }
   .heading-lg {
     font-size: $font-size-heading-lg;
     margin: 0 0 35px;
@@ -121,11 +124,6 @@
   }  
 }
 
-// Interview feature image
-.img-feature {
-  
-}
-
 // Interview side by side images
 .img-side-by-side {
   display: flex;
@@ -151,6 +149,9 @@
 .img-portrait img {
   max-width: 620px;
 }
+.img-landscape img {
+  max-width: 940px;
+}
 
 
 
@@ -172,8 +173,12 @@
 // Interview text blocks
 // ------------------------------------------------------------
 
-// Q&A blocks - Q&A content contained in <dl>
-// https://www.w3.org/TR/html/grouping-content.html#the-dl-element
+// Q&A blocks - Q&A content contained in <dl> elements
+// www.w3.org/TR/html/grouping-content.html#the-dl-element
+dl.border {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .interview-q {
   font-size: $font-size-questions;
   font-weight: $type-bold;
@@ -181,10 +186,11 @@
 }
 
 // Pull quotes
+// Should be contained in an <aside> element
 .pull-quote {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
-  padding: 77px 0 57px;
+  padding: 72px 0 52px;
   
   p {    
     &:before {
@@ -199,6 +205,7 @@
 // Credits
 .credits {
   font-size: $font-size-subtext;
+  padding-top: 60px;
   
   ul {
     @include list-reset;
@@ -224,4 +231,12 @@
   }
 }
 
+
+
+// Primary / Global Footer
+// ------------------------------------------------------------
+.footer-primary {
+  background: white;
+  padding: 100px 62px;
+}
 

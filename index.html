@@ -1,118 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Women&amp;&amp;Tech Style Guide - Kitchen Sink</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="style-guide theme-coral">
-    <!-- global header -->
-    <header class="header-primary">
-      <h1 class="logo"><a href="index.html">Women&&Tech</a></h1>
-      <nav>
-        Style Guide
-      </nav>
-    </header>
+<head>
+  <title>Women&amp;&amp;Tech Style Guide - Kitchen Sink</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="style-guide theme-coral">
     
-    <main role="main">
-
-      <!-- page templates -->
-      <section class="border">
-        <h2 class="title">Full Page Templates</h2>
+  <!-- // Primary Header -->
+  <header class="header-primary">
+    <h1 class="logo"><a href="index.html">Women&&Tech</a></h1>
+    <nav>
+      Style Guide
+    </nav>
+  </header>
+    
+  <main role="main">
+    <!-- // Page Templates -->
+    <section>
+      <h2 class="title" style="padding-top:30px;">Full Page Templates</h2>
+      <div class="border">
         <a href="page-template.html" target="_blank">Full Page Template (Default)</a><br>
-        <a href="interview-template.html" target="_blank">Full Interview Template</a>
-      </section>
-      
-      <!-- Themes & Colours -->
-      <section class="border">
-        <h2 class="title">Themes & Colours</h2>
-        <p>Select a button below to change the theme.</p>
+        <a href="interview-template.html" target="_blank">Full Interview Template</a><br>
+        <a href="base-template.html" target="_blank">Base Page Markup Template</a> (view page source)
+      </div>
+    </section>
+    
+    <!-- // Themes & Colours -->
+    <section>
+      <h2 class="title">Themes & Colours</h2>
+      <div class="border">
+        <p>Select a button below to change the theme. Theme changes include:</p>
+        <ul>
+          <li>page background</li>
+          <li>link hover</li>
+        </ul>
+        
         <button class="coral" data-theme="coral">Coral</button>
         <button class="purple" data-theme="purple">Purple</button>
         <button class="yellow" data-theme="yellow">Yellow</button>
         <button class="green" data-theme="green">Green</button>
         <button class="blue" data-theme="blue">Blue</button>
-        
-        <p>Theme changes include:</p>
-        <ul>
-          <li>page background</li>
-          <li>link hover</li>
-        </ul>
-      </section>
-      
-      <!-- Typography -->
-      <section class="border">
-        <h2 class="title">Header Modules</h2>
-        <h3>Interview Header</h3>
-        
-        <div class="example">
-          <header class="border header-interview">
-            <div class="wrapper-sm">
-              <h2>Biying Miao</h2>
-              <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
-              <p class="author">An interview with <a href="/" class="name">Ruby Watson</a></p>
-            </div>
-          </header>
-<pre><code>
-&#x3C;header class=&#x22;border header-interview&#x22;&#x3E;
+      </div>
+    </section>
+    
+    <!-- // Header Modules -->
+    <section>
+      <h2 class="title">Header Modules</h2>
+      <h3 class="subtitle">Secondary / Page Header Example</h3>
+<pre><code class="xml">&lt;header class=&quot;header-secondary&quot;&gt;
+  &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
+  &lt;p class=&quot;intro wrapper-sm&quot;&gt;Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+    
+      <!-- Page Header -->
+      <header class="header-secondary">
+        <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
+        <p class="intro wrapper-sm">[This is an example of a optional paragraph text.] Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
+      </header>
+
+
+      <!-- // Interview header -->
+      <h3 class="subtitle">Interview Header Example</h3>
+<pre><code>&#x3C;header class=&#x22;border header-interview&#x22;&#x3E;
   &#x3C;div class=&#x22;wrapper-sm&#x22;&#x3E;
     &#x3C;h2&#x3E;Biying Miao&#x3C;/h2&#x3E;
     &#x3C;p class=&#x22;intro&#x22;&#x3E;Biying Miao is the co-founder of &#x3C;a href=&#x22;/&#x22;&#x3E;Hot Pop Factory&#x3C;/a&#x3E;, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the &#x3C;a href=&#x22;/&#x22;&#x3E;Textile Museum of Canada&#x3C;/a&#x3E; and the Art Gallery of Ontario.&#x3C;/p&#x3E;
     &#x3C;p class=&#x22;author&#x22;&#x3E;An interview with &#x3C;a href=&#x22;/&#x22; class=&#x22;name&#x22;&#x3E;Ruby Watson&#x3C;/a&#x3E;&#x3C;/p&#x3E;
   &#x3C;/div&#x3E;
 &#x3C;/header&#x3E;
-</code></pre>
-        </div>
-      </section>
-      
-      <!-- Images -->
-      <section class="border">
-        <h2 class="title">Images</h2>
-        
-        <!-- // Image options -->
-        <figure class="border img-feature">
-          <img src="img/image-featured.jpg" alt="Biying Miao">
-        </figure>
-        
-        <div class="border img-side-by-side">
-          <figure>
-            <img src="img/image-side-left.jpg" alt="Biying Miao">
-          </figure>
-          <figure>
-            <img src="img/image-side-right.jpg" alt="Biying Miao">
-            <figcaption>
-              Optional caption goes here.
-            </figcaption>
-          </figure>
-        </div>
-        
-        <figure class="border img-portrait">
-          <img src="img/image-single-portrait.jpg" alt="Biying Miao">
-        </figure>
-        
-      </section>
-      
-      <!-- Components -->
-      <section class="border">
-        <h2 class="title">Components</h2>
-        <h3>Past Interview Cards</h3>
-        
-        <!-- http://blog.cloudfour.com/breaking-out-with-viewport-units-and-calc/ -->
-      </section>
-    </main>
+</code></pre>    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
-    <script>!window.jQuery && document.write('<script src="js/jquery-2.2.3.min.js"><\/script>')</script>
-    <!-- Fonts -->
-    <script type="text/javascript" src="//fast.fonts.net/jsapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.js"></script>
-    <!-- Syntax highlighter -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
-    <script src="js/global-min.js"></script>
     
-    <!-- Initialize syntax highlighter -->
-    <script>hljs.initHighlightingOnLoad();</script>
-    </body>
-  </html>
+      <header class="border header-interview">
+        <div class="wrapper-sm">
+          <h2 class="heading-lg">Biying Miao</h2>
+          <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
+          <p class="author">An interview with <a href="/" class="name">Ruby Watson</a></p>
+          
+          <ul class="social-list">
+            <li><a href="/" title="Facebook">FB icon</a></li>
+            <li><a href="/" title="Twitter">Twitter icon</a></li>
+            <li><a href="/" title="Email">Email icon</a></li>
+          </ul>
+        </div>
+        <br><br>
+      </header>
+
+
+    </section>
+    
+    <!-- Images -->
+    <section>
+      <h2 class="title">Images</h2>
+      
+      <!-- // Featured image -->
+      <figure class="border img-feature">
+        <img src="img/image-featured.jpg" alt="Biying Miao">
+      </figure>
+      
+      <!-- // Side by side images -->
+      <div class="border img-side-by-side">
+        <figure>
+          <img src="img/image-side-left.jpg" alt="Biying Miao">
+        </figure>
+        <figure>
+          <img src="img/image-side-right.jpg" alt="Biying Miao">
+          <figcaption>
+            Optional caption goes here.
+          </figcaption>
+        </figure>
+      </div>
+    
+      <!-- // Single image - portrait -->
+      <figure class="border img-portrait">
+        <img src="img/image-single-portrait.jpg" alt="Biying Miao">
+      </figure>
+      
+      <!-- // Single image - landscape -->
+      <figure class="border img-landscape">
+        <img src="img/image-single-landscape.jpg" alt="Biying Miao">
+      </figure>
+    </section>
+      
+
+    <!-- Components -->
+    <section>
+      <h2 class="title">Components</h2>
+      <h3 class="subtitle">Past Interview Cards</h3>
+      
+      <!-- http://blog.cloudfour.com/breaking-out-with-viewport-units-and-calc/ -->
+    </section>
+  </main>
+
+  <footer class="footer-primary">
+    footer content to be added
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
+  <script>!window.jQuery && document.write('<script src="js/jquery-2.2.3.min.js"><\/script>')</script>
+  <!-- Fonts -->
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.js"></script>
+  <!-- Syntax highlighter -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+  <script src="js/global-min.js"></script>
+  
+  <!-- Initialize syntax highlighter -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

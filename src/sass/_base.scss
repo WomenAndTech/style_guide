@@ -25,6 +25,7 @@ main {
   // Adds space to the bottom of the page modules. See 
   // comments for .border in _modules.scss for more info.
   margin-bottom: 20px;
+  
   &:after {
     content: "";
     display: block;
