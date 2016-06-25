@@ -22,10 +22,25 @@
     <!-- // Page Templates -->
     <section>
       <h2 class="title" style="padding-top:30px;">Full Page Templates</h2>
+      
       <div class="border">
-        <a href="page-template.html" target="_blank">Full Page Template (Default)</a><br>
-        <a href="interview-template.html" target="_blank">Full Interview Template</a><br>
-        <a href="base-template.html" target="_blank">Base Page Markup Template</a> (view page source)
+        <ul>
+          <li><a href="page-template.html" target="_blank">Full Page Example</a>
+            <ul>
+              <li>Use for static content (e.g. About)</li>
+            </ul>
+          </li>
+          <li>
+            <a href="interview-template.html" target="_blank">Full Interview Example</a>
+          </li>
+          <li><a href="base-template.html" target="_blank">Base Markup Template</a>
+            <ul>
+              <li>Base markup for all pages</li>
+              <li>Includes global header, footer and links to css & js files</li>
+              <li>Theme color classes should be added to the <code>body</code> tag</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
     
@@ -36,7 +51,7 @@
         <p>Select a button below to change the theme. Theme changes include:</p>
         <ul>
           <li>page background</li>
-          <li>link hover</li>
+          <li>link colors, :hover and :focus</li>
         </ul>
         
         <button class="coral" data-theme="coral">Coral</button>
