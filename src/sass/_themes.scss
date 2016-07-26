@@ -15,9 +15,25 @@
   .theme-#{$theme} {
     background-color: $color;
     
-    a:hover,
-    a:focus {
-      color: $color;
+    // Underline styles for links
+    a {
+      @include underline-shadow(#fff, $color);
+      
+      &:hover,
+      &:focus {
+        background: none;
+        text-shadow: none;
+      }
+    }
+    .border a {
+      @include underline-shadow($black, #fff);
+    
+      &:hover,
+      &:focus {
+        color: $color;
+        background: none;
+        text-shadow: none;
+      }
     }
     
     // Add theme color to any snippet of text

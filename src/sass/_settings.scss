@@ -53,8 +53,8 @@ $line-height-compact:    1.45;
 }
 .no-underline {
   text-decoration: none;
-  background: none;
-  text-shadow: none;
+  background: none!important;
+  text-shadow: none!important;
 }
 
 
@@ -91,6 +91,17 @@ $line-height-compact:    1.45;
     }
   }
 }
+
+@mixin underline-shadow($line-color, $shadow-color) {
+  // adds underline
+  background: linear-gradient(to bottom, $line-color 0, $line-color 100%) repeat-x 0 96% / 1px 1px;
+  // adds bg on letters to go over the line
+  text-shadow: 2px 0 $shadow-color, 1px 0 $shadow-color, -1px 0 $shadow-color, -2px 0 $shadow-color;  
+}
+
+
+
+
 @mixin clearfix {
   &:after {
     content: "";
@@ -98,6 +109,7 @@ $line-height-compact:    1.45;
     clear: both;
   }
 }
+
 @mixin retina {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @content;
