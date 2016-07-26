@@ -1,4 +1,4 @@
-// ------------------------------------------------------------
+
 // MODULES & STANDALONE COMPONENTS
 // ------------------------------------------------------------
 
@@ -93,14 +93,9 @@
   }
   .author {
     font-size: $font-size-subtext;
-  }
-  .name {
-    font-weight: $type-bold;
-    text-transform: uppercase;
-    background: none;
-    text-shadow: none;
-  }
+  } 
 }
+
 
 // Page heading
 .heading {
@@ -217,8 +212,6 @@ dl.border {
     }
   }
   a {
-    font-weight: $type-bold;
-    text-transform: uppercase;
     background: none;
     text-shadow: none;
     

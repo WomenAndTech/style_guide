@@ -48,6 +48,14 @@ $line-height-compact:    1.45;
 .bold {
   font-weight: $type-bold;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.no-underline {
+  text-decoration: none;
+  background: none;
+  text-shadow: none;
+}
 
 
 

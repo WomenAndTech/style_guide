@@ -55,7 +55,7 @@ a {
     color: $black;
     // adds underline
     background: linear-gradient(to bottom, $black 0, $black 100%) repeat-x 0 96% / 1px 1px;
-    // adds bg on letters of go over the line
+    // adds bg on letters to go over the line
     text-shadow: 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff;  
     
     &:hover {

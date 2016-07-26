@@ -20,8 +20,8 @@
       color: $color;
     }
     
-    // Interview credits
-    .credits a {
+    // Add theme color to any snippet of text
+    .theme {
       color: $color;
     }
     
@@ -31,7 +31,8 @@
     }
   }
   
-  // Style guide page
+  // Style guide page 
+  // Theme buttons just for display. Style is not used on the site.
   button.#{$theme} {
     background: $color;
     
