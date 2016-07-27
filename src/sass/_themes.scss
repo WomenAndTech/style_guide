@@ -44,6 +44,9 @@
     .theme {
       color: $color;
     }
+    a.theme:hover {
+      color: $black;
+    }
     
     // Global header
     .logo a {
