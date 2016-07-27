@@ -14,34 +14,33 @@
     font-size: 3.5rem;
     text-align: left;
   }
-  .module-wrap:after {
-    display: block;
-    content: "";
+  .module-wrap {
     margin: 0 20px;
-    padding: 15px;
+    padding: 30px 20px;
     background: white;
   }
-  .title,
+  .example {
+    border: 1px solid $gray;
+    padding: 20px;
+  }
+  .title, 
   .subtitle {
-    background: white;
-    margin: 0 20px;
+    margin-top: 0;
   }
   .title {
     font-size: 3.5rem;
-    padding: 20px 20px 0;
   }
   .subtitle {
-    padding: 30px 20px 0;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
-  
   button {
     color: white;
   }
   
   pre {
-    border: 1px solid #ccc;
-    margin: 0 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0 -20px -32px;
     white-space: pre-wrap;
     
     code {

@@ -37,14 +37,6 @@ $font-size-questions:    $font-size-s;
 $font-size-body:         $font-size-xs;
 $font-size-subtext:      $font-size-xxs;
 
-.font-size-xxl { font-size: $font-size-xxl; }
-.font-size-xl { font-size: $font-size-xl; }
-.font-size-l { font-size: $font-size-l; }
-.font-size-m { font-size: $font-size-m; }
-.font-size-s { font-size: $font-size-s; }
-.font-size-xs { font-size: $font-size-xs; }
-.font-size-xxs { font-size: $font-size-xxs; }
-
 $line-height:            1.55;
 $line-height-compact:    1.45;
 
@@ -73,6 +65,13 @@ $line-height-compact:    1.45;
   background: none!important;
   text-shadow: none!important;
 }
+.font-size-xxl { font-size: $font-size-xxl; }
+.font-size-xl  { font-size: $font-size-xl; }
+.font-size-l   { font-size: $font-size-l; }
+.font-size-m   { font-size: $font-size-m; }
+.font-size-s   { font-size: $font-size-s; }
+.font-size-xs  { font-size: $font-size-xs; }
+.font-size-xxs { font-size: $font-size-xxs; }
 
 
 
@@ -97,7 +96,6 @@ $line-height-compact:    1.45;
   padding: 0;
   list-style-type: none;
   
-    
   li {
     display: inline-block;
     
@@ -115,9 +113,6 @@ $line-height-compact:    1.45;
   // adds bg on letters to go over the line
   text-shadow: 2px 0 $shadow-color, 1px 0 $shadow-color, -1px 0 $shadow-color, -2px 0 $shadow-color;  
 }
-
-
-
 
 @mixin clearfix {
   &:after {

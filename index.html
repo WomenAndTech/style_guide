@@ -23,44 +23,39 @@
     <!-- // Page Templates -->
     <section class="module-wrap">
       <h2 class="title">Full Page Templates</h2>
-      
-      <div class="border">
-        <ul>
-          <li><a href="page-template.html" target="_blank">Full Page Example</a>
-            <ul>
-              <li>Use for static content (e.g. About)</li>
-            </ul>
-          </li>
-          <li>
-            <a href="interview-template.html" target="_blank">Full Interview Example</a>
-          </li>
-          <li><a href="base-template.html" target="_blank">Base Markup Template</a>
-            <ul>
-              <li>Base markup for all pages</li>
-              <li>Includes global header, footer and links to css & js files</li>
-              <li>Theme color classes should be added to the <code>body</code> tag</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href="page-template.html" target="_blank">Full Page Example</a>
+          <ul>
+            <li>Use for static content (e.g. About)</li>
+          </ul>
+        </li>
+        <li>
+          <a href="interview-template.html" target="_blank">Full Interview Example</a>
+        </li>
+        <li><a href="base-template.html" target="_blank">Base Markup Template</a>
+          <ul>
+            <li>Base markup for all pages</li>
+            <li>Includes global header, footer and links to css & js files</li>
+            <li>Theme color classes should be added to the <code>body</code> tag</li>
+          </ul>
+        </li>
+      </ul>
     </section>
     
     <!-- // Themes & Colours -->
     <section class="module-wrap">
       <h2 class="title">Themes & Colours</h2>
-      <div class="border">
-        <p>Select a button below to change the theme. Theme changes include:</p>
-        <ul>
-          <li>page background</li>
-          <li>link colors, :hover and :focus</li>
-        </ul>
-        
-        <button class="coral" data-theme="coral">Coral</button>
-        <button class="purple" data-theme="purple">Purple</button>
-        <button class="yellow" data-theme="yellow">Yellow</button>
-        <button class="green" data-theme="green">Green</button>
-        <button class="blue" data-theme="blue">Blue</button>
-      </div>
+      <p>Select a button below to change the theme. Theme changes include:</p>
+      <ul>
+        <li>page background</li>
+        <li>link colors, :hover and :focus</li>
+      </ul>
+      
+      <button class="coral" data-theme="coral">Coral</button>
+      <button class="purple" data-theme="purple">Purple</button>
+      <button class="yellow" data-theme="yellow">Yellow</button>
+      <button class="green" data-theme="green">Green</button>
+      <button class="blue" data-theme="blue">Blue</button>
     </section>
     
     <!-- // Font sizing -->
@@ -68,22 +63,19 @@
       <h2 class="title">Font Sizes</h2>
       <!-- Usage -->
       <h3 class="subtitle">Current Usage</h3>
-      <div class="border">
-        <h3>Current Usage</h3>
-        <ul>
-          <li>xxl - Interview heading</li>
-          <li>xl - Pullquote</li>
-          <li>l - Heading</li>
-          <li>m - Intro paragraph text, usually following a heading.</li>
-          <li>s - Interview questions</li>
-          <li>xs - Base body font size</li>
-          <li>xxs - Sub-text</li>
-        </ul>
-      </div>
+      <ul>
+        <li>xxl - Interview heading</li>
+        <li>xl - Pullquote</li>
+        <li>l - Heading</li>
+        <li>m - Intro paragraph text, usually following a heading.</li>
+        <li>s - Interview questions</li>
+        <li>xs - Base body font size</li>
+        <li>xxs - Sub-text</li>
+      </ul>
       
       <!-- non-heading examples -->
-      <h3 class="subtitle">Size classes applied to non-heading HTML tags (e.g <code>&lt;p&gt;</code>).</h3>
-      <div class="border">
+      <h3 class="subtitle">Size classes applied to non-heading HTML tags (e.g <code>&lt;p&gt;</code>)</h3>
+      <div class="example">
         <p class="font-size-xxl">Biying Miao [xxl]</p>
         <p class="font-size-xl">Work/life balance is very difficult. [xl]</p>
         <p class="font-size-l">We're not endorsing the obvious. We're commending the awesome. [l]</p>
@@ -95,14 +87,14 @@
       
       <!-- heading examples -->
       <h3 class="subtitle"><br><br>Any heading tag (<code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</code>)</h3>
-      <div class="border">
+      <div class="example">
         <h2 class="font-size-xxl">Biying Miao [xxl]</h2>
         <h2 class="font-size-xl">Work/life balance is very difficult. [xl]</h2>
-        <h2 class="font-size-l">We're not endorsing the obvious. We're commending the awesome.</h2>
-        <h2 class="font-size-m">Biying Miao is the co-founder of Hot Pop Factory.</h2>
-        <h2 class="font-size-s">Where did you grow up and what were you like as a child?</h2>
-        <h2 class="font-size-xs">A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why,</h2>
-        <h2 class="font-size-xxs">Interview by RUBY WATSON</h2>
+        <h2 class="font-size-l">We're not endorsing the obvious. We're commending the awesome. [l]</h2>
+        <h2 class="font-size-m">Biying Miao is the co-founder of Hot Pop Factory. [m]</h2>
+        <h2 class="font-size-s">Where did you grow up and what were you like as a child? [s]</h2>
+        <h2 class="font-size-xs">A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why. [xs]</h2>
+        <h2 class="font-size-xxs">Interview by RUBY WATSON [xxs]</h2>
       </div>
     </section>
     
@@ -110,21 +102,22 @@
     <section class="module-wrap">
       <h2 class="title">Header Modules</h2>
       <h3 class="subtitle">Secondary / Page Header Example</h3>
-<pre><code class="xml">&lt;header class=&quot;header-secondary&quot;&gt;
+<pre><code class="xml">&lt;header class=&quot;no-border header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
-  &lt;p class=&quot;intro wrapper-sm&quot;&gt;Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
+  &lt;p class=&quot;intro wrapper-sm&quot;&gt;This is an &lt;a href="/"&gt;example link</a>. Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
 &lt;/header&gt;
 </code></pre>
+    </section>
     
-      <!-- Page Header -->
-      <header class="header-secondary">
-        <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
-        <p class="intro wrapper-sm">[This is an <a href="/">example</a> of a optional paragraph text.] Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
-      </header>
-
-
-      <!-- // Interview header -->
-      <h3 class="subtitle">Interview Header Example</h3>
+    <!-- // Page Header -->
+    <header class="no-border header-secondary">
+      <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
+      <p class="intro wrapper-sm">This is an <a href="/">example link</a>. Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
+    </header>
+    
+    <!-- // Interview header -->
+    <section class="module-wrap">
+    <h3 class="subtitle">Interview Header Example</h3>
 <pre><code>&#x3C;header class=&#x22;border header-interview&#x22;&#x3E;
   &#x3C;div class=&#x22;wrapper-sm&#x22;&#x3E;
     &#x3C;h2&#x3E;Biying Miao&#x3C;/h2&#x3E;
@@ -133,58 +126,54 @@
   &#x3C;/div&#x3E;
 &#x3C;/header&#x3E;
 </code></pre>    
-
-    
-      <header class="border header-interview">
-        <div class="wrapper-sm">
-          <h2 class="heading-lg">Biying Miao</h2>
-          <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
-          <p class="author">An interview with <a href="/" class="uppercase bold no-underline">Ruby Watson</a></p>
-          
-          <ul class="social-list">
-            <li><a href="/" title="Facebook">FB icon</a></li>
-            <li><a href="/" title="Twitter">Twitter icon</a></li>
-            <li><a href="/" title="Email">Email icon</a></li>
-          </ul>
-        </div>
-        <br><br>
-      </header>
-
-
     </section>
     
-    <!-- Images -->
+    <header class="border header-interview">
+      <div class="wrapper-sm">
+        <h2 class="heading-lg">Biying Miao</h2>
+        <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
+        <p class="author">An interview with <a href="/" class="uppercase bold no-underline">Ruby Watson</a></p>
+        
+        <ul class="social-list">
+          <li><a href="/" title="Facebook">FB icon</a></li>
+          <li><a href="/" title="Twitter">Twitter icon</a></li>
+          <li><a href="/" title="Email">Email icon</a></li>
+        </ul>
+      </div>
+      <br><br>
+    </header>
+
+    <!-- // Images -->
     <section class="module-wrap">
       <h2 class="title">Images</h2>
-      
-      <!-- // Featured image -->
-      <figure class="border img-feature">
-        <img src="img/image-featured.jpg" alt="Biying Miao">
-      </figure>
-      
-      <!-- // Side by side images -->
-      <div class="border img-side-by-side">
-        <figure>
-          <img src="img/image-side-left.jpg" alt="Biying Miao">
-        </figure>
-        <figure>
-          <img src="img/image-side-right.jpg" alt="Biying Miao">
-          <figcaption>
-            Optional caption goes here.
-          </figcaption>
-        </figure>
-      </div>
-    
-      <!-- // Single image - portrait -->
-      <figure class="border img-portrait">
-        <img src="img/image-single-portrait.jpg" alt="Biying Miao">
-      </figure>
-      
-      <!-- // Single image - landscape -->
-      <figure class="border img-landscape">
-        <img src="img/image-single-landscape.jpg" alt="Biying Miao">
-      </figure>
     </section>
+    <!-- Featured image -->
+    <figure class="border img-feature">
+      <img src="img/image-featured.jpg" alt="Biying Miao">
+    </figure>
+    
+    <!-- Side by side images -->
+    <div class="border img-side-by-side">
+      <figure>
+        <img src="img/image-side-left.jpg" alt="Biying Miao">
+      </figure>
+      <figure>
+        <img src="img/image-side-right.jpg" alt="Biying Miao">
+        <figcaption>
+          Optional caption goes here.
+        </figcaption>
+      </figure>
+    </div>
+  
+    <!-- Single image - portrait -->
+    <figure class="border img-portrait">
+      <img src="img/image-single-portrait.jpg" alt="Biying Miao">
+    </figure>
+    
+    <!-- // Single image - landscape -->
+    <figure class="border img-landscape">
+      <img src="img/image-single-landscape.jpg" alt="Biying Miao">
+    </figure>
       
 
     <!-- Components -->
@@ -194,6 +183,7 @@
       
       <!-- http://blog.cloudfour.com/breaking-out-with-viewport-units-and-calc/ -->
     </section>
+    
   </main>
 
   <footer class="footer-primary">

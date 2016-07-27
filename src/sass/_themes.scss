@@ -16,7 +16,8 @@
   .theme-#{$theme} {
     background-color: $color;
     
-    main a {
+    // Underline on theme color background
+    .no-border a {
       @include underline-shadow(#fff, $color);
       
       &:hover,
@@ -25,7 +26,10 @@
         text-shadow: none;
       }
     }
-    .border a {
+    
+    // Underline on white background
+    .border a,
+    .module-wrap a {
       @include underline-shadow($black, #fff);
     
       &:hover,
@@ -48,7 +52,7 @@
     
     // Style guide page
     .module-wrap {
-      border-bottom: 2px solid $color;
+      border-top: 2px solid $color;
     }
   }
   
