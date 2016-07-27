@@ -19,3 +19,8 @@ The **src** folder contains the unminified sass and js files.  Using your compil
 * src/sass/styles.scss imports all of the partial sass files and should be minified and saved to the **css** folder
 * make sure to include autoprefixr when compiling the sass files
 * src/js/ contains the dev js files and should be minified and saved to the root **js** folder
+
+
+This project uses [editorconfig](http://editorconfig.org/) to maintain consistent coding style. Make sure your text editor has the editorconfig [plugin](http://editorconfig.org/#download) installed.
+
+**Atom Users:** The Whitespace plugin (which is installed by default) has `Trim trailing whitespace` option turned on by default. Turn this off in the Whitespace plugin settings, otherwise it overwrites the setting in [.editorconfig](.editorconfig). This is a known [issue](https://github.com/sindresorhus/atom-editorconfig/issues/3). This is only required for editing the slides. Workshop learners are not required to add this plugin.
