@@ -1,12 +1,13 @@
 // ------------------------------------------------------------
 // THEME STYLES
 // ------------------------------------------------------------
-// A class of "theme-color" needs to be 
-// added to the <body> element for the theme 
-// styles to work.
+// The class (color prepended with "theme-") needs to be added 
+// to the <body> element for the theme styles to work. 
 
 
 // http://sass-lang.com/documentation/file.SASS_REFERENCE.html#each-directive
+// $theme = class name
+// $color = color variable listed in settings.scss
 @each $theme, $color in ('coral', $coral),
                         ('purple', $purple),
                         ('yellow', $yellow),
@@ -15,8 +16,7 @@
   .theme-#{$theme} {
     background-color: $color;
     
-    // Underline styles for links
-    a {
+    main a {
       @include underline-shadow(#fff, $color);
       
       &:hover,
@@ -36,7 +36,7 @@
       }
     }
     
-    // Add theme color to any snippet of text
+    // Adds theme color to any snippet of text
     .theme {
       color: $color;
     }
@@ -45,10 +45,14 @@
     .logo a {
       color: $color;
     }
+    
+    // Style guide page
+    .module-wrap {
+      border-bottom: 2px solid $color;
+    }
   }
   
-  // Style guide page 
-  // Theme buttons just for display. Style is not used on the site.
+  // Style guide page
   button.#{$theme} {
     background: $color;
     
