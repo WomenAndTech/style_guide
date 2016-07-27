@@ -126,8 +126,15 @@
   justify-content: center;
   
   figure {
-    margin: 0 10px;
+    // margin: 0 10px;
     position: relative;
+    
+    &:first-child {
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-left: 10px;
+    }
   }
   figcaption {
     position: absolute;
@@ -185,7 +192,8 @@ dl.border {
 .pull-quote {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
-  padding: 72px 0 52px;
+  padding-top: 72px;
+  padding-bottom: 52px;
   
   p {    
     &:before {
