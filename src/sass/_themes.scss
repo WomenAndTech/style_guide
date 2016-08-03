@@ -1,7 +1,7 @@
-// ------------------------------------------------------------
+// ---------------------------------------------------------
 // THEME STYLES
-// ------------------------------------------------------------
-// The class (color prepended with "theme-") needs to be added 
+// ---------------------------------------------------------
+// The class (prepended with "theme-") needs to be added 
 // to the <body> element for the theme styles to work. 
 
 
@@ -16,8 +16,6 @@
   .theme-#{$theme} {
     background-color: $color;
     
-    // Link styles
-    // -------------
     // Underline on theme color background
     .no-border a {
       @include underline-shadow(#fff, $color);
@@ -54,7 +52,6 @@
     .logo a {
       color: $color;
     }
-    
     
     // Style guide page
     .module-wrap {

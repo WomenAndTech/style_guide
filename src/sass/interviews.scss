@@ -1,0 +1,142 @@
+// ---------------------------------------------------------
+// INTERVIEW TEMPLATE COMPONENTS
+// ---------------------------------------------------------
+
+.header-interview {
+  padding-top: 63px;
+  
+  + dl {
+    padding-top: 45px;
+  }
+  .wrapper-sm {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 45px;
+  }
+}
+.heading-lg {
+  font-size: $font-size-heading-lg;
+  margin: 0 0 35px;
+}
+.intro {
+  font-size: $font-size-intro;
+  line-height: $line-height;
+}
+.author {
+  font-size: $font-size-subtext;
+  
+  a {
+    @include theme-links-inverse;
+  }
+} 
+
+.social-list {
+  @include list-reset-inline;
+  margin-top: 35px;
+  
+  li {
+    margin-right: 10px;
+  }
+}
+
+.subtext {
+  font-size: $font-size-subtext;
+}
+
+.credits {
+  padding-top: 60px;
+  
+  ul {
+    @include list-reset;
+    border-top: 1px solid $gray;
+    padding-top: 55px;
+    
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  p {
+    margin-top: 30px;
+  }
+}
+
+
+// Q&A blocks - contained in <dl> elements
+// ---------------------------------------------------------
+// www.w3.org/TR/html/grouping-content.html#the-dl-element
+dl.border {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.interview-q {
+  font-size: $font-size-questions;
+  font-weight: $type-bold;
+  margin-bottom: 25px;
+}
+
+
+// Pull quotes - contained in an <aside> element
+// ---------------------------------------------------------
+.pull-quote {
+  font-weight: $type-bold;
+  font-size: $font-size-pullquote;
+  padding-top: 72px;
+  padding-bottom: 52px;
+  
+  p {    
+    &:before {
+      content: "“";
+    }
+    &:after {
+      content: "”";
+    }
+  }
+}
+
+
+// Images
+// ---------------------------------------------------------
+[class*="img-"] {
+  text-align: center;
+  // gets rid of extra space under image
+  font-size: 0;
+  
+  img {
+    width: 100%;
+  }  
+}
+
+// Side by side
+.img-side-by-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  figure {
+    position: relative;
+    
+    &:first-child {
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    font-size: $font-size-body;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+  }
+}
+
+// Single images
+.img-portrait img {
+  max-width: 620px;
+}
+.img-landscape img {
+  max-width: 940px;
+}
