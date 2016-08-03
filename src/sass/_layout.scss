@@ -13,3 +13,15 @@
   max-width: 620px;
   margin: 0 auto;
 }
+
+
+// Module container
+// ---------------------------------------------------------
+.border {
+  // padding and margin are not the same on all sides of the 
+  // element so independent modules & content sections can
+  // stack on top of eachother
+  margin: 0 20px;
+  padding: 20px 20px 1px;
+  background: white;
+}

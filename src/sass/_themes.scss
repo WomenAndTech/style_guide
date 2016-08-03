@@ -13,11 +13,12 @@
                         ('yellow', $yellow),
                         ('green', $green),
                         ('blue', $blue) {
+
   .theme-#{$theme} {
     background-color: $color;
     
     // Underline on theme color background
-    .no-border a {
+    main a {
       @include underline-shadow(#fff, $color);
       
       &:hover,
@@ -38,24 +39,10 @@
         text-shadow: none;
       }
     }
-    .theme-links a {
-      color: $color;
-      background: none;
-      text-shadow: none; 
-      
-      &:hover {
-        color: $black;
-      }
-    }
-    
-    // Global header
-    .logo a {
-      color: $color;
-    }
     
     // Style guide page
     .module-wrap {
-      border-top: 2px solid $color;
+      border-top: 4px solid $color;
     }
   }
   
@@ -68,4 +55,4 @@
     }
   }
   
-} // close @each
+}

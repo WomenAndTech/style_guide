@@ -37,6 +37,7 @@ main {
 }
 h1, h2, h3 {
   line-height: 1;
+  margin-top: 0;
 }
 figure {
   margin: 0;
@@ -73,56 +74,33 @@ b {
 }
 
 
-// Module borders
-// ---------------------------------------------------------
-.border {
-  // padding and margin are not the same on all sides of the 
-  // element so independent modules & content sections can
-  // stack on top of eachother
-  margin: 0 20px;
-  padding: 20px 20px 1px;
-  background: white;
-}
-
-
 // Headers
 // ---------------------------------------------------------
-// Global site header - contains logo & nav
+// Global header
 .header-primary {
   color: white;
   margin: 20px 40px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   
   .logo {
-    // Setting logo as bg image, text contained in link.
-    background: url(../img/W&&T-full-logo-outline.svg) no-repeat;
-    width: 50%;
-    height: 64px;
-    margin: 0;
-    
-    // Hiding link text but making area clickable.
-    // Font color change according to theme.
-    a {
-      padding-left: 220px;
-    }
-  }
-  nav {
-    width: 50%;
-    text-align: right;
-    
-    a:hover,
-    .active {
-      font-weight: $type-bold;
-      color: white;
-    }
-  }
+    width: 230px;
+  }  
+}
+.nav-primary {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  
   a {
     color: white;
     text-decoration: none;
     padding-left: 26px;
     display: inline-block;
+    
+    &:hover,
+    &.active {
+      font-weight: $type-bold;
+      color: white;
+    }
   }
 }
 
