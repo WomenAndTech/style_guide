@@ -21,21 +21,13 @@ $type-bold:              700;
 
 // Using the 62.5% method to calculate rem.
 // http://snook.ca/archives/html_and_css/font-size-with-rem
-$font-size-xxl:          6.0rem;
-$font-size-xl:           2.9rem; // lh 42px = 1.45
-$font-size-l:            2.4rem;
-$font-size-m:            2.2rem; // lh 34px = 1.54
-$font-size-s:            2.0rem; // lh 28px = 1.4
-$font-size-xs:           1.8rem; // lh 26px = 1.44
-$font-size-xxs:          1.4rem;
-
-$font-size-heading-lg:   $font-size-xxl;
-$font-size-heading:      $font-size-l;
-$font-size-pullquote:    $font-size-xl;
-$font-size-intro:        $font-size-m;
-$font-size-questions:    $font-size-s;
-$font-size-body:         $font-size-xs;
-$font-size-subtext:      $font-size-xxs;
+$font-size-heading-lg:   6.0rem;
+$font-size-heading:      2.4rem;
+$font-size-pullquote:    2.9rem; // lh 42px = 1.45
+$font-size-intro:        2.2rem; // lh 34px = 1.54
+$font-size-questions:    2.0rem; // lh 28px = 1.4
+$font-size-body:         1.8rem; // lh 26px = 1.44
+$font-size-subtext:      1.4rem;
 
 $line-height:            1.55;
 $line-height-compact:    1.45;
@@ -57,27 +49,22 @@ $line-height-compact:    1.45;
 .bold {
   font-weight: $type-bold;
 }
-.uppercase {
-  text-transform: uppercase;
-}
-.no-underline {
-  text-decoration: none;
-  background: none!important;
-  text-shadow: none!important;
-}
-.font-size-xxl { font-size: $font-size-xxl; }
-.font-size-xl  { font-size: $font-size-xl; }
-.font-size-l   { font-size: $font-size-l; }
-.font-size-m   { font-size: $font-size-m; }
-.font-size-s   { font-size: $font-size-s; }
-.font-size-xs  { font-size: $font-size-xs; }
-.font-size-xxs { font-size: $font-size-xxs; }
 
 
 
 // ------------------------------------------------------------
 // MIXINS
 // ------------------------------------------------------------
+
+@mixin theme-links-inverse {
+  background: none;
+  text-shadow: none;
+  
+  &:hover {
+    // color: $color;
+  }
+}
+
 @mixin list-reset {
   margin-top: 0;
   margin-bottom: 0;

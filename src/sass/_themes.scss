@@ -16,6 +16,8 @@
   .theme-#{$theme} {
     background-color: $color;
     
+    // Link styles
+    // -------------
     // Underline on theme color background
     .no-border a {
       @include underline-shadow(#fff, $color);
@@ -26,7 +28,6 @@
         text-shadow: none;
       }
     }
-    
     // Underline on white background
     .border a,
     .module-wrap a {
@@ -39,19 +40,21 @@
         text-shadow: none;
       }
     }
-    
-    // Adds theme color to any snippet of text
-    .theme {
+    .theme-links a {
       color: $color;
-    }
-    a.theme:hover {
-      color: $black;
+      background: none;
+      text-shadow: none; 
+      
+      &:hover {
+        color: $black;
+      }
     }
     
     // Global header
     .logo a {
       color: $color;
     }
+    
     
     // Style guide page
     .module-wrap {
@@ -67,4 +70,5 @@
       outline: 1px solid darken($color, 10%);
     }
   }
-}
+  
+} // close @each

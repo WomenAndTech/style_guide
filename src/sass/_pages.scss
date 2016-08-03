@@ -22,6 +22,11 @@
   .example {
     border: 1px solid $gray;
     padding: 20px;
+    
+    [class*="font-size-"]{
+      // margin: 10px 0;
+      // background: pink;
+    }
   }
   .title, 
   .subtitle {

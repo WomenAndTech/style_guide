@@ -1,4 +1,3 @@
-
 // MODULES & STANDALONE COMPONENTS
 // ------------------------------------------------------------
 
@@ -56,19 +55,26 @@
   }
 }
 
+// Default heading
+.heading {
+  font-size: $font-size-heading;
+  font-weight: $type-bold;
+}
+
+// Page heading
+.page-template .heading {
+  margin: 62px 0 42px;
+}
+
 // Optional page header, contained in <main> tag
 .header-secondary {
   color: white;
   text-align: center;
   margin-top: 80px;
+  margin-bottom: 66px;
   
-  h2 {
+  .heading {
     margin: 0 0 40px;
-    font-size: $font-size-heading;
-    font-weight: $type-bold;
-  }
-  .intro {
-    margin: 0 auto 66px;
   }
 }
 
@@ -79,30 +85,26 @@
   + dl {
     padding-top: 45px;
   }
-  .heading-lg {
-    font-size: $font-size-heading-lg;
-    margin: 0 0 35px;
-  }
   .wrapper-sm {
     border-bottom: 1px solid $gray;
     padding-bottom: 45px;
   }
-  .intro {
-    font-size: $font-size-intro;
-    line-height: $line-height;
+}
+.heading-lg {
+  font-size: $font-size-heading-lg;
+  margin: 0 0 35px;
+}
+.intro {
+  font-size: $font-size-intro;
+  line-height: $line-height;
+}
+.author {
+  font-size: $font-size-subtext;
+  
+  a {
+    @include theme-links-inverse;
   }
-  .author {
-    font-size: $font-size-subtext;
-  } 
-}
-
-
-// Page heading
-.heading {
-  font-size: $font-size-heading;
-  font-weight: $type-bold;
-  margin: 62px 0 42px;
-}
+} 
 
 
 
@@ -126,7 +128,6 @@
   justify-content: center;
   
   figure {
-    // margin: 0 10px;
     position: relative;
     
     &:first-child {
@@ -174,6 +175,9 @@
 
 // Interview text blocks
 // ------------------------------------------------------------
+.subtext {
+  font-size: $font-size-subtext;
+}
 
 // Q&A blocks - Q&A content contained in <dl> elements
 // www.w3.org/TR/html/grouping-content.html#the-dl-element
@@ -207,7 +211,6 @@ dl.border {
 
 // Credits
 .credits {
-  font-size: $font-size-subtext;
   padding-top: 60px;
   
   ul {
@@ -219,14 +222,7 @@ dl.border {
       margin-bottom: 10px;
     }
   }
-  a {
-    background: none;
-    text-shadow: none;
-    
-    &:hover {
-      color: $black;
-    }
-  }
+  
   p {
     margin-top: 30px;
   }
