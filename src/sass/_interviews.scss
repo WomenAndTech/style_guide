@@ -5,31 +5,23 @@
 .header-interview {
   padding-top: 63px;
   
-  + dl {
-    padding-top: 45px;
+  h2 {
+    font-size: $font-size-heading-lg;
+    margin: 0 0 35px;
   }
   .wrapper-sm {
     border-bottom: 1px solid $gray;
     padding-bottom: 45px;
   }
-}
-.heading-lg {
-  font-size: $font-size-heading-lg;
-  margin: 0 0 35px;
-}
-.intro {
-  font-size: $font-size-intro;
-  line-height: $line-height;
-}
-.author {
-  font-size: $font-size-subtext;
-  
-  a {
-    @include theme-links-inverse;
+  .intro {
+    font-size: $font-size-intro;
+    line-height: $line-height;
+  } 
+  + dl {
+    padding-top: 45px;
   }
-} 
-
-.social-list {
+}
+.social-share {
   @include list-reset-inline;
   margin-top: 35px;
   
@@ -38,8 +30,14 @@
   }
 }
 
-.subtext {
+.author,
+.credits {
   font-size: $font-size-subtext;
+  
+  a {
+    font-weight: $type-bold;
+    text-transform: uppercase;
+  }
 }
 
 .credits {
@@ -49,14 +47,16 @@
     @include list-reset;
     border-top: 1px solid $gray;
     padding-top: 55px;
+    @extend .wrapper-sm;
     
     li {
       margin-bottom: 10px;
     }
   }
-  
   p {
+    @extend .wrapper-sm;
     margin-top: 30px;
+    font-style: italic;
   }
 }
 

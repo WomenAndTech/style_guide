@@ -40,9 +40,16 @@
       }
     }
     
+    // Interview links
+    .author a {
+      @include theme-links-inverse($color);
+    }
+    .credits a {
+      @include theme-links($color);
+    }
     // Style guide page
-    .module-wrap {
-      border-top: 4px solid $color;
+    .module-wrap h2:first-child {
+      border-bottom: 1px solid $color;
     }
   }
   

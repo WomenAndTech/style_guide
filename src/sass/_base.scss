@@ -43,10 +43,11 @@ figure {
   margin: 0;
 }
 p {
-  margin: 0 0 25px;
+  margin: 0;
+  padding-bottom: 25px;
   
   &:last-of-type {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 a {
@@ -104,15 +105,15 @@ b {
   }
 }
 
-// Page heading tags
-.heading {
+// Page headings
+.heading,
+.header-secondary h2 {
   font-size: $font-size-heading;
   font-weight: $type-bold;
-  
-  section & {
-    margin: 62px 0 42px;
-    text-align: center;
-  }
+}
+section .heading {
+  margin: 62px 0 42px;
+  text-align: center;
 }
 
 // Optional page header module
@@ -124,6 +125,9 @@ b {
   
   .heading {
     margin: 0 0 40px;
+  }
+  p {
+    @extend .wrapper-sm;
   }
 }
 
