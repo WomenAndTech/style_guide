@@ -51,6 +51,11 @@
     .module-wrap h2:first-child {
       border-bottom: 1px solid $color;
     }
+    
+    // Global footer
+    input[type="submit"]{
+      color: $color;
+    }
   }
   
   // Style guide page

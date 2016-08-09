@@ -25,3 +25,14 @@
   padding: 20px 20px 1px;
   background: white;
 }
+
+
+// Columns
+// ---------------------------------------------------------
+.column-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.column-3 {
+  width: (100/3) * 1%;
+}

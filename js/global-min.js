@@ -1,1 +1,1 @@
-$(function(){$("[data-theme]").click(function(){var t=$(this).data("theme");$("body").removeClass(function(t,e){return(e.match(/\btheme-\S+/g)||[]).join(" ")}).addClass("theme-"+t)})});
+$(function(){$("[data-theme]").click(function(){var e=$(this).data("theme");$("body").removeClass(function(e,t){return(t.match(/\btheme-\S+/g)||[]).join(" ")}).addClass("theme-"+e)});var e=(new Date).getFullYear();$("[data-year]").text(e)});
