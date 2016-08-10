@@ -114,11 +114,17 @@ $line-height-compact:    1.45;
 }
 
 // Underline style used for links
-@mixin underline-shadow($line-color, $shadow-color) {
+@mixin underline-shadow($line-color, $shadow-color, $hover-color) {
   // adds underline
   background: linear-gradient(to bottom, $line-color 0, $line-color 100%) repeat-x 0 96% / 1px 1px;
   // adds bg on letters to go over the line
-  text-shadow: 2px 0 $shadow-color, 1px 0 $shadow-color, -1px 0 $shadow-color, -2px 0 $shadow-color;  
+  text-shadow: 2px 0 $shadow-color, 1px 0 $shadow-color, -1px 0 $shadow-color, -2px 0 $shadow-color;
+  
+  &:hover {
+    color: $hover-color;
+    background: none;
+    text-shadow: none;
+  }
 }
 
 

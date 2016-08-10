@@ -25,15 +25,15 @@ body {
 main {
   // Adds space to the bottom of the page modules. See 
   // comments for .border in _modules.scss for more info.
-  margin-bottom: 20px;
-  
-  &:after {
-    content: "";
-    display: block;
-    height: 85px;
-    background: white;
-    margin: 0 20px;
-  }
+  // margin-bottom: 20px;
+  // 
+  // section:last-of-type:after {
+  //   content: "";
+  //   display: block;
+  //   height: 85px;
+  //   background: white;
+  //   margin: 0 20px;
+  // }
 }
 h1, h2, h3 {
   line-height: 1;
@@ -138,6 +138,7 @@ section .heading {
   background: white;
   padding: 100px 62px;
   font-size: $font-size-subtext;
+  margin-top: 20px;
   
   p {
     padding-bottom: 12px;
@@ -165,15 +166,14 @@ section .heading {
   // Social accounts
   section:nth-of-type(3) {
     padding-left: 8%;
-    
-    a {
-      @include underline-shadow($black, white);
-      display: inline-block;
-      margin-right: 10px;
-    }
   }
-  ul {
-    @include list-reset-inline;
+}
+.footer-links {
+  @include list-reset-inline;
+  
+  a {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 

@@ -19,25 +19,17 @@
     
     // Underline on theme color background
     main a {
-      @include underline-shadow(#fff, $color);
-      
-      &:hover,
-      &:focus {
-        background: none;
-        text-shadow: none;
-      }
+      @include underline-shadow(#fff, $color, #fff);
     }
-    // Underline on white background
+    // Black underline on white background
     .border a,
     .module-wrap a {
-      @include underline-shadow($black, #fff);
-    
-      &:hover,
-      &:focus {
-        color: $color;
-        background: none;
-        text-shadow: none;
-      }
+      @include underline-shadow($black, #fff, $color);
+    }
+    // Theme color underline on white background
+    .past-interviews a,
+    .footer-links a {
+      @include underline-shadow($color, #fff, $color);
     }
     
     // Interview links

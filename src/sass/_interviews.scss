@@ -140,3 +140,36 @@ dl.border {
 .img-landscape img {
   max-width: 940px;
 }
+
+
+// Past Interviews
+// ---------------------------------------------------------
+.past-interviews {
+  margin-top: 35px;
+  
+  h2 {
+    color: white;
+  }
+  h3 {
+    font-size: $font-size-heading;
+    margin: 25px 0 15px;
+  }
+  img {
+    max-width: 100%;
+  }
+  p {
+    margin: 0 10px;
+  }
+  .column-3 {
+    text-align: center;
+    background: white;
+    padding: 18px;
+  }
+}
+
+
+
+
+
+
+
