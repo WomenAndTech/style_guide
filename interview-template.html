@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
   <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="theme-coral">
     
   <!-- global header -->
   <header class="header-primary">
-    <a href="index.html"><img class="logo" src="img/W&&T-full-logo-outline.svg" alt="Women && Tech logo"></a>
+    <a href="index.html"><img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo"></a>
     <nav class="nav-primary">
       <a href="/">Interviews</a>
       <a href="/" class="active">About Us</a>
@@ -24,7 +24,7 @@
   <main role="main">
     <!-- // Featured image -->
     <figure class="border img-feature">
-      <img src="img/style-guide/image-featured.jpg" alt="Biying Miao">
+      <img src="assets/img/image-featured.jpg" alt="Biying Miao">
     </figure>
     
     <!-- // Interview header -->
@@ -35,9 +35,9 @@
         <p class="author">An interview with <a href="#">Ruby Watson</a></p>
         
         <ul class="social-share">
-          <li><a href="/" title="Facebook">FB icon</a></li>
-          <li><a href="/" title="Twitter">Twitter icon</a></li>
-          <li><a href="/" title="Email">Email icon</a></li>
+          <li><a href="/" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="/" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="/" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </header>
@@ -64,10 +64,10 @@
     
     <div class="border img-side-by-side">
       <figure>
-        <img src="img/style-guide/image-side-left.jpg" alt="Biying Miao">
+        <img src="assets/img/image-side-left.jpg" alt="Biying Miao">
       </figure>
       <figure>
-        <img src="img/style-guide/image-side-right.jpg" alt="Biying Miao">
+        <img src="assets/img/image-side-right.jpg" alt="Biying Miao">
         <figcaption>
           Biying’s 3D printed jewelry, photo by Mauricio
         </figcaption>
@@ -93,10 +93,17 @@
     </dl>
 
     <figure class="border img-portrait">
-      <img src="img/style-guide/image-single-portrait.jpg" alt="Biying Miao">
+      <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
     </figure>
     
-    <section class="border credits">
+    <dl class="border">
+      <dt class="interview-q wrapper-sm">Not only do you work in an industry that is rapidly evolving, you’re an entrepreneur running a growing business. How is your work/life balance? Is there one?</dt>
+      <dd class="interview-a wrapper-sm">
+        <p>Should I tell you the truth, or should I lie? [Laughs] Work/life balance is very difficult. There doesn’t seem to be a way to achieve it without making a compromise. I try to pick an extracurricular activity to do, especially in the summertime. I play beach volleyball every week, make sure to see friends as much as possible, and get out of the city.</p>
+      </dd>
+    </dl>
+    
+    <footer class="border credits">
       <ul>
         <li>Interview by <a href="/">Ruby Watson</a></li>
         <li>Photography by <a href="/">Amanda Huang</a></li>
@@ -107,31 +114,31 @@
         <li>Transcriptions by <a href="/">Ruby Watson</a></li>
       </ul>
       <p>This site uses Lost Type's Blanch by Atipus, Steve Matteson's Open Sans, Twitter Bootstrap, WordPress, Roots Theme, jQuery, AngularJS, Curtains, Modernizr, Github, Swiffy, Cloudflare, and Windows Azure.</p>
-    </section>
+    </footer>
     
-    <section class="past-interviews wrapper">
+    <aside class="past-interviews wrapper">
       <h2>Past Interviews</h2>
       <div class="column-wrapper with-gutter">
         <section class="column-3">
-          <img src="img/thumbnail-sara-hicks.png" alt="Sara Hicks">
+          <img src="assets/img/thumbnail-sara-hicks.png" alt="Sara Hicks">
           <h3>Sarah Hicks</h3>
           <p>with <a href="#">Sophie He</a></p>
           <p>Co-founder and CEO of Reaction Commerce, an open source eCommerce platform.</p>
         </section>
         <section class="column-3">
-          <img src="img/thumbnail-mitchell-baker.png" alt="Mitchell Baker">
+          <img src="assets/img/thumbnail-mitchell-baker.png" alt="Mitchell Baker">
           <h3>Mitchell Baker</h3>
           <p>with <a href="#">Cassie McDaniel</a></p>
           <p>Founder of the non-profit tech company Mozilla, creator of Firefox and champion of the open web.</p>
         </section>
         <section class="column-3">
-          <img src="img/thumbnail-sandi-lin.png" alt="Sandi Lin">
+          <img src="assets/img/thumbnail-sandi-lin.png" alt="Sandi Lin">
           <h3>Sandi Lin</h3>
           <p>with <a href="#">Sarah Sutherland</a></p>
           <p>Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.</p>
         </section>
       </div>
-    </section>
+    </aside>
   </main>
     
   <footer class="footer-primary">
@@ -164,12 +171,12 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
-  <script>!window.jQuery && document.write('<script src="js/jquery-2.2.3.min.js"><\/script>')</script>
+  <script>!window.jQuery && document.write('<script src="assets/js/jquery-2.2.3.min.js"><\/script>')</script>
   <!-- Fonts -->
   <script type="text/javascript" src="//fast.fonts.net/jsapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.js"></script>
   <!-- Syntax highlighter -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
-  <script src="js/global-min.js"></script>
+  <script src="assets/js/global-min.js"></script>
   
   <!-- Initialize syntax highlighter -->
   <script>hljs.initHighlightingOnLoad();</script>

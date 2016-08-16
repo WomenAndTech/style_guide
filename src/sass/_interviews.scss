@@ -3,7 +3,7 @@
 // ---------------------------------------------------------
 
 .header-interview {
-  padding-top: 63px;
+  padding-top: 50px;
   
   h2 {
     font-size: $font-size-heading-lg;
@@ -12,23 +12,42 @@
   .wrapper-sm {
     border-bottom: 1px solid $gray;
     padding-bottom: 45px;
+    margin-bottom: 20px;
   }
   .intro {
     font-size: $font-size-intro;
-    line-height: $line-height;
+    line-height: 1.54;
   } 
   + dl {
     padding-top: 45px;
   }
-}
-.social-share {
-  @include list-reset-inline;
-  margin-top: 35px;
   
-  li {
-    margin-right: 10px;
+  .social-share {
+    @include list-reset-inline;
+    
+    li {
+      margin-right: 10px;
+      vertical-align: text-bottom;
+    }
+    a {
+      text-shadow: none;
+      background: none;
+      border: 1px solid $black;
+      border-radius: 50%;
+      height: 38px;
+      width: 38px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .fa {
+      padding-top: 10px;
+    }
+    .fa-envelope {
+      font-size: 14px;
+    }
   }
 }
+
 
 .author,
 .credits {
@@ -41,7 +60,8 @@
 }
 
 .credits {
-  padding-top: 60px;
+  // padding-top: 60px;
+  padding-bottom: 80px;
   
   ul {
     @include list-reset;
@@ -67,9 +87,14 @@
 dl.border {
   padding-top: 25px;
   padding-bottom: 25px;
+  
+  &:last-of-type {
+    padding-bottom: 55px;
+  }
 }
 .interview-q {
   font-size: $font-size-questions;
+  line-height: 1.4;
   font-weight: $type-bold;
   margin-bottom: 25px;
 }
@@ -80,6 +105,7 @@ dl.border {
 .pull-quote {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
+  line-height: 1.45;
   padding-top: 72px;
   padding-bottom: 52px;
   
@@ -139,6 +165,13 @@ dl.border {
 }
 .img-landscape img {
   max-width: 940px;
+}
+
+
+.img-side-by-side,
+.img-portrait,
+.img-landscape {
+  padding: 60px 0;
 }
 
 
