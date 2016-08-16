@@ -11,14 +11,14 @@
 <body class="style-guide theme-coral">
   <!-- // Primary Header -->
   <header>
-    <a href="index.html"><img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo"></a><br><br>
-    <h1>Style Guide</h1>
+    <h1><img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">Style Guide</h1>
   </header>
     
   <main role="main">
-    <!-- // Page Templates -->
+    
+    <!-- // Page Templates // -->
     <section class="module-wrap">
-      <h2>Full Page Templates</h2>
+      <h2 class="first">Full Page Templates</h2>
       <ul>
         <li><a href="base-template.html" target="_blank">Base Markup Template</a>
           <ul>
@@ -38,7 +38,8 @@
       </ul>
     </section>
     
-    <!-- // Themes & Colours -->
+    
+    <!-- // Themes & Colours // -->
     <section class="module-wrap">
       <h2>Themes & Colours</h2>
       <p>Select a button below to change the theme. Theme changes include:</p>
@@ -53,53 +54,13 @@
       <button class="green" data-theme="green">Green</button>
       <button class="blue" data-theme="blue">Blue</button>
     </section>
-    
-    <!-- // Font sizing -->
-    <!-- <section class="module-wrap">
-      <h2>Typography</h2>
-      
-      <h3>Interview Heading</h3>
-      <header class="header-interview">
-      <h2 class="example">Biying Miao</h2>
-      </header>
-      
-      <h3>Intro Paragraph</h3>
-      <p class="example intro">Biying Miao is the co-founder of Hot Pop Factory, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the Textile Museum of Canada and the Art Gallery of Ontario.</p>
-      
-      <h3>Pullquote</h3>
-      <p class="example pull-quote">“Work/life balance is very difficult. There doesn’t seem to be a way to achieve it without making a compromise.“</p>
-      
-      <h3>Default Page Heading</h3>
-      <h2 class="example heading">We're not endorsing the obvious. We're commending the awesome.</h2>
-      
-      <h3>Interview questions</h3>
-      <p class="example interview-q">Where did you grow up and what were you like as a child?</p>
-      
-      <h3>Base body font size</h3>
-      <p class="example">A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why. This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded Women&&Tech, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
-      
-      <h3>Sub-text</h3>
-      <p class="example author">Interview by RUBY WATSON</p>
-      <p></p>
-    </section>
-     -->
-    <!-- <section class="module-wrap font-styles">
-      <h2>Formatting Styles</h2>
-    
-      <p>When using these HTML tags, be sure to use them semantically.</p>
-      
-      <div class="example">
-        <span>default</span>
-        <span><b>bold</b></span> 
-        <span><strong>strong</strong></span>
-        <span><i>italics</i></span>
-        <span><em>emphasis</em></span>
-      </div>
-    </section> -->
-    
-    <!-- // Header Modules -->
+
+
+    <!-- // Header Modules // -->
     <section class="module-wrap">
       <h2>Header Modules</h2>
+      
+      <!-- // Secondary Header -->
       <h3>Secondary Header Example</h3>
 <pre><code class="xml">&lt;header class=&quot;header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
@@ -108,50 +69,82 @@
 </code></pre>
     </section>
     
-    <!-- // Page Header -->
+    <!-- Secondary Header -->
     <header class="header-secondary">
       <h2 class="heading">We're not endorsing the obvious. We're commending the awesome.</h2>
       <p class="wrapper-sm">Our industry is filled with <a href="#">smart, interesting women</a> including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
     </header>
     
-    <!-- // Interview header -->
+    <!-- // Interview Header -->
     <section class="module-wrap">
-    <h3>Interview Header Example</h3>
-<pre><code>&#x3C;header class=&#x22;border header-interview&#x22;&#x3E;
-  &#x3C;div class=&#x22;wrapper-sm&#x22;&#x3E;
-    &#x3C;h2&#x3E;Biying Miao&#x3C;/h2&#x3E;
-    &#x3C;p class=&#x22;intro&#x22;&#x3E;Biying Miao is the co-founder of &#x3C;a href=&#x22;/&#x22;&#x3E;Hot Pop Factory&#x3C;/a&#x3E;, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the &#x3C;a href=&#x22;/&#x22;&#x3E;Textile Museum of Canada&#x3C;/a&#x3E; and the Art Gallery of Ontario.&#x3C;/p&#x3E;
-    &#x3C;p class=&#x22;author&#x22;&#x3E;An interview with &#x3C;a href=&#x22;/&#x22; class=&#x22;uppercase bold no-underline&#x22;&#x3E;Ruby Watson&#x3C;/a&#x3E;&#x3C;/p&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/header&#x3E;
-</code></pre>    
+      <h3>Interview Header Example</h3>
+<pre><code>&lt;header class=&quot;border header-interview&quot;&gt;
+  &lt;div class=&quot;wrapper-sm&quot;&gt;
+    &lt;h2&gt;Biying Miao&lt;/h2&gt;
+    &lt;p class=&quot;intro&quot;&gt;Biying Miao is the co-founder of &lt;a href=&quot;/&quot;&gt;Hot Pop Factory&lt;/a&gt;, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the &lt;a href=&quot;/&quot;&gt;Textile Museum of Canada&lt;/a&gt; and the Art Gallery of Ontario.&lt;/p&gt;
+    &lt;p class=&quot;author&quot;&gt;An interview with &lt;a href=&quot;#&quot;&gt;Ruby Watson&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;ul class=&quot;social-share&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;//twitter.com/WomenAndTech&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;//facebook.com&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;mailto:contact@womenandtech.com&quot; title=&quot;Email&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
     </section>
     
+    <!-- Interview Header -->
     <header class="border header-interview">
       <div class="wrapper-sm">
-        <h2 class="heading-lg">Biying Miao</h2>
+        <h2>Biying Miao</h2>
         <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
-        <p class="author">An interview with <a href="/" class="uppercase bold no-underline">Ruby Watson</a></p>
+        <p class="author">An interview with <a href="#">Ruby Watson</a></p>
         
-        <ul class="social-list">
-          <li><a href="/" title="Facebook">FB icon</a></li>
-          <li><a href="/" title="Twitter">Twitter icon</a></li>
-          <li><a href="/" title="Email">Email icon</a></li>
+        <ul class="social-share">
+          <li><a href="//twitter.com/WomenAndTech" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="//facebook.com" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:contact@womenandtech.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
         </ul>
       </div>
-      <br><br>
     </header>
-
-    <!-- // Images -->
+    
+    
+    <!-- // Image Modules // -->
     <section class="module-wrap">
-      <h2>Images</h2>
+      <h2>Interview Images</h2>
+      
+      <!-- // Feature Image -->
+      <h3>Feature Image Example</h3>
+<pre><code>&lt;figure class=&quot;border img-feature&quot;&gt;
+  &lt;img src=&quot;assets/img/image-featured.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+&lt;/figure&gt;
+</code></pre>
     </section>
-    <!-- Featured image -->
+    
+    <!-- Featured Image -->
     <figure class="border img-feature">
       <img src="assets/img/image-featured.jpg" alt="Biying Miao">
     </figure>
     
-    <!-- Side by side images -->
+    <!-- // Side by Side Image -->
+    <section class="module-wrap">
+      <h3>Side by Side Images</h3>
+<pre><code>&lt;div class=&quot;border img-side-by-side&quot;&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;assets/img/image-side-left.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+  &lt;/figure&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;assets/img/image-side-right.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+    &lt;figcaption&gt;
+      Optional caption goes here.
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+</code></pre>
+    </section>
+      
+    <!-- Side by Side Image -->
     <div class="border img-side-by-side">
       <figure>
         <img src="assets/img/image-side-left.jpg" alt="Biying Miao">
@@ -163,23 +156,69 @@
         </figcaption>
       </figure>
     </div>
-  
-    <!-- Single image - portrait -->
+    
+    <!-- // Single Image - Portrait -->
+    <section class="module-wrap">
+      <h3>Single Image - Portrait</h3>
+<pre><code>&lt;figure class=&quot;border img-portrait&quot;&gt;
+  &lt;img src=&quot;assets/img/image-single-portrait.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+&lt;/figure&gt;
+</code></pre>
+    </section>
+    
+    <!-- Single Image - Portrait -->
     <figure class="border img-portrait">
       <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
     </figure>
     
-    <!-- // Single image - landscape -->
+    <!-- // Single Image - Landscape -->
+    <section class="module-wrap">
+      <h3>Single Image - Landscape</h3>
+<pre><code> &lt;figure class=&quot;border img-landscape&quot;&gt;
+  &lt;img src=&quot;assets/img/image-single-landscape.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+&lt;/figure&gt;
+</code></pre>
+    </section>
+    
+    <!-- Single Image - Landscape -->
     <figure class="border img-landscape">
       <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
     </figure>
       
 
-    <!-- Components -->
+    <!-- // Interview Cards // -->
     <section class="module-wrap">
       <h2>Past Interview Cards</h2>
+<pre><code>&lt;aside class=&quot;past-interviews wrapper&quot;&gt;
+  &lt;h2&gt;Past Interviews&lt;/h2&gt;
+  
+  &lt;div class=&quot;column-wrapper with-gutter&quot;&gt;
+    &lt;section class=&quot;column-3&quot;&gt;
+      &lt;img src=&quot;assets/img/thumbnail-sara-hicks.png&quot; alt=&quot;Sara Hicks&quot;&gt;
+      &lt;h3&gt;Sarah Hicks&lt;/h3&gt;
+      &lt;p&gt;with &lt;a href=&quot;#&quot;&gt;Sophie He&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Co-founder and CEO of Reaction Commerce, an open source eCommerce platform.&lt;/p&gt;
+    &lt;/section&gt;
+    
+    &lt;section class=&quot;column-3&quot;&gt;
+      &lt;img src=&quot;assets/img/thumbnail-mitchell-baker.png&quot; alt=&quot;Mitchell Baker&quot;&gt;
+      &lt;h3&gt;Mitchell Baker&lt;/h3&gt;
+      &lt;p&gt;with &lt;a href=&quot;#&quot;&gt;Cassie McDaniel&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Founder of the non-profit tech company Mozilla, creator of Firefox and champion of the open web.&lt;/p&gt;
+    &lt;/section&gt;
+    
+    &lt;section class=&quot;column-3&quot;&gt;
+      &lt;img src=&quot;assets/img/thumbnail-sandi-lin.png&quot; alt=&quot;Sandi Lin&quot;&gt;
+      &lt;h3&gt;Sandi Lin&lt;/h3&gt;
+      &lt;p&gt;with &lt;a href=&quot;#&quot;&gt;Sarah Sutherland&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;
+</code></pre>
     </section>
-    <section class="past-interviews wrapper">
+    
+    <aside class="past-interviews wrapper">
       <h2>Past Interviews</h2>
       <div class="column-wrapper with-gutter">
         <section class="column-3">
@@ -201,7 +240,7 @@
           <p>Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.</p>
         </section>
       </div>
-    </section>
+    </aside>
     
   </main>
 

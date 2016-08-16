@@ -13,19 +13,17 @@
     text-align: center;
     padding: 20px;
   }
-  h3 {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
+
   button {
     color: white;
   }
   pre {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    margin: 0 -20px -55px;
     white-space: pre-wrap;
+    margin: -10px -20px -20px;
+    line-height: 1.5;
+    font-size: $font-size-subtext;
     
     code {
       padding: 25px 30px;
@@ -34,19 +32,20 @@
 }
 .module-wrap {
   margin: 0 20px;
-  padding: 30px 20px 55px;
-  background: white;
-  
-  h2:first-child {
-    padding-bottom: 10px;
-  }
-}
-.example {
-  border: 1px solid $gray;
   padding: 20px;
-  margin-bottom: 25px;
-}
-.font-styles span {
-  margin-right: 10px;
+  background: white;
+
+  h2 {
+    padding: 60px 0 10px;
+    font-size: 4rem;
+    
+    &.first {
+      padding-top: 10px;
+    }
+  }
+  h3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
 }
 
