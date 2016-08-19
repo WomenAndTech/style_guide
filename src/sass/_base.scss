@@ -98,10 +98,13 @@ b {
   font-size: $font-size-heading;
   font-weight: $type-bold;
 }
-section .heading {
-  margin: 62px 0 42px;
-  text-align: center;
-}
+section,
+article {
+  .heading {
+    margin: 62px 0 42px;
+    text-align: center;
+  }
+} 
 
 // Optional page header module
 .header-secondary {

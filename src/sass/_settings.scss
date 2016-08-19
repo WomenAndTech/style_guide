@@ -27,6 +27,7 @@ $font-size-pullquote:    2.9rem; // lh 42px = 1.45
 $font-size-intro:        2.2rem; // lh 34px = 1.54
 $font-size-questions:    2.0rem; // lh 28px = 1.4
 $font-size-body:         1.8rem; // lh 30px = 1.66
+$font-size-body-sm:      1.6rem;
 $font-size-subtext:      1.4rem;
 
 
@@ -112,7 +113,7 @@ $font-size-subtext:      1.4rem;
 // Underline style used for links
 @mixin underline-shadow($line-color, $shadow-color, $hover-color) {
   // adds underline
-  background: linear-gradient(to bottom, $line-color 0, $line-color 100%) repeat-x 0 81% / 1px 1px;
+  background: linear-gradient(to bottom, $line-color 0, $line-color 100%) repeat-x 0 82% / 1px 1px;
   // adds bg on letters to go over the line
   text-shadow: 2px 0 $shadow-color, 1px 0 $shadow-color, -1px 0 $shadow-color, -2px 0 $shadow-color;
   

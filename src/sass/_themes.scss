@@ -48,6 +48,11 @@
     input[type="submit"]{
       color: $color;
     }
+    
+    // Team component
+    .team .name {
+      @include underline-shadow($black, white, $color);
+    }
   }
   
   // Style guide page
