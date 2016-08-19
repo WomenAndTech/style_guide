@@ -92,6 +92,10 @@ dl.border {
     padding-bottom: 55px;
   }
 }
+.interview-q,
+.interview-a {
+  @extend .wrapper-sm;
+}
 .interview-q {
   font-size: $font-size-questions;
   line-height: 1.4;
@@ -109,7 +113,9 @@ dl.border {
   padding-top: 72px;
   padding-bottom: 52px;
   
-  p {    
+  p {
+  @extend .wrapper-sm;
+  
     &:before {
       content: "“";
     }
@@ -179,6 +185,7 @@ dl.border {
 // ---------------------------------------------------------
 .past-interviews {
   margin-top: 35px;
+  line-height: 1.5;
   
   h2 {
     color: white;
@@ -196,7 +203,7 @@ dl.border {
   .column-3 {
     text-align: center;
     background: white;
-    padding: 18px;
+    padding: 18px 18px 30px;
   }
 }
 
