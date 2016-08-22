@@ -38,18 +38,18 @@
 }
 
 // Page headings
-.heading,
-.header-secondary h2 {
-  font-size: $font-size-heading;
-  font-weight: $type-bold;
-}
 section,
 article {
-  .heading {
-    margin: 62px 0 42px;
+  h2 {
     text-align: center;
+    font-size: $font-size-heading;
+    font-weight: $type-bold;
   }
 } 
+article h2 {
+  margin: 62px 0 42px;
+}
+
 
 // Optional page header module
 .header-secondary {
