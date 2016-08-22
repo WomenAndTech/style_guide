@@ -24,6 +24,7 @@
   
   .social-share {
     @include list-reset-inline;
+    font-size: 0;
     
     li {
       margin-right: 10px;
@@ -42,6 +43,7 @@
     }
     .fa {
       padding-top: 10px;
+      font-size: $font-size-body;
     }
     .fa-envelope {
       font-size: 14px;
@@ -186,7 +188,7 @@ dl.border {
 // ---------------------------------------------------------
 .past-interviews {
   margin-top: 35px;
-  line-height: 1.5;
+  font-size: $font-size-body-sm;
   
   h2 {
     color: white;

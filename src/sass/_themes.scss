@@ -50,8 +50,13 @@
     }
     
     // Team component
-    .team .name {
+    .team-listing .name {
       @include underline-shadow($black, white, $color);
+    }
+    
+    // Helper class, add to any element to add theme color
+    .theme-color {
+      color: $color;
     }
   }
   

@@ -1,0 +1,158 @@
+// ---------------------------------------------------------
+// PAGE TEMPLATE COMPONENTS
+// ---------------------------------------------------------
+// Interview template specific page components and styles can
+// be found in _interviews.scss.
+// Style guide specific components and styles can be found in
+// _style-guide.scss.
+
+
+// Headers
+// ---------------------------------------------------------
+// Global header
+.header-primary {
+  color: white;
+  margin: 20px 40px 14px;
+  
+  .logo {
+    width: 230px;
+  }  
+}
+.nav-primary {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding-left: 26px;
+    display: inline-block;
+    
+    &:hover,
+    &.active {
+      font-weight: $type-bold;
+      color: white;
+    }
+  }
+}
+
+// Page headings
+.heading,
+.header-secondary h2 {
+  font-size: $font-size-heading;
+  font-weight: $type-bold;
+}
+section,
+article {
+  .heading {
+    margin: 62px 0 42px;
+    text-align: center;
+  }
+} 
+
+// Optional page header module
+.header-secondary {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 66px;
+  
+  .heading {
+    margin: 0 0 40px;
+  }
+  p {
+    @extend .wrapper-sm;
+    font-size: $font-size-body-sm;
+  }
+}
+
+
+// Global Footer
+// ---------------------------------------------------------
+.footer-primary {
+  background: white;
+  padding: 100px 62px;
+  font-size: $font-size-subtext;
+  margin-top: 20px;
+  
+  p {
+    padding-bottom: 12px;
+  }
+  
+  section:nth-of-type(1){
+    padding-right: 30px;
+  }
+  
+  // Subscribe form
+  input[type="email"]{
+    width: 215px;
+    margin-top: 10px;
+    height: 25px;
+  }
+  input[type="submit"]{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-size: $font-size-subtext;
+    font-weight: $type-bold;
+    cursor: pointer;
+    padding-left: 0;
+  }
+  
+  // Social accounts
+  section:nth-of-type(3) {
+    padding-left: 8%;
+  }
+}
+.footer-links {
+  @include list-reset-inline;
+  
+  a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+
+
+// Team content block
+.team-listing {
+  text-align: center;
+  padding: 40px 0;
+  
+  ul {
+    @include list-reset-inline;
+    margin-bottom: 40px;
+  }
+  p {
+    padding: 0;
+  }
+  .name {
+    font-size: $font-size-heading;
+    margin: 0 35px;
+  }
+  .role {
+    font-size: $font-size-body-sm;
+  }
+  .thanks {
+    font-size: $font-size-subtext;
+    font-style: italic;
+  }
+}
+
+
+// "With <3 from the Women&&Tech team"
+.signature {
+  text-align: center;
+  padding-top: 50px;
+  
+  .fa,
+  .team {
+    font-weight: $type-bold;
+  }
+  .team {
+    display: block;
+    text-transform: uppercase;
+  }
+}

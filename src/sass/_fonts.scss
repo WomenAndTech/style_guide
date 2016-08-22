@@ -4,11 +4,12 @@
 // License - http://fontawesome.io/license 
 // (Font: SIL OFL 1.1, CSS: MIT License)
 // ---------------------------------------------------------
-
 // Didn't add the whole Font Awesome library since we're 
-// (currently) only using three icons and no other styles.
+// (currently) only using four icons and no other styles.
 // See link above for more info or refer to font-awesome.css
 // in the "src" folder.
+
+// http://fontawesome.io/accessibility/ for accessibility info
 
 @font-face {
   font-family: 'FontAwesome';
@@ -34,4 +35,7 @@
 }
 .fa-envelope:before {
   content: "\f0e0";
+}
+.fa-heart-o:before {
+  content: "\f08a";
 }
