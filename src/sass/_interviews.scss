@@ -187,18 +187,17 @@ dl.border {
 // Past Interviews
 // ---------------------------------------------------------
 .past-interviews {
+  @extend .wrapper;
   margin-top: 35px;
   font-size: $font-size-body-sm;
-  @extend .wrapper;
+  padding-left: 20px;
+  padding-right: 20px;
   
-  @include max-width(sm){
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @include min-max(400px, 660px){
+  @include min-max($screen-xsm, $screen-sm){
     padding-left: 10%;
     padding-right: 10%;
   }
+  
   h2 {
     color: white;
   }
@@ -212,12 +211,13 @@ dl.border {
   p {
     margin: 0 10px;
   }
-  .grid-3 {
+  .grid-3-1 {
     text-align: center;
-    background: white;
-    padding: 18px 18px 30px;
     
-    @include max-width(med){
+    @include min-width($screen-med){
+      padding: 18px 18px 30px;
+    }
+    @include max-width($screen-med){
       padding: 10px 10px 20px;
     }
   }

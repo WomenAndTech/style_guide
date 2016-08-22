@@ -120,41 +120,37 @@ $font-size-subtext:      1.4rem;
 // MEDIA QUERIES
 // ---------------------------------------------------------
 // placeholder sizes - to be updated
+$screen-xsm: 400px;
 $screen-sm: 660px;
 $screen-med: 980px;
 
-@mixin max-width($screen-size) {
-  @if $screen-size == sm {
-    @media only screen and (max-width: $screen-sm) { @content; }
-  }
-  @if $screen-size == med {
-    @media only screen and (max-width: $screen-med) { @content; }
-  }
+@mixin max-width($max) {
+  @media only screen and (max-width: $max) { @content; }
 }
-@mixin min-width($screen-size) {
-  @if $screen-size == sm {
-    @media only screen and (min-width: $screen-sm + 1) { @content; }
-  }
-  @if $screen-size == med {
-    @media only screen and (min-width: $screen-med + 1) { @content; }
-  }
-}
-@mixin between($screen-size) {
-  @if $screen-size == sm-med {
-    @media only screen and (min-width: $screen-sm) and (max-width: $screen-med) { @content; }
-  }
+@mixin min-width($min) {
+  @media only screen and (min-width: $min + 1) { @content; }
 }
 @mixin min-max($min, $max){
-  @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+  @media only screen and (min-width: $min + 1) and (max-width: $max) { @content; }
 }
 
 //test media queries
-// .theme-coral {
-//   @include max-width(sm){
-//     color: lightblue!important;
+// .test {
+//   position: fixed;
+//   bottom: 40px;
+//   left: 20px;
+// 
+//   span {
+//     display: none;
 //   }
-//   @include max-width(med){
-//     color: pink;
+//   @include min-max($screen-xsm, $screen-sm){
+//     .xsm { display: block; }
+//   }
+//   @include min-max($screen-sm, $screen-med){
+//     .sm { display: block; }
+//   }
+//   @include min-width($screen-med){
+//     .med { display: block; }
 //   }
 // }
 
