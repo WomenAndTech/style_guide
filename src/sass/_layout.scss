@@ -26,15 +26,31 @@
     margin-top: -20px;
   }
 }
+.no-border {
+  @include max-width(med) {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 20px;
+  }
+}
+.no-border-columns {
+  @include max-width(med) {
+    margin: 0 20px;
+  }
+}
 
 
 // Columns
 // ---------------------------------------------------------
-.column-wrapper {
+.grid-wrapper {
   display: flex;
   justify-content: center;
+  
+  @include max-width(sm){
+    flex-wrap: wrap;
+  }
 }
-.column-3 {
+.grid-3 {
   width: (100/3) * 1%;
 
   .with-gutter & {
@@ -43,6 +59,19 @@
     &:nth-of-type(2) {
       margin-left: 20px;
       margin-right: 20px;
+      
+      @include max-width(med) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      @include max-width(sm){
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
+  }
+  
+  @include max-width(sm){
+    width: 100%;
   }
 }

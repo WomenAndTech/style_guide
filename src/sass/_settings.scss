@@ -88,12 +88,6 @@ $font-size-subtext:      1.4rem;
   margin-bottom: 0;
   padding: 0;
   list-style-type: none;
-  
-  li:before {
-    content: "";
-    padding-right: 0;
-    margin-left: 0;
-  }
 }
 @mixin list-reset-inline {
   margin-top: 0;
@@ -103,12 +97,6 @@ $font-size-subtext:      1.4rem;
   
   li {
     display: inline-block;
-    
-    &:before {
-      content: "";
-      padding-right: 0;
-      margin-left: 0;
-    }
   }
 }
 
@@ -132,9 +120,8 @@ $font-size-subtext:      1.4rem;
 // MEDIA QUERIES
 // ---------------------------------------------------------
 // placeholder sizes - to be updated
-$screen-sm: 800px;
-$screen-med: 1024px;
-$screen-lrg: 1400px;
+$screen-sm: 660px;
+$screen-med: 980px;
 
 @mixin max-width($screen-size) {
   @if $screen-size == sm {
@@ -142,9 +129,6 @@ $screen-lrg: 1400px;
   }
   @if $screen-size == med {
     @media only screen and (max-width: $screen-med) { @content; }
-  }
-  @if $screen-size == lrg {
-    @media only screen and (max-width: $screen-lrg) { @content; }
   }
 }
 @mixin min-width($screen-size) {
@@ -154,19 +138,23 @@ $screen-lrg: 1400px;
   @if $screen-size == med {
     @media only screen and (min-width: $screen-med + 1) { @content; }
   }
-  @if $screen-size == lrg {
-    @media only screen and (min-width: $screen-lrg + 1) { @content; }
-  }
 }
 @mixin between($screen-size) {
   @if $screen-size == sm-med {
     @media only screen and (min-width: $screen-sm) and (max-width: $screen-med) { @content; }
   }
-  @if $screen-size == med-lrg {
-    @media only screen and (min-width: $screen-med) and (max-width: $screen-lrg) { @content; }
-  }
-  @if $screen-size == sm-lrg {
-    @media only screen and (min-width: $screen-sm) and (max-width: $screen-lrg) { @content; }
-  }
 }
+@mixin min-max($min, $max){
+  @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+}
+
+//test media queries
+// .theme-coral {
+//   @include max-width(sm){
+//     color: lightblue!important;
+//   }
+//   @include max-width(med){
+//     color: pink;
+//   }
+// }
 

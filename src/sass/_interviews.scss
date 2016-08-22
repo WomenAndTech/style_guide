@@ -180,7 +180,7 @@ dl.border {
 .img-side-by-side,
 .img-portrait,
 .img-landscape {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 
@@ -189,7 +189,16 @@ dl.border {
 .past-interviews {
   margin-top: 35px;
   font-size: $font-size-body-sm;
+  @extend .wrapper;
   
+  @include max-width(sm){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include min-max(400px, 660px){
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   h2 {
     color: white;
   }
@@ -198,15 +207,19 @@ dl.border {
     margin: 25px 0 15px;
   }
   img {
-    max-width: 100%;
+    width: 100%;
   }
   p {
     margin: 0 10px;
   }
-  .column-3 {
+  .grid-3 {
     text-align: center;
     background: white;
     padding: 18px 18px 30px;
+    
+    @include max-width(med){
+      padding: 10px 10px 20px;
+    }
   }
 }
 

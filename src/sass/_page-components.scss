@@ -119,11 +119,18 @@ article h2 {
 // Team content block
 .team-listing {
   text-align: center;
-  padding: 40px 0;
+  padding-bottom: 60px;
   
   ul {
     @include list-reset-inline;
     margin-bottom: 40px;
+    
+    @include max-width(med) {
+      li {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
   }
   p {
     padding: 0;
@@ -131,6 +138,7 @@ article h2 {
   .name {
     font-size: $font-size-heading;
     margin: 0 35px;
+    display: inline-block;
   }
   .role {
     font-size: $font-size-body-sm;
