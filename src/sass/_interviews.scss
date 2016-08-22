@@ -187,15 +187,16 @@ dl.border {
 // Past Interviews
 // ---------------------------------------------------------
 .past-interviews {
-  @extend .wrapper;
   margin-top: 35px;
   font-size: $font-size-body-sm;
-  padding-left: 20px;
-  padding-right: 20px;
-  
+
   @include min-max($screen-xsm, $screen-sm){
     padding-left: 10%;
     padding-right: 10%;
+  }
+  @include max-width($screen-xsm){
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   h2 {
@@ -211,8 +212,10 @@ dl.border {
   p {
     margin: 0 10px;
   }
+  
   .grid-3-1 {
     text-align: center;
+    background: white;
     
     @include min-width($screen-med){
       padding: 18px 18px 30px;

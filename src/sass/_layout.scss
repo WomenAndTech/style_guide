@@ -8,6 +8,11 @@
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
+  
+  @include max-width($screen-med){
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .wrapper-sm {
   max-width: 620px;
@@ -34,15 +39,6 @@
     margin: 0 20px;
   }
 }
-.no-border-grid {
-  .grid-wrapper [class*="grid-"]{
-    background: white;
-  }
-  
-  @include max-width($screen-med) {
-    margin: 0 20px;
-  }
-}
 
 
 
@@ -51,37 +47,19 @@
 .grid-wrapper {
   display: flex;
   justify-content: center;
-  
-  @include max-width($screen-sm){
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 // goes from 3 columns to 1
 .grid-3-1 {
+  margin-bottom: 20px;
+  
   @include min-width($screen-sm){
-    width: (100/3) * 1%;
-  }
-  @include max-width($screen-sm){
-    width: 100%;
-  }
-
-  .with-gutter & {
-    margin-bottom: 20px;
+    width: 32%;
     
     &:nth-of-type(2) {
-      @include min-width($screen-med){
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      @include min-max($screen-sm, $screen-med) {
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      @include max-width($screen-sm){
-        margin-left: 0;
-        margin-right: 0;
-      }
+      margin-left: 2%;
+      margin-right: 2%;
     }
   }
 }
