@@ -149,7 +149,7 @@ dl.border {
   }
   figcaption {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     font-size: $font-size-body;
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
@@ -170,11 +170,6 @@ dl.border {
       &:last-child {
         margin-left: 10px;
       }
-    }
-  }
-  @include max-width($screen-sm){
-    figure:first-child {
-      // margin-bottom: 10px;
     }
   }
 }
