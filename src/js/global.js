@@ -12,4 +12,15 @@ $(function() {
   // Adds current year to copyright date
   var currentYear = (new Date()).getFullYear();
   $("[data-year]").text(currentYear);
+  
+  
+  // Shows browser size just for testing
+  function jqUpdateSize(){
+    var pageWidth = $(document).width();
+    var pageHeight = $(document).height();
+    $('#width').html(pageWidth);
+    $('#height').html(pageHeight);
+  }
+  $(document).ready(jqUpdateSize);
+  $(window).resize(jqUpdateSize);
 });

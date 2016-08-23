@@ -44,7 +44,6 @@ $font-size-subtext:      1.4rem;
 }
 
 
-
 // ---------------------------------------------------------
 // MIXINS
 // ---------------------------------------------------------
@@ -119,7 +118,6 @@ $font-size-subtext:      1.4rem;
 // ---------------------------------------------------------
 // MEDIA QUERIES
 // ---------------------------------------------------------
-// placeholder sizes - to be updated
 $screen-xsm: 400px;
 $screen-sm: 660px;
 $screen-med: 980px;
@@ -134,23 +132,4 @@ $screen-med: 980px;
   @media only screen and (min-width: $min + 1) and (max-width: $max) { @content; }
 }
 
-//test media queries
-// .test {
-//   position: fixed;
-//   bottom: 40px;
-//   left: 20px;
-// 
-//   span {
-//     display: none;
-//   }
-//   @include min-max($screen-xsm, $screen-sm){
-//     .xsm { display: block; }
-//   }
-//   @include min-max($screen-sm, $screen-med){
-//     .sm { display: block; }
-//   }
-//   @include min-width($screen-med){
-//     .med { display: block; }
-//   }
-// }
 

@@ -7,6 +7,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  
+  @include max-width($screen-xsm){
+    font-size: 50%;
+  }
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -28,14 +32,6 @@ h1, h2, h3 {
 }
 figure {
   margin: 0;
-}
-p {
-  margin: 0;
-  padding-bottom: 25px;
-  
-  &:last-of-type {
-    padding-bottom: 0;
-  }
 }
 a {
   color: inherit;

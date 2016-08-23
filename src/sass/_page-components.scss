@@ -73,11 +73,13 @@ article h2 {
   background: white;
   font-size: $font-size-subtext;
   margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   
   section {
-    padding-left: 20px;
-    
     @include min-width($screen-med){
+      padding-left: 20px;
+      
       &:nth-of-type(1){
         width: 320px;
       }
@@ -88,10 +90,9 @@ article h2 {
         width: 250px;
       }
     }
-    
-    * {
-      display: inline-block;
-    }
+  }
+  p {
+    margin: 0px;
   }
   // Subscribe form
   label {
@@ -99,8 +100,10 @@ article h2 {
   }
   input[type="email"]{
     width: 215px;
-    margin: 10px 0 30px;
     height: 25px;
+    margin: 10px 0 5px;
+    border: 1px solid #bbb;
+    -webkit-appearance: none;
   }
   input[type="submit"]{
     border: none;
@@ -109,20 +112,34 @@ article h2 {
     font-size: $font-size-subtext;
     font-weight: $type-bold;
     cursor: pointer;
-    padding-left: 0;
+    padding: 0;
+    margin-bottom: 30px;
   }
   
-  @include max-width($screen-med){
-    padding: 35px 0;
-    text-align: center;
+  @include min-width($screen-sm){
+    .nowrap {
+      display: inline-block;
+      padding-top: 12px;
+    }
   }
   @include min-width($screen-med){
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include max-width($screen-med){
+    padding-top: 35px;
+    padding-bottom: 50px;
+    text-align: center;
     
-    p {
-      padding-bottom: 12px;
+    form {
+      margin-top: 20px;
+    }
+  }
+  @include max-width($screen-sm){
+    input[type="submit"]{
+      font-size: $font-size-body;
     }
   }
 }
@@ -130,7 +147,7 @@ article h2 {
   @include list-reset-inline;
   
   a {
-    margin-right: 10px;
+    margin: 12px 10px 0 0;
   }
 }
 
@@ -140,7 +157,7 @@ article h2 {
 // ---------------------------------------------------------
 .team-listing {
   text-align: center;
-  padding-bottom: 60px;
+  padding: 20px 20px 60px;
   
   ul {
     @include list-reset-inline;
@@ -173,8 +190,8 @@ article h2 {
 // "With <3 from the Women&&Tech team"
 .signature {
   text-align: center;
-  padding-top: 50px;
-  
+  padding: 50px 0 30px;
+
   .fa,
   .team {
     font-weight: $type-bold;

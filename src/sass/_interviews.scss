@@ -3,8 +3,6 @@
 // ---------------------------------------------------------
 
 .header-interview {
-  padding-top: 50px;
-  
   h2 {
     font-size: $font-size-heading-lg;
     margin: 0 0 35px;
@@ -21,7 +19,6 @@
   + dl {
     padding-top: 45px;
   }
-  
   .social-share {
     @include list-reset-inline;
     font-size: 0;
@@ -49,8 +46,10 @@
       font-size: 14px;
     }
   }
+  @include min-width($screen-xsm){
+    padding-top: 50px;
+  }
 }
-
 
 .author,
 .credits {
@@ -63,13 +62,12 @@
 }
 
 .credits {
-  // padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   
   ul {
     @include list-reset;
     border-top: 1px solid $gray;
-    padding-top: 55px;
+    padding-top: 45px;
     @extend .wrapper-sm;
     
     li {
@@ -90,10 +88,6 @@
 dl.border {
   padding-top: 25px;
   padding-bottom: 25px;
-  
-  &:last-of-type {
-    padding-bottom: 55px;
-  }
 }
 .interview-q,
 .interview-a {
@@ -113,8 +107,6 @@ dl.border {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
   line-height: 1.45;
-  padding-top: 72px;
-  padding-bottom: 52px;
   
   p {
   @extend .wrapper-sm;
@@ -125,6 +117,14 @@ dl.border {
     &:after {
       content: "”";
     }
+  }
+  @include min-width($screen-xsm){
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  @include max-width($screen-xsm){
+    text-align: center;
+    padding: 32px 20px;
   }
 }
 
@@ -138,24 +138,14 @@ dl.border {
   
   img {
     width: 100%;
-  }  
+    margin-bottom: 10px;
+  }
 }
 
 // Side by side
 .img-side-by-side {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
   figure {
     position: relative;
-    
-    &:first-child {
-      margin-right: 10px;
-    }
-    &:last-child {
-      margin-left: 10px;
-    }
   }
   figcaption {
     position: absolute;
@@ -165,6 +155,27 @@ dl.border {
     width: 100%;
     padding: 12px;
     text-align: left;
+  }
+  @include min-width($screen-sm){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    figure {
+      max-width: 460px;
+      
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+  @include max-width($screen-sm){
+    figure:first-child {
+      // margin-bottom: 10px;
+    }
   }
 }
 
@@ -177,28 +188,12 @@ dl.border {
 }
 
 
-.img-side-by-side,
-.img-portrait,
-.img-landscape {
-  padding: 60px 20px;
-}
-
-
 // Past Interviews
 // ---------------------------------------------------------
 .past-interviews {
   margin-top: 35px;
   font-size: $font-size-body-sm;
 
-  @include min-max($screen-xsm, $screen-sm){
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  @include max-width($screen-xsm){
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
   h2 {
     color: white;
   }
@@ -209,26 +204,23 @@ dl.border {
   img {
     width: 100%;
   }
-  p {
-    margin: 0 10px;
-  }
-  
   .grid-3-1 {
     text-align: center;
     background: white;
     
     @include min-width($screen-med){
-      padding: 18px 18px 30px;
+      padding: 18px;
     }
     @include max-width($screen-med){
       padding: 10px 10px 20px;
     }
   }
+  @include min-max($screen-xsm, $screen-sm){
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  @include max-width($screen-xsm){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-
-
-
-
-
-
-
