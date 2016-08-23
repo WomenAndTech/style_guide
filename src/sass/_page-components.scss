@@ -12,21 +12,18 @@
 // Global header
 .header-primary {
   color: white;
-  margin: 20px 40px 14px;
   
   .logo {
     width: 230px;
-  }  
+    height: 75px;
+    overflow: hidden;
+  }
 }
 .nav-primary {
-  position: absolute;
-  top: 38px;
-  right: 40px;
-  
   a {
     color: white;
     text-decoration: none;
-    padding-left: 26px;
+    padding: 13px;
     display: inline-block;
     
     &:hover,
@@ -34,6 +31,28 @@
       font-weight: $type-bold;
       color: white;
     }
+  }
+}
+@include max-width(800px){
+  .header-primary,
+  .nav-primary {
+    text-align: center;
+  }
+  .header-primary {
+    margin: 20px 5px 14px;
+  }
+  .nav-primary a {
+    padding: 10px 6px;
+  }
+}
+@include min-width(800px){
+  .nav-primary {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+  .header-primary {
+    margin: 20px 40px 14px;
   }
 }
 
