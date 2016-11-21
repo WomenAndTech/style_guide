@@ -47,7 +47,7 @@
     }
   }
   @include min-width($screen-xsm){
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 
@@ -107,10 +107,11 @@ dl.border {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
   line-height: 1.45;
+  padding: 32px 20px;
   
   p {
-  @extend .wrapper-sm;
-  
+    @extend .wrapper-sm;
+    
     &:before {
       content: "“";
     }
@@ -118,13 +119,9 @@ dl.border {
       content: "”";
     }
   }
-  @include min-width($screen-xsm){
-    padding-top: 52px;
-    padding-bottom: 52px;
-  }
+  
   @include max-width($screen-xsm){
     text-align: center;
-    padding: 32px 20px;
   }
 }
 
@@ -134,7 +131,7 @@ dl.border {
 // Interview images are wrapped in a class with the -img prefix
 [class*="img-"] {
   figure {
-    margin: 0 auto;
+    margin: 0 auto 20px;
     position: relative;
     // gets rid of extra space under image
     // font-size redeclared in figcaption

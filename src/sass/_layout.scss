@@ -26,12 +26,16 @@
   background: white;
   
   + .border {
-    margin-top: -20px;
+    // margin-top: -20px;
   }
   
   @include min-width($screen-xsm){
     margin: 0 20px;
-    padding: 20px;
+    padding: 10px 20px;
+    
+    &:first-child {
+      padding-top: 20px;
+    }
   }
   @include max-width($screen-xsm){
     margin: 0 12px;
