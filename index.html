@@ -274,28 +274,32 @@
       
       <!-- // Feature Image -->
       <h3>Feature Image</h3>
-<pre><code>&#x3C;!-- // Feature Image --&#x3E;
-&lt;figure class=&quot;border img-feature&quot;&gt;
-  &lt;img src=&quot;assets/img/image-featured.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
-&lt;/figure&gt;
+<pre><code>&#x3C;!-- // Feature image --&#x3E;
+&#x3C;div class=&#x22;border img-feature&#x22;&#x3E;
+  &#x3C;figure&#x3E;
+    &#x3C;img src=&#x22;assets/img/image-featured.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+  &#x3C;/figure&#x3E;
+&#x3C;/div&#x3E;
 </code></pre>
     </section>
     <!-- Featured Image -->
-    <figure class="border img-feature">
-      <img src="assets/img/image-featured.jpg" alt="Biying Miao">
-    </figure>
+    <div class="border img-feature">
+      <figure>
+        <img src="assets/img/image-featured.jpg" alt="Biying Miao">
+      </figure>
+    </div>
+    
     
     <!-- // Side by Side Image -->
     <section class="module-wrap">
       <h3>Side by Side Images</h3>
-<pre><code>&#x3C;!-- // Image - Left & right --&#x3E;
+<pre><code>&#x3C;!-- // Image - Left & Right --&#x3E;
 &lt;div class=&quot;border img-side-by-side&quot;&gt;
   &lt;figure&gt;
     &lt;img src=&quot;assets/img/image-side-left.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
   &lt;/figure&gt;
   &lt;figure&gt;
     &lt;img src=&quot;assets/img/image-side-right.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
-    
     &lt;figcaption&gt;
       Optional caption goes here.
     &lt;/figcaption&gt;
@@ -320,29 +324,90 @@
     <section class="module-wrap">
       <h3>Single Image - Portrait</h3>
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
-&lt;figure class=&quot;border img-portrait&quot;&gt;
-  &lt;img src=&quot;assets/img/image-single-portrait.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
-&lt;/figure&gt;
+&#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
+  &#x3C;figure&#x3E;
+    &#x3C;img src=&#x22;assets/img/image-single-portrait.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+  &#x3C;/figure&#x3E;
+&#x3C;/div&#x3E;
 </code></pre>
     </section>
     <!-- Single Image - Portrait -->
-    <figure class="border img-portrait">
-      <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
-    </figure>
+    <div class="border img-portrait">
+      <figure>
+        <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
+      </figure>
+    </div>
+    
+    <section class="module-wrap">
+      <h3>Single Image - Portrait with caption</h3>    
+<pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
+&#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
+  &#x3C;figure&#x3E;
+    &#x3C;img src=&#x22;assets/img/image-single-portrait.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;figcaption&#x3E;
+      Optional caption goes here.
+    &#x3C;/figcaption&#x3E;
+  &#x3C;/figure&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
+    </section>
+    <div class="border img-portrait">
+      <figure>
+        <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
+        <figcaption>
+          Optional caption goes here.
+        </figcaption>
+      </figure>
+    </div>
     
     <!-- // Single Image - Landscape -->
     <section class="module-wrap">
       <h3>Single Image - Landscape</h3>
-<pre><code>&#x3C;!-- // Team Listing --&#x3E;
-&lt;figure class=&quot;border img-landscape&quot;&gt;
-  &lt;img src=&quot;assets/img/image-single-landscape.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
-&lt;/figure&gt;
+<pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
+&#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
+  &#x3C;figure&#x3E;
+    &#x3C;img src=&#x22;assets/img/image-single-landscape.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+  &#x3C;/figure&#x3E;
+&#x3C;/div&#x3E;
 </code></pre>
     </section>
     <!-- Single Image - Landscape -->
-    <figure class="border img-landscape">
-      <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
-    </figure>
+    <div class="border img-landscape">
+      <figure>
+        <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
+      </figure>
+    </div>
+    <div class="border img-portrait">
+      <figure>
+        <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
+        <figcaption>
+          Optional caption goes here.
+        </figcaption>
+      </figure>
+    </div>
+    
+    <section class="module-wrap">
+      <h3>Single Image - Landscape with caption</h3>
+<pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
+&#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
+  &#x3C;figure&#x3E;
+    &#x3C;img src=&#x22;assets/img/image-single-landscape.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;figcaption&#x3E;
+      Optional caption goes here.
+    &#x3C;/figcaption&#x3E;
+  &#x3C;/figure&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
+    </section>
+    <!-- Single Image - Landscape -->
+    <div class="border img-landscape">
+      <figure>
+        <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
+        <figcaption>
+          Optional caption goes here.
+        </figcaption>
+      </figure>
+    </div>
     
     
     <!-- // Interview Cards // -->

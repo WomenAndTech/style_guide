@@ -131,31 +131,40 @@ dl.border {
 
 // Images
 // ---------------------------------------------------------
+// Interview images are wrapped in a class with the -img prefix
 [class*="img-"] {
-  text-align: center;
-  // gets rid of extra space under image
-  font-size: 0;
-  
-  img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-// Side by side
-.img-side-by-side {
   figure {
+    margin: 0 auto;
     position: relative;
+    // gets rid of extra space under image
+    // font-size redeclared in figcaption
+    font-size: 0; 
   }
   figcaption {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     font-size: $font-size-body;
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
     padding: 12px;
-    text-align: left;
   }
+  img {
+    width: 100%;
+  }
+}
+
+// Single images
+.img-portrait figure,
+.img-portrait img {
+  max-width: 620px;
+}
+.img-landscape figure,
+.img-landscape img {
+  max-width: 940px;
+}
+
+// Side by side
+.img-side-by-side {
   @include min-width($screen-sm){
     display: flex;
     align-items: center;
@@ -172,15 +181,14 @@ dl.border {
       }
     }
   }
+  @include max-width($screen-sm){
+    figure:first-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-// Single images
-.img-portrait img {
-  max-width: 620px;
-}
-.img-landscape img {
-  max-width: 940px;
-}
+
 
 
 // Past Interviews
