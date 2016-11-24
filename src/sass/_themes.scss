@@ -26,10 +26,18 @@
     .module-wrap a {
       @include underline-shadow($black, #fff, $color);
     }
-    // Theme color underline on white background
-    .past-interviews a,
-    .footer-links a {
-      @include underline-shadow($color, #fff, $color);
+    // Theme color underline, no shadow
+    .footer-links a,
+    [class*="img-"] a {
+      @include underline-shadow($color, transparent, $color);
+    }
+    // No underline
+    a.no-underline {
+      @include underline-shadow(transparent, transparent, transparent);
+      
+      &:hover {
+        color: $black;
+      }
     }
     
     // Interview links
@@ -39,6 +47,7 @@
     .credits a {
       @include theme-links($color);
     }
+    
     // Style guide page
     .module-wrap h2:first-child {
       border-bottom: 1px solid $color;
