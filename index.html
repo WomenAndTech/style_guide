@@ -12,15 +12,15 @@
   <header>
     <h1><img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">Style Guide</h1>
     
-    <nav>
-      <a href="#templates">Templates</a>
-      <a href="#themes">Themes</a>
-      <a href="#headings">Headings</a>
-      <a href="#images">Images</a>
-      <a href="#qa">Q&A</a>
-      <a href="#quote">Pull Quote</a>
-      <a href="#team">Team</a>
-      <a href="#footer">Interview Footer</a>
+    <nav data-scroll-header>
+      <a data-scroll href="#templates">Templates</a>
+      <a data-scroll href="#themes">Themes</a>
+      <a data-scroll href="#headings">Headings</a>
+      <a data-scroll href="#images">Images</a>
+      <a data-scroll href="#qa">Q&A</a>
+      <a data-scroll href="#quote">Pull Quote</a>
+      <a data-scroll href="#team">Team</a>
+      <a data-scroll href="#footer">Interview Footer</a>
     </nav>
   </header>
     
@@ -89,7 +89,7 @@
     
     <!-- // Secondary Header -->
     <section class="module-wrap">
-      <h3>Secondary Header</h3>
+      <h3>Secondary Header / No background </h3>
       <h4>Web Component: header-secondary.html</h4>
 <pre><code class="xml">&#x3C;!-- // Secondary Header --&#x3E;
 &lt;header class=&quot;no-border header-secondary&quot;&gt;
@@ -280,12 +280,14 @@
     <section class="module-wrap" id="images">
       <h2>Interview Images</h2>
       
+      <p>The static site uses PHP to load partial files. Be sure to include the PHP snippet for image paths, shown in the example code below.</p>
+      
       <!-- // Feature Image -->
       <h3>Feature Image</h3>
 <pre><code>&#x3C;!-- // Feature image --&#x3E;
 &#x3C;div class=&#x22;border img-feature&#x22;&#x3E;
   &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;/assets/img/image-featured.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;featured-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
   &#x3C;/figure&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
@@ -304,10 +306,10 @@
 <pre><code>&#x3C;!-- // Image - Left & Right --&#x3E;
 &lt;div class=&quot;border img-side-by-side&quot;&gt;
   &lt;figure&gt;
-    &lt;img src=&quot;/assets/img/image-side-left.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+    &lt;img src=&quot;&#x3C;?php echo $path_img; ?&#x3E;left-biying-miao.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
   &lt;/figure&gt;
   &lt;figure&gt;
-    &lt;img src=&quot;/assets/img/image-side-right.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
+    &lt;img src=&quot;&#x3C;?php echo $path_img; ?&#x3E;right-biying-miao.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
     &lt;figcaption&gt;
       Optional caption goes here.
     &lt;/figcaption&gt;
@@ -334,7 +336,7 @@
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
 &#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
   &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;/assets/img/image-single-portrait.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;portrait-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
   &#x3C;/figure&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
@@ -351,7 +353,7 @@
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
 &#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
   &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;/assets/img/image-single-portrait.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;portrait-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
     &#x3C;figcaption&#x3E;
       Optional caption goes here.
     &#x3C;/figcaption&#x3E;
@@ -374,7 +376,7 @@
 <pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
 &#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
   &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;/assets/img/image-single-landscape.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;landscape-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
   &#x3C;/figure&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
@@ -391,7 +393,7 @@
 <pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
 &#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
   &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;/assets/img/image-single-landscape.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;landscape-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
     &#x3C;figcaption&#x3E;
       Optional caption goes here.
     &#x3C;/figcaption&#x3E;
@@ -442,7 +444,7 @@
     <!-- // Interview Cards // -->
     <section class="module-wrap">
       <h2>Past Interview Cards</h2>
-      <p>To be added as a global include file. This is here for reference only.</p>
+      <p>Added as a global include file in the template. This is here for reference only.</p>
 <pre><code>&#x3C;!-- // Past Interviews --&#x3E;
 &#x3C;aside class=&#x22;past-interviews&#x22;&#x3E;
   &#x3C;div class=&#x22;wrapper&#x22;&#x3E;
@@ -450,7 +452,7 @@
     &#x3C;div class=&#x22;grid-wrapper&#x22;&#x3E;
       &#x3C;section class=&#x22;grid-3-1&#x22;&#x3E;
         &#x3C;a href=&#x22;#link-to-interview&#x22; class=&#x22;no-underline&#x22;&#x3E;
-          &#x3C;img src=&#x22;/assets/img/thumbnail-sara-hicks.png&#x22; alt=&#x22;Sara Hicks&#x22;&#x3E;
+          &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-sara-hicks.png&#x22; alt=&#x22;Sara Hicks&#x22;&#x3E;
           &#x3C;h3&#x3E;Sarah Hicks&#x3C;/h3&#x3E;
           &#x3C;p&#x3E;with Sophie He&#x3C;/p&#x3E;
           &#x3C;p&#x3E;Co-founder and CEO of Reaction Commerce, an open source eCommerce platform.&#x3C;/p&#x3E;
@@ -458,7 +460,7 @@
       &#x3C;/section&#x3E;
       &#x3C;section class=&#x22;grid-3-1&#x22;&#x3E;
         &#x3C;a href=&#x22;#link-to-interview&#x22; class=&#x22;no-underline&#x22;&#x3E;
-          &#x3C;img src=&#x22;/assets/img/thumbnail-mitchell-baker.png&#x22; alt=&#x22;Mitchell Baker&#x22;&#x3E;
+          &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-mitchell-baker.png&#x22; alt=&#x22;Mitchell Baker&#x22;&#x3E;
           &#x3C;h3&#x3E;Mitchell Baker&#x3C;/h3&#x3E;
           &#x3C;p&#x3E;with Cassie McDaniel&#x3C;/p&#x3E;
           &#x3C;p&#x3E;Founder of the non-profit tech company Mozilla, creator of Firefox and champion of the open web.&#x3C;/p&#x3E;
@@ -466,7 +468,7 @@
       &#x3C;/section&#x3E;
       &#x3C;section class=&#x22;grid-3-1&#x22;&#x3E;
         &#x3C;a href=&#x22;#link-to-interview&#x22; class=&#x22;no-underline&#x22;&#x3E;
-          &#x3C;img src=&#x22;/assets/img/thumbnail-sandi-lin.png&#x22; alt=&#x22;Sandi Lin&#x22;&#x3E;
+          &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-sandi-lin.png&#x22; alt=&#x22;Sandi Lin&#x22;&#x3E;
           &#x3C;h3&#x3E;Sandi Lin&#x3C;/h3&#x3E;
           &#x3C;p&#x3E;with Sarah Sutherland&#x3C;/p&#x3E;
           &#x3C;p&#x3E;Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.&#x3C;/p&#x3E;
@@ -545,8 +547,14 @@
   <script type="text/javascript" src="//fast.fonts.net/jsapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.js"></script>
   <!-- Syntax highlighter -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
   <script src="assets/js/global-min.js"></script>
-  
+  <script>
+    smoothScroll.init({
+      selectorHeader: '[data-scroll-header]'
+    });
+  </script>
+
   <!-- Initialize syntax highlighter -->
   <script>hljs.initHighlightingOnLoad();</script>
   </body>

@@ -10,13 +10,21 @@
     color: white;
     margin: 0 auto;
     text-align: center;
-    padding: 40px 0 20px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: $coral;
     
     img {
       max-width: 300px;
       vertical-align: middle;
       margin-right: 15px;
     }
+  }
+  main {
+    margin-top: 182px;
   }
   button {
     color: white;
@@ -44,11 +52,12 @@
   }
   nav a {
     padding: 0 20px;
+    display: inline-block;
   }
 }
 .module-wrap {
-  @extend .border;
   padding-top: 100px;
+  @extend .border;
   
   + .border {
     margin-top: 0;
@@ -60,10 +69,6 @@
     padding-bottom: 10px;
     font-size: 3.5rem;
     text-align: left;
-
-    &.first {
-      padding-top: 10px;
-    }
   }
   h3 {
     font-size: 2.5rem;

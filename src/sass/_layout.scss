@@ -68,7 +68,7 @@
   @include min-width($screen-sm){
     width: 32%;
     
-    &:nth-of-type(2) {
+    &:nth-of-type(3n+2) {
       margin-left: 2%;
       margin-right: 2%;
     }
