@@ -18,7 +18,59 @@
   max-width: 620px;
   margin: 0 auto;
 }
+.wrapper-lg {
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  @include max-width($screen-lg){
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
+// Columns
+// ---------------------------------------------------------
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// goes from 3 columns to 1
+.grid-3-1 {
+  margin-bottom: 20px;
+  
+  @include min-width($screen-sm){
+    width: 32%;
+    
+    &:nth-of-type(3n+2) {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }
+}
+
+// goes from 4 columns to 2 to 1
+.grid-4-2-1 {
+  margin-bottom: 20px;
+  
+  @include min-width($screen-med){
+    width: 23.875%;
+    margin-left: 1.5%;
+    
+    &:nth-of-type(4n+1) {
+      margin-left: 0;
+    }
+  }
+  @include min-max($screen-sm, $screen-med){
+    width: 32%;
+    
+    &:nth-of-type(3n+2) {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }
+}
 
 // Module container
 // ---------------------------------------------------------
@@ -53,24 +105,7 @@
 
 
 
-// Columns
-// ---------------------------------------------------------
-.grid-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
-// goes from 3 columns to 1
-.grid-3-1 {
-  margin-bottom: 20px;
-  
-  @include min-width($screen-sm){
-    width: 32%;
-    
-    &:nth-of-type(3n+2) {
-      margin-left: 2%;
-      margin-right: 2%;
-    }
-  }
-}
+
+
+

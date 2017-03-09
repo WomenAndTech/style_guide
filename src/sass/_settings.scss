@@ -121,6 +121,7 @@ $font-size-subtext:      1.4rem;
 $screen-xsm: 400px;
 $screen-sm: 660px;
 $screen-med: 980px;
+$screen-lg: 1280px;
 
 @mixin max-width($max) {
   @media only screen and (max-width: $max) { @content; }

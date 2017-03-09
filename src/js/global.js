@@ -13,6 +13,10 @@ $(function() {
   var currentYear = (new Date()).getFullYear();
   $("[data-year]").text(currentYear);
   
+
+  // Opens external links in a new window
+  $("a[href^='http://'], a[href^='https://'], a[href^='//']").attr("target","_blank");
+  
   
   // Shows browser size just for testing
   function jqUpdateSize(){
