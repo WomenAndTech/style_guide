@@ -28,8 +28,9 @@
     
     &:hover,
     &.active {
-      font-weight: $type-bold;
       color: white;
+      text-shadow: 0.04rem 0px 0 #fff, 
+                   -0.04rem 0px 0px #fff;
     }
   }
 }
