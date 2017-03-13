@@ -150,6 +150,10 @@ dl.border {
   }
 }
 
+.img-feature {
+  min-height: 600px;
+}
+
 // Single images
 .img-portrait figure,
 .img-portrait img {
@@ -186,8 +190,6 @@ dl.border {
 }
 
 
-
-
 // Past Interviews
 // ---------------------------------------------------------
 .past-interviews {
@@ -203,6 +205,14 @@ dl.border {
   }
   img {
     width: 100%;
+    transition: transform 0.25s ease-in-out;
+  }
+  a {
+    overflow: hidden;
+    
+    &:hover img {
+      transform: scale(1.1);  
+    }
   }
   [class*="grid-"]:not(.grid-wrapper) {
     text-align: center;

@@ -53,3 +53,27 @@ strong,
 b {
   font-weight: $type-bold;
 }
+
+
+
+// Fade in content - also uses JS in global.js
+// ---------------------------------------------------------
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.fade-in {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

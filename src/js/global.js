@@ -1,7 +1,6 @@
 $(function() {
   
-  // STYLE GUIDE
-  // Change theme based on button click
+  // Style guide: change theme based on button click
   $('[data-theme]').click(function() {
     var currentTheme = $(this).data('theme');
     $('body').removeClass (function (index, css) {
@@ -9,22 +8,33 @@ $(function() {
     }).addClass('theme-'+currentTheme);
   });
   
-  // Adds current year to copyright date
+  
+  // Adds current year to copyright date in footer
   var currentYear = (new Date()).getFullYear();
   $("[data-year]").text(currentYear);
   
-
-  // Opens external links in a new window
+  
+  // Opens all external links in a new window
   $("a[href^='http://'], a[href^='https://'], a[href^='//']").attr("target","_blank");
   
   
-  // Shows browser size just for testing
-  function jqUpdateSize(){
-    var pageWidth = $(document).width();
-    var pageHeight = $(document).height();
-    $('#width').html(pageWidth);
-    $('#height').html(pageHeight);
-  }
-  $(document).ready(jqUpdateSize);
-  $(window).resize(jqUpdateSize);
+  // Fade in content
+  // https://github.com/dirkgroenen/jQuery-viewport-checker
+  $('.border:not(:first-child) > *').addClass("hidden").viewportChecker({
+    classToAdd: 'visible fade-in',
+    classToRemove: 'hidden',
+    offset: 100
+  });
+
+
+  // ONLY FOR TESTING
+  // Shows browser size
+  // function jqUpdateSize(){
+  //   var pageWidth = $(document).width();
+  //   var pageHeight = $(document).height();
+  //   $('#width').html(pageWidth);
+  //   $('#height').html(pageHeight);
+  // }
+  // $(document).ready(jqUpdateSize);
+  // $(window).resize(jqUpdateSize);
 });
