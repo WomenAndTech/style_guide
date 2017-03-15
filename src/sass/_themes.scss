@@ -27,7 +27,6 @@
       @include underline-shadow($black, #fff, $color);
     }
     // Theme color underline, no shadow
-    .footer-links a,
     [class*="img-"] a {
       @include underline-shadow($color, transparent, $color);
     }
@@ -44,7 +43,8 @@
     .author a {
       @include theme-links-inverse($color);
     }
-    .credits a {
+    .credits a,
+    .footer-links a {
       @include theme-links($color);
     }
     
