@@ -20,11 +20,20 @@ $(function() {
   
   // Fade in content
   // https://github.com/dirkgroenen/jQuery-viewport-checker
-  $('.border:not(:first-child) > *').addClass("hidden").viewportChecker({
-    classToAdd: 'visible fade-in',
-    classToRemove: 'hidden',
-    offset: 100
-  });
+  var $fadeInInterview = $('.interview').find('.border:not(:first-child) > *');
+  var $fadeInPage = $('.default-page').find('.wrapper-sm > *:not(h2):not(p:first-of-type)');
+  function fadeIn(obj) {
+    obj.addClass("hidden").viewportChecker({
+      classToAdd: 'visible fade-in',
+      classToRemove: 'hidden',
+      offset: 100
+    });
+  }
+  
+  fadeIn($fadeInPage);
+  fadeIn($fadeInInterview);
+  
+
 
 
   // ONLY FOR TESTING

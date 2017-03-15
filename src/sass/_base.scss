@@ -54,7 +54,6 @@ b {
 }
 
 
-
 // Fade in content - also uses JS in global.js
 // ---------------------------------------------------------
 .hidden {
@@ -66,7 +65,7 @@ b {
 .fade-in {
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-name: fadeIn;
+  animation-name: fade-in;
 }
 @keyframes fade-in {
   from {
