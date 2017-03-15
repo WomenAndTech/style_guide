@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.css">
-
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/style-guide.css">
   
@@ -448,69 +446,66 @@
     <section class="module-wrap">
       <h2>Past Interview Cards</h2>
       <p><strong>Added as a global include file in the template.</strong> This is here for reference only.</p>
-<pre><code>&#x3C;!-- // Past Interviews --&#x3E;
-&#x3C;aside class=&#x22;past-interviews&#x22;&#x3E;
-  &#x3C;div class=&#x22;wrapper&#x22;&#x3E;
-    &#x3C;h2&#x3E;Past Interviews&#x3C;/h2&#x3E;
+<pre><code>&#x3C;aside class=&#x22;past-interviews wrapper&#x22;&#x3E;
+    &#x3C;h2&#x3E;Latest Interviews&#x3C;/h2&#x3E;
+    &#x3C;a class=&#x22;view-all&#x22; href=&#x22;/archive/&#x22;&#x3E;view all&#x3C;/a&#x3E;
     &#x3C;div class=&#x22;grid-wrapper&#x22;&#x3E;
-      &#x3C;section class=&#x22;grid-3-1&#x22;&#x3E;
-        &#x3C;a href=&#x22;#link-to-interview&#x22; class=&#x22;no-underline&#x22;&#x3E;
+      &#x3C;article class=&#x22;grid-3-1&#x22;&#x3E;
+        &#x3C;a href=&#x22;/interview/sara-hicks/&#x22; class=&#x22;no-underline&#x22;&#x3E;
           &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-sara-hicks.png&#x22; alt=&#x22;Sara Hicks&#x22;&#x3E;
-          &#x3C;h3&#x3E;Sarah Hicks&#x3C;/h3&#x3E;
+          &#x3C;h3&#x3E;Sara Hicks&#x3C;/h3&#x3E;
           &#x3C;p&#x3E;with Sophie He&#x3C;/p&#x3E;
-          &#x3C;p&#x3E;Co-founder and CEO of Reaction Commerce, an open source eCommerce platform.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;Cofounder and CEO of Reaction Commerce, an open-source ecommerce platform.&#x3C;/p&#x3E;
         &#x3C;/a&#x3E;
-      &#x3C;/section&#x3E;
-      &#x3C;section class=&#x22;grid-3-1&#x22;&#x3E;
-        &#x3C;a href=&#x22;#link-to-interview&#x22; class=&#x22;no-underline&#x22;&#x3E;
+      &#x3C;/article&#x3E;
+      &#x3C;article class=&#x22;grid-3-1&#x22;&#x3E;
+        &#x3C;a href=&#x22;/interview/mitchell-baker/&#x22; class=&#x22;no-underline&#x22;&#x3E;
           &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-mitchell-baker.png&#x22; alt=&#x22;Mitchell Baker&#x22;&#x3E;
           &#x3C;h3&#x3E;Mitchell Baker&#x3C;/h3&#x3E;
           &#x3C;p&#x3E;with Cassie McDaniel&#x3C;/p&#x3E;
-          &#x3C;p&#x3E;Founder of the non-profit tech company Mozilla, creator of Firefox and champion of the open web.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&#x3C;/p&#x3E;
         &#x3C;/a&#x3E;
-      &#x3C;/section&#x3E;
-      &#x3C;section class=&#x22;grid-3-1&#x22;&#x3E;
-        &#x3C;a href=&#x22;#link-to-interview&#x22; class=&#x22;no-underline&#x22;&#x3E;
+      &#x3C;/article&#x3E;
+      &#x3C;article class=&#x22;grid-3-1&#x22;&#x3E;
+        &#x3C;a href=&#x22;/interview/sandi-lin/&#x22; class=&#x22;no-underline&#x22;&#x3E;
           &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-sandi-lin.png&#x22; alt=&#x22;Sandi Lin&#x22;&#x3E;
           &#x3C;h3&#x3E;Sandi Lin&#x3C;/h3&#x3E;
           &#x3C;p&#x3E;with Sarah Sutherland&#x3C;/p&#x3E;
           &#x3C;p&#x3E;Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.&#x3C;/p&#x3E;
         &#x3C;/a&#x3E;
-      &#x3C;/section&#x3E;
+      &#x3C;/article&#x3E;
     &#x3C;/div&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/aside&#x3E;</code></pre>
+  &#x3C;/aside&#x3E;</code></pre>
     </section>
     
-    <aside class="past-interviews">
-      <div class="wrapper">
-        <h2>Past Interviews</h2>
-        <div class="grid-wrapper">
-          <section class="grid-3-1">
-            <a href="#link-to-interview" class="no-underline">
-              <img src="assets/img/thumbnail-sara-hicks.png" alt="Sara Hicks">
-              <h3>Sarah Hicks</h3>
-              <p>with Sophie He</p>
-              <p>Co-founder and CEO of Reaction Commerce, an open source eCommerce platform.</p>
-            </a>
-          </section>
-          <section class="grid-3-1">
-            <a href="#link-to-interview" class="no-underline">
-              <img src="assets/img/thumbnail-mitchell-baker.png" alt="Mitchell Baker">
-              <h3>Mitchell Baker</h3>
-              <p>with Cassie McDaniel</p>
-              <p>Founder of the non-profit tech company Mozilla, creator of Firefox and champion of the open web.</p>
-            </a>
-          </section>
-          <section class="grid-3-1">
-            <a href="#link-to-interview" class="no-underline">
-              <img src="assets/img/thumbnail-sandi-lin.png" alt="Sandi Lin">
-              <h3>Sandi Lin</h3>
-              <p>with Sarah Sutherland</p>
-              <p>Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.</p>
-            </a>
-          </section>
-        </div>
+    <aside class="interview-cards wrapper">
+      <h2>Latest Interviews</h2>
+      <a class="view-all" href="/archive/">view all</a>
+      <div class="grid-wrapper">
+        <article class="grid-3-1">
+          <a href="/interview/sara-hicks/" class="no-underline">
+            <img src="assets/img/thumbnail-sara-hicks.png" alt="Sara Hicks">
+            <h3>Sara Hicks</h3>
+            <p>with Sophie He</p>
+            <p>Cofounder and CEO of Reaction Commerce, an open-source ecommerce platform.</p>
+          </a>
+        </article>
+        <article class="grid-3-1">
+          <a href="/interview/mitchell-baker/" class="no-underline">
+            <img src="assets/img/thumbnail-mitchell-baker.png" alt="Mitchell Baker">
+            <h3>Mitchell Baker</h3>
+            <p>with Cassie McDaniel</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </a>
+        </article>
+        <article class="grid-3-1">
+          <a href="/interview/sandi-lin/" class="no-underline">
+            <img src="assets/img/thumbnail-sandi-lin.png" alt="Sandi Lin">
+            <h3>Sandi Lin</h3>
+            <p>with Sarah Sutherland</p>
+            <p>Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.</p>
+          </a>
+        </article>
       </div>
     </aside>
   </main>
@@ -518,6 +513,7 @@
   <!-- for testing only -->
   <!-- <p style="position:fixed;bottom:20px;left:10px;color:black;background:white;padding:5px;"><span id="width"></span> x <span id="height"></span></p> -->
   
+  <!-- // Primary Footer -->
   <footer class="footer-primary">
     <section>
       <p>&copy; 2012 - <span data-year></span> Women&&Tech. <span class="nowrap">Made in Toronto. All Rights Reserved.</span></p>
@@ -537,18 +533,37 @@
     <section>
       <p>Connect with us: </p>
       <ul class="footer-links">
-        <li><a href="//twitter.com/WomenAndTech">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Email</a></li>
+        <li>
+          <a href="//facebook.com" title="Facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span class="screen-readers">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="//twitter.com/WomenAndTech" title="Twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span class="screen-readers">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="//instagram.com/WomenAndTech" title="Instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span class="screen-readers">Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@womenandtech.com" title="Email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span class="screen-readers">Email</span>
+          </a>
+        </li>
       </ul>
     </section>
   </footer>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
   <script>!window.jQuery && document.write('<script src="assets/js/jquery-2.2.3.min.js"><\/script>')</script>
-  <!-- Fonts -->
-  <script type="text/javascript" src="//fast.fonts.net/jsapi/28b6dbe0-7189-4bf0-b1ff-a727583465ca.js"></script>
-  
+    
   <!-- Only used in style guide -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
   <script src="assets/js/smooth-scroll.min.js"></script>

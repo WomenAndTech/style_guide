@@ -186,11 +186,12 @@ dl.border {
 }
 
 
-// Past Interviews
+// Past/Latest Interviews
 // ---------------------------------------------------------
-.past-interviews {
+.interview-cards {
   margin-top: 35px;
   font-size: $font-size-body-sm;
+  position: relative;
 
   h2 {
     color: white;
@@ -209,6 +210,12 @@ dl.border {
     &:hover img {
       transform: scale(1.1);  
     }
+  }
+  .view-all {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: white;
   }
   [class*="grid-"]:not(.grid-wrapper) {
     text-align: center;
