@@ -2,7 +2,6 @@
 // PAGE LAYOUTS & GRIDS
 // ---------------------------------------------------------
 
-
 // Content wrappers
 // ---------------------------------------------------------
 .wrapper {
@@ -72,14 +71,10 @@
   }
 }
 
-// Module container
+// Module / component container
 // ---------------------------------------------------------
 .border {
   background: white;
-  
-  + .border {
-    // margin-top: -20px;
-  }
   
   @include min-width($screen-xsm){
     margin: 0 20px;

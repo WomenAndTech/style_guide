@@ -1,7 +1,7 @@
 // ---------------------------------------------------------
 // BASE STYLES
 // ---------------------------------------------------------
-// Global and site-wide styles
+// site-wide styles
 
 html {
   box-sizing: border-box;
@@ -44,12 +44,10 @@ button {
   cursor: pointer;
   font-size: $font-size-body;
 }
-i,
-em {
+i, em {
   font-style: italic;
 }
-strong,
-b {
+strong, b {
   font-weight: $type-bold;
 }
 

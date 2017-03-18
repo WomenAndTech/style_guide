@@ -3,11 +3,11 @@
 // ---------------------------------------------------------
 // The class (prepended with "theme-") needs to be added 
 // to the <body> element for the theme styles to work. 
+// Added and customized using PHP variables on each page.
 
-
-// http://sass-lang.com/documentation/file.SASS_REFERENCE.html#each-directive
 // $theme = class name
 // $color = color variable listed in settings.scss
+// http://sass-lang.com/documentation/file.SASS_REFERENCE.html#each-directive
 @each $theme, $color in ('coral', $coral),
                         ('purple', $purple),
                         ('yellow', $yellow),
@@ -17,7 +17,7 @@
   .theme-#{$theme} {
     background-color: $color;
     
-    // Underline on theme color background
+    // White underline on theme colored background
     main a {
       @include underline-shadow(#fff, $color, #fff);
     }
@@ -43,19 +43,20 @@
     .author a {
       @include theme-links-inverse($color);
     }
-    .credits a,
-    .footer-links a {
+    .credits a {
       @include theme-links($color);
-    }
-    
-    // Style guide page
-    .module-wrap h2:first-child {
-      border-bottom: 1px solid $color;
     }
     
     // Global footer
     input[type="submit"]{
       color: $color;
+      
+      &:hover {
+        color: $black;
+      }
+    }
+    .footer-links a {
+      @include theme-links-inverse($color);
     }
     
     // Team component
@@ -63,7 +64,7 @@
       @include underline-shadow($black, white, $color);
     }
     
-    // Helper class, add to any element to add theme color
+    // Helper class - add to any element for one off styles
     .theme-color {
       color: $color;
     }
@@ -77,5 +78,8 @@
       outline: 1px solid darken($color, 10%);
     }
   }
+  .module-wrap h2:first-child {
+    border-bottom: 1px solid $color;
+  }
   
-}
+} // closing @each

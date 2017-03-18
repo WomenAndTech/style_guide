@@ -1,6 +1,6 @@
 # Women&&Tech Style Guide
 
-This repo is designed to house the current styles and components used on [http://womenandtech.com](http://womenandtech.com).  Essentially it will be the basics to create a proper theme no matter what underlying CMS/Blogging platform is used.
+This style guide provides the markup and CSS for the components used on [http://womenandtech.com](http://womenandtech.com).  These modules can be used to create full page layouts that are consistent and simple to put together.
 
 ## Goals
 
@@ -8,18 +8,15 @@ This repo is designed to house the current styles and components used on [http:/
 - Avoid unnecessary divs
 - Build reusable components
 
-## Contributing
-
-[in progress]
-
 The latest updates can be viewed here: <a href="http://womenandtech.github.io/style_guide/" target="_blank">http://womenandtech.github.io/style_guide/</a>
 
-The **src** folder contains the un-minified sass and js files.  Using your compiler or task runner of choice, make sure to follow these guidelines:
+## File structure
+The **src** folder contains the un-minified sass and js files used for development.  Using your compiler, app or task runner of choice, make sure to follow these guidelines:
 
-* src/sass/styles.scss imports all of the partial sass files and should be minified and saved to the **css** folder
-* make sure to include autoprefixr when compiling the sass files
-* src/js/ contains the dev js files and should be minified and saved to the root **js** folder
-
+* src/sass/styles.scss imports all of the partial sass files and should be minified and saved to the **assets/css** folder
+* src/sass/style-guide.scss is only used in this style guide and is not required to be included in the global css file or womenandtech.com site files
+* make sure to include [autoprefixr](https://github.com/postcss/autoprefixer) or something similar when compiling the sass files
+* src/js/ contains the js files for devlopment and should be minified and saved to the **assets/js** folder
 
 This project uses [editorconfig](http://editorconfig.org/) to maintain consistent coding style. Make sure your text editor has the editorconfig [plugin](http://editorconfig.org/#download) installed.
 

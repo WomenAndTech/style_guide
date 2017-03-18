@@ -47,6 +47,8 @@ $font-size-subtext:      1.4rem;
 // ---------------------------------------------------------
 // MIXINS
 // ---------------------------------------------------------
+
+// Clearfix for floated elements
 @mixin clearfix {
   &:after {
     content: "";
@@ -55,13 +57,17 @@ $font-size-subtext:      1.4rem;
   }
 }
 
+// For retina displays
 @mixin retina {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @content;
   }
 }
 
-// Link is the same color as the theme
+
+// LINKS
+// ---------------------------------------------------------
+// same color as the theme
 @mixin theme-links($color) {
   background: none;
   text-shadow: none;
@@ -71,8 +77,7 @@ $font-size-subtext:      1.4rem;
     color: $black;
   }
 }
-
-// Link hover is the same color as the theme
+// hover is the same color as the theme
 @mixin theme-links-inverse($color) {
   background: none;
   text-shadow: none;
@@ -81,25 +86,7 @@ $font-size-subtext:      1.4rem;
     color: $color;
   }
 }
-
-@mixin list-reset {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  list-style-type: none;
-}
-@mixin list-reset-inline {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  list-style-type: none;
-  
-  li {
-    display: inline-block;
-  }
-}
-
-// Underline style used for links
+// custom underline style
 @mixin underline-shadow($line-color, $shadow-color, $hover-color) {
   // adds underline
   background: linear-gradient(to bottom, $line-color 0, $line-color 100%) repeat-x 0 82% / 1px 1px;
@@ -113,6 +100,27 @@ $font-size-subtext:      1.4rem;
   }
 }
 
+
+// LISTS
+// ---------------------------------------------------------
+// Removes default styles
+@mixin list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+// Removes default styles and displays horrizontal
+@mixin list-reset-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+  
+  li {
+    display: inline-block;
+  }
+}
 
 
 // ---------------------------------------------------------

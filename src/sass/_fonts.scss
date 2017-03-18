@@ -49,19 +49,20 @@ This CSS resource incorporates links to font software which is the valuable copy
   font-style: italic;
 }
 
+/*
+---------------------------------------------------------
+Font Awesome 4.6.3 by @davegandy http://fontawesome.io 
+License - http://fontawesome.io/license 
+(Font: SIL OFL 1.1, CSS: MIT License)
+---------------------------------------------------------
+I didn't add the whole Font Awesome library since we're 
+(currently) only using few icons and no other styles.
+See link above or refer to the font-awesome.css
+in the "src" folder. 
 
-// ---------------------------------------------------------
-// Font Awesome 4.6.3 by @davegandy 
-// http://fontawesome.io - @fontawesome
-// License - http://fontawesome.io/license 
-// (Font: SIL OFL 1.1, CSS: MIT License)
-// ---------------------------------------------------------
-// Didn't add the whole Font Awesome library since we're 
-// (currently) only using few icons and no other styles.
-// See link above for more info or refer to font-awesome.css
-// in the "src" folder.
-// Also, view http://fontawesome.io/accessibility/ for 
-// accessibility info.
+Also, view http://fontawesome.io/accessibility/ for 
+accessibility info.
+*/
 
 @font-face {
   font-family: 'FontAwesome';
@@ -78,7 +79,6 @@ This CSS resource incorporates links to font software which is the valuable copy
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .fa-twitter:before {
   content: "\f099";
 }
