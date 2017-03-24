@@ -17,9 +17,9 @@
   .theme-#{$theme} {
     background-color: $color;
     
-    // White underline on theme colored background
-    main a {
-      @include underline-shadow(#fff, $color, #fff);
+    // White underline on theme colored background, black on hover
+    .no-border a {
+      @include underline-shadow(#fff, $color, $black);
     }
     // Black underline on white background
     .border a,
@@ -31,6 +31,7 @@
       @include underline-shadow($color, transparent, $color);
     }
     // No underline
+    .no-underline a,
     a.no-underline {
       @include underline-shadow(transparent, transparent, transparent);
       
@@ -68,6 +69,14 @@
     .theme-color {
       color: $color;
     }
+    
+    // Style guide page
+    .module-wrap h2:first-child {
+      border-bottom: 1px solid $color;
+    }
+    &.style-guide header:first-child {
+      background: $color;
+    }
   }
   
   // Style guide page
@@ -78,8 +87,6 @@
       outline: 1px solid darken($color, 10%);
     }
   }
-  .module-wrap h2:first-child {
-    border-bottom: 1px solid $color;
-  }
+  
   
 } // closing @each

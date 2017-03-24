@@ -27,8 +27,8 @@ $font-size-pullquote:    2.9rem; // lh 42px = 1.45
 $font-size-intro:        2.2rem; // lh 34px = 1.54
 $font-size-questions:    2.0rem; // lh 28px = 1.4
 $font-size-body:         1.8rem; // lh 30px = 1.66
-$font-size-body-sm:      1.6rem;
-$font-size-subtext:      1.4rem;
+$font-size-sm:           1.6rem;
+$font-size-xsm:          1.4rem;
 
 
 // ---------------------------------------------------------
@@ -41,6 +41,16 @@ $font-size-subtext:      1.4rem;
 .screen-readers {
   text-indent: -9999px;
   display: inline-block;
+}
+.spacer30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.spacer30-bottom {
+  margin-bottom: 30px;
+}
+.spacer30-top {
+  margin-top: 30px;
 }
 
 

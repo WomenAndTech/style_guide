@@ -102,9 +102,8 @@ article h2 {
   
   p {
     @extend .wrapper-sm;
-    font-size: $font-size-body-sm;
+    font-size: $font-size-sm;
   }
-  
   @include min-width($screen-sm){
     margin-top: 80px;
     margin-bottom: 66px;
@@ -128,7 +127,7 @@ article h2 {
 // ---------------------------------------------------------
 .footer-primary {
   background: white;
-  font-size: $font-size-subtext;
+  font-size: $font-size-xsm;
   margin-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -171,7 +170,7 @@ article h2 {
     border: none;
     background: none;
     text-transform: uppercase;
-    font-size: $font-size-subtext;
+    font-size: $font-size-xsm;
     font-weight: $type-bold;
     cursor: pointer;
     padding: 0;
@@ -205,7 +204,23 @@ article h2 {
     }
   }
 }
-
+.footer-secondary {
+  text-align: center;
+  font-size: $font-size-sm;
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @include min-width($screen-sm){
+    margin-top: 80px;
+    margin-bottom: 66px;
+  }
+  @include max-width($screen-sm){
+    margin-top: 60px;
+    margin-bottom: 46px;
+  }
+}
 .footer-links {
   // colors added in themes.scss
   @include list-reset-inline;
@@ -226,6 +241,12 @@ article h2 {
   ul {
     @include list-reset-inline;
     margin-bottom: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    li {
+      margin-bottom: 25px;
+    }
   }
   p {
     margin: 0;
@@ -236,10 +257,10 @@ article h2 {
     display: inline-block;
   }
   .role {
-    font-size: $font-size-body-sm;
+    font-size: $font-size-sm;
   }
   .thanks {
-    font-size: $font-size-subtext;
+    font-size: $font-size-xsm;
     font-style: italic;
   }
   @include max-width($screen-med) {
@@ -255,7 +276,7 @@ article h2 {
     }
   }
   @include min-width($screen-med) {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
 }
 
@@ -274,3 +295,14 @@ article h2 {
   }
 }
 
+
+// Letter to the readers page
+// ---------------------------------------------------------
+.supporter-logos {
+  text-align: center;
+  margin-bottom: 30px;
+  
+  img {
+    margin: 1em;
+  }
+}

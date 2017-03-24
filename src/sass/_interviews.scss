@@ -53,7 +53,7 @@
 
 .author,
 .credits {
-  font-size: $font-size-subtext;
+  font-size: $font-size-xsm;
   
   a {
     font-weight: $type-bold;
@@ -140,7 +140,7 @@ dl.border {
   figcaption {
     position: absolute;
     bottom: 0;
-    font-size: $font-size-body;
+    font-size: $font-size-xsm;
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
     padding: 12px;
@@ -191,7 +191,7 @@ dl.border {
 // Used in Latest Interviews component and Archive page
 .interview-cards {
   margin-top: 35px;
-  font-size: $font-size-body-sm;
+  font-size: $font-size-sm;
   position: relative;
 
   h2 {
