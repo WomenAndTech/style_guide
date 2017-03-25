@@ -26,10 +26,6 @@
     .module-wrap a {
       @include underline-shadow($black, #fff, $color);
     }
-    // Theme color underline, no shadow
-    [class*="img-"] a {
-      @include underline-shadow($color, transparent, $color);
-    }
     // No underline
     .no-underline a,
     a.no-underline {

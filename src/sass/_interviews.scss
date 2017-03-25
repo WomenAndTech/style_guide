@@ -5,10 +5,10 @@
 .header-interview {
   h2 {
     font-size: $font-size-heading-lg;
-    margin: 0 0 35px;
+    margin: 0 0 16px;
   }
   .wrapper-sm {
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $gray-light;
     padding-bottom: 45px;
     margin-bottom: 20px;
   }
@@ -47,12 +47,12 @@
     }
   }
   @include min-width($screen-xsm){
-    padding-top: 30px;
+    padding-top: 20px;
   }
 }
 
 .author,
-.credits {
+.credits ul {
   font-size: $font-size-xsm;
   
   a {
@@ -63,10 +63,11 @@
 
 .credits {
   padding-bottom: 60px;
+  font-size: $font-size-xsm;
   
   ul {
     @include list-reset;
-    border-top: 1px solid $gray;
+    border-top: 1px solid $gray-light;
     padding-top: 45px;
     @extend .wrapper-sm;
     
@@ -77,7 +78,6 @@
   p {
     @extend .wrapper-sm;
     margin-top: 30px;
-    font-style: italic;
   }
 }
 
@@ -86,8 +86,8 @@
 // ---------------------------------------------------------
 // www.w3.org/TR/html/grouping-content.html#the-dl-element
 dl.border {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .interview-q,
 .interview-a {
@@ -97,7 +97,7 @@ dl.border {
   font-size: $font-size-questions;
   line-height: 1.4;
   font-weight: $type-bold;
-  margin-bottom: 25px;
+  margin-bottom: 1em;
 }
 
 
@@ -107,7 +107,7 @@ dl.border {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
   line-height: 1.45;
-  padding: 32px 20px;
+  padding: 16px 10px 26px;
   
   p {
     @extend .wrapper-sm;
@@ -130,24 +130,26 @@ dl.border {
 // ---------------------------------------------------------
 // Interview images are wrapped in a class with the -img prefix
 [class*="img-"] {
-  figure {
-    margin: 0 auto 20px;
-    position: relative;
-    // gets rid of extra space under image
-    // font-size redeclared in figcaption
-    font-size: 0; 
-  }
-  figcaption {
-    position: absolute;
-    bottom: 0;
-    font-size: $font-size-xsm;
-    background: rgba(255, 255, 255, 0.7);
-    width: 100%;
-    padding: 12px;
-  }
   img {
     width: 100%;
   }
+  &.border a {
+    background: none;
+    
+    &:hover {
+      color: #000000;
+    }
+  }
+}
+figure {
+  margin: 0 auto 20px;
+  font-size: 0; 
+}
+figcaption {
+  font-size: $font-size-xsm;
+  line-height: 1.5;
+  padding: 8px 0 0;
+  color: $gray-med;
 }
 
 // Single images
@@ -164,8 +166,6 @@ dl.border {
 .img-side-by-side {
   @include min-width($screen-sm){
     display: flex;
-    align-items: center;
-    justify-content: center;
     
     figure {
       max-width: 460px;

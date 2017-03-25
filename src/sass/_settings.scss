@@ -10,7 +10,8 @@ $yellow:                 #eaaf1d;
 $green:                  #0ab070;
 $blue:                   #105ac6;
 $black:                  #2b2b2b;
-$gray:                   #d2d2d2;
+$gray-light:             #d2d2d2;
+$gray-med:               #808080;
 
 
 // Typography
@@ -21,7 +22,7 @@ $type-bold:              700;
 
 // Using the 62.5% method to calculate rem.
 // http://snook.ca/archives/html_and_css/font-size-with-rem
-$font-size-heading-lg:   6.0rem;
+$font-size-heading-lg:   5.0rem;
 $font-size-heading:      2.4rem;
 $font-size-pullquote:    2.9rem; // lh 42px = 1.45
 $font-size-intro:        2.2rem; // lh 34px = 1.54
@@ -34,14 +35,19 @@ $font-size-xsm:          1.4rem;
 // ---------------------------------------------------------
 // HELPER CLASSES
 // ---------------------------------------------------------
+.italic {
+  font-style: italic;
+}
 .nowrap {
   white-space: nowrap;
 }
+
 // Adds text for screen readers but hides it for visual users
 .screen-readers {
   text-indent: -9999px;
   display: inline-block;
 }
+
 .spacer30 {
   margin-top: 30px;
   margin-bottom: 30px;
