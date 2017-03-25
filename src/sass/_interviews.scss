@@ -207,6 +207,7 @@ figcaption {
   }
   a {
     overflow: hidden;
+    display: inline-block;
     
     &:hover img {
       transform: scale(1.1);  
