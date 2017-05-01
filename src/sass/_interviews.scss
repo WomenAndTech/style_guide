@@ -107,7 +107,8 @@ dl.border {
   font-weight: $type-bold;
   font-size: $font-size-pullquote;
   line-height: 1.45;
-  padding: 16px 10px 26px;
+  padding-top: 16px;
+  padding-bottom: 26px;
   
   p {
     @extend .wrapper-sm;
@@ -208,6 +209,7 @@ figcaption {
   a {
     overflow: hidden;
     display: inline-block;
+    cursor: pointer;
     
     &:hover img {
       transform: scale(1.1);  
@@ -215,7 +217,7 @@ figcaption {
   }
   .view-all {
     position: absolute;
-    top: 10px;
+    top: 7px;
     right: 0;
     color: white;
   }
@@ -231,8 +233,14 @@ figcaption {
     }
   }
   @include min-max($screen-xsm, $screen-sm){
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+  @include max-width($screen-sm){    
+    .view-all {
+      position: relative;
+      top: -20px;
+    }
   }
   @include max-width($screen-xsm){
     padding-left: 20px;

@@ -59,8 +59,9 @@ strong, b {
 .visible {
   opacity: 1;
 }
+
 .fade-in {
-  animation-duration: 1s;
+  animation-duration: 0.2s;
   animation-fill-mode: both;
   animation-name: fade-in;
 }

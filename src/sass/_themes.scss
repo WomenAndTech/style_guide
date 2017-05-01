@@ -56,11 +56,6 @@
       @include theme-links-inverse($color);
     }
     
-    // Team component
-    .team-listing .name {
-      @include underline-shadow($black, white, $color);
-    }
-    
     // Helper class - add to any element for one off styles
     .theme-color {
       color: $color;
