@@ -29,24 +29,33 @@
 </head>
 <body class="style-guide theme-coral">
   <header>
-    <h1><img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">Style Guide</h1>
+    <img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">
+    <h1>Style Guide & Templates</h1>
     
-    <nav data-scroll-header>
-      <a data-scroll href="#templates">Templates</a>
-      <a data-scroll href="#themes">Themes</a>
-      <a data-scroll href="#headings">Headings</a>
+    <nav class="nav-primary" data-scroll-header>
+      <a data-scroll href="#templates">Templates & Themes</a>
+      <!-- <a data-scroll href="#themes">Themes</a> -->
+      <a data-scroll href="#headings">Headers</a>
+      <a data-scroll href="#footers">Footers</a>
       <a data-scroll href="#images">Images</a>
+      <!-- <a data-scroll href="#headings" class="content">Content ▼</a> -->
       <a data-scroll href="#qa">Q&A</a>
       <a data-scroll href="#quote">Pull Quote</a>
       <a data-scroll href="#team">Team</a>
-      <a data-scroll href="#footers">Footers</a>
+      <a data-scroll href="#misc">Misc</a>
+      <!-- <ul class="dropdown">
+        <li><a data-scroll href="#qa">Q&A</a></li>
+        <li><a data-scroll href="#quote">Pull Quote</a></li>
+        <li><a data-scroll href="#team">Team</a></li>
+        <li><a data-scroll href="#misc">Misc</a></li>
+      </ul> -->
     </nav>
   </header>
     
   <main role="main">
     <!-- // Page Templates // -->
-    <section class="module-wrap" id="templates">
-      <h2 class="first">Full Page Templates</h2>
+    <section class="border module-info">
+      <h2 id="templates">Templates</h2>
       <ul>
         <li><a href="base-template.html" target="_blank">Base Markup Template</a>
           <ul>
@@ -55,61 +64,51 @@
             <li>Theme color classes should be added to the <code>&lt;body&gt;</code> tag</li>
           </ul>
         </li>
-        <li><a href="page-template.html" target="_blank">Full Page Example</a>
+        <li><a href="page-template.html" target="_blank">Page Example</a>
           <ul>
             <li>Use for static content (e.g. About)</li>
           </ul>
         </li>
         <li>
-          <a href="interview-template.html" target="_blank">Full Interview Example</a>
+          <a href="interview-template.html" target="_blank">Interview Example</a>
+          <ul>
+            <li>Use for interview pages</li>
+          </ul>
         </li>
       </ul>
+      <p>Refer to the sections below for specific content module examples and code snippets.</p>
     </section>
     
+    
+    
     <!-- // Themes & Colours // -->
-    <section class="module-wrap" id="themes">
-      <h2>Themes & Colours</h2>
-      <p>Select a button below to change the theme. Theme changes include:</p>
+    <section class="border module-info">
+      <h2 id="themes">Themes</h2>
+      
+      <button class="coral" data-theme="coral">.theme-coral</button>
+      <button class="purple" data-theme="purple">.theme-purple</button>
+      <button class="yellow" data-theme="yellow">.theme-yellow</button>
+      <button class="green" data-theme="green">.theme-green</button>
+      <button class="blue" data-theme="blue">.theme-blue</button>
+      
+      <p>Select a button to view the theme color options. Theme changes include:</p>
       <ul>
         <li>page background</li>
         <li>link colors, :hover and :focus</li>
       </ul>
       
-      <button class="coral" data-theme="coral">Coral</button>
-      <button class="purple" data-theme="purple">Purple</button>
-      <button class="yellow" data-theme="yellow">Yellow</button>
-      <button class="green" data-theme="green">Green</button>
-      <button class="blue" data-theme="blue">Blue</button>
+      <p>Theme color classes are added to the <code>&lt;body&gt;</code> tag. In the static site, themes are added using PHP variables. Refer to the static site documentation for more info.</p>  
     </section>
 
-    <!-- // Page text-base content //-->
-    <section class="module-wrap" id="headings">
-      <h2>Text-Based Components</h2>
-      
-      <h3>Default heading, paragraphs and links</h3>
-      <h4>Web component: page-content-default.html</h4>
-<pre><code>&#x3C;!-- // Default header content --&#x3E;
-&lt;article class=&quot;border&quot;&gt;
-  &lt;div class=&quot;wrapper-sm&quot;&gt;
-    &lt;h2&gt;Letter to our Readers&lt;/h2&gt;
-    &lt;p&gt;A fresh look for an important project. We&rsquo;ve redesigned and relaunched Women&amp;&amp;Tech, let us tell you why...&lt;/p&gt;
-    &lt;p&gt;This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded &lt;a href=&quot;#&quot;&gt;Women&amp;&amp;Tech&lt;/a&gt;, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&amp;&amp;Tech became a passion project for our entire team. &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/article&gt;</code></pre>
-    </section>
-    <!-- basic header & paragraphs  -->
-    <article class="border">
-      <div class="wrapper-sm">
-        <h2>Letter to our Readers</h2>
-        <p>A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why...</p>
-        <p>This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded <a href="http://womenandtech.com">Women&&Tech</a>, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
-      </div>
-    </article>
+
+
+    <!-- // Headings //-->
+    <section class="border module-info">
+      <h2 id="headings">Headers</h2>
     
-    <!-- // Secondary Header -->
-    <section class="module-wrap">
-      <h3>Secondary Header / No background </h3>
-      <h4>Web Component: header-secondary.html</h4>
+      <!-- // Secondary Header -->
+      <h3>Secondary Header</h3>
+      <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
 <pre><code class="xml">&#x3C;!-- // Secondary Header --&#x3E;
 &lt;header class=&quot;no-border header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
@@ -117,39 +116,44 @@
 &lt;/header&gt;
 </code></pre>
     </section>
-    <!-- Secondary Header -->
+    
+    <!-- Example: Secondary Header -->
     <header class="no-border header-secondary">
       <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
       <p>Our industry is filled with <a href="#">smart, interesting women</a> including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
     </header>
     
-    <!-- // Interview Header -->
-    <section class="module-wrap">
-      <h3>Interview Header</h3>
-<pre><code>&#x3C;!-- // Interview Header --&#x3E;
-&lt;header class=&quot;border header-interview&quot;&gt;
-  &lt;div class=&quot;wrapper-sm&quot;&gt;
-    &lt;h2&gt;Biying Miao&lt;/h2&gt;
-    &lt;p class=&quot;intro&quot;&gt;Biying Miao is the co-founder of &lt;a href=&quot;#&quot;&gt;Hot Pop Factory&lt;/a&gt;, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the &lt;a href=&quot;/&quot;&gt;Textile Museum of Canada&lt;/a&gt; and the Art Gallery of Ontario.&lt;/p&gt;
-    &lt;p class=&quot;author&quot;&gt;An interview with &lt;a href=&quot;#&quot;&gt;Ruby Watson&lt;/a&gt;&lt;/p&gt;
     
+    <!-- // Interview Header -->
+    <section class="border module-info">
+      <h3>Interview Header</h3>
+      <p>This header is used to begin all interview pages. PHP variables are used to automatically add the author name and social media information. Included in the <strong>base-template.php</strong> file in the static site repo.</p>
+<pre><code>&lt;header class=&quot;border header-interview&quot;&gt;
+  &lt;div class=&quot;wrapper-sm&quot;&gt;
+    &lt;h2&gt;Interviewee Name [update this]&lt;/h2&gt;
+    &lt;p class=&quot;intro&quot;&gt;Intro paragraph.[update this]&lt;/p&gt;
+
+    &lt;?php // Don't update. Using the same info as in Interview Credits. ?&gt;
+    &lt;p class=&quot;author&quot;&gt;An interview with &lt;a href=&quot;&lt;?php echo $interviewer_url; ?&gt;&quot;&gt;&lt;?php echo $interviewer; ?&gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;?php // Don't update. Using the info from PHP variables at the top of the page. ?&gt;
     &lt;ul class=&quot;social-share&quot;&gt;
       &lt;li&gt;
-        &lt;a href=&quot;//facebook.com/WomenAndTech&quot; title=&quot;Facebook @WomenAndTech&quot;&gt;
+        &lt;a href=&quot;http://www.facebook.com/sharer.php?u=http://womenandtech.com/interview/&lt;?php echo $interviewee_url;?&gt;/&quot; title=&quot;Share on Facebook&quot;&gt;
           &lt;i class=&quot;fa fa-facebook&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-          &lt;span class=&quot;screen-readers&quot;&gt;Facebook&lt;/span&gt;
+          &lt;span class=&quot;screen-readers&quot;&gt;Post the interview on Facebook&lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;//twitter.com/WomenAndTech&quot; title=&quot;Twitter @WomenAndTech&quot;&gt;
+        &lt;a href=&quot;http://twitter.com/share?text=Women and Tech Interviews &lt;?php echo $interviewee_name; ?&gt;&amp;url=http://womenandtech.com/interview/&lt;?php echo $interviewee_url; ?&gt;/&quot; title=&quot;Share on Twitter&quot;&gt;
           &lt;i class=&quot;fa fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-          &lt;span class=&quot;screen-readers&quot;&gt;Twitter&lt;/span&gt;
+          &lt;span class=&quot;screen-readers&quot;&gt;Tweet the interview&lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;mailto:contact@womenandtech.com&quot; title=&quot;Email contact@womenandtech.com&quot;&gt;
+        &lt;a href=&quot;mailto:?subject=Women and Tech Interviews &lt;?php echo $interviewee_name; ?&gt;&amp;body=Women and Tech Interviews &lt;?php echo $interviewee_name; ?&gt; http://womenandtech.com/interview/&lt;?php echo $interviewee_url; ?&gt;/&quot; title=&quot;Email the interview&quot;&gt;
           &lt;i class=&quot;fa fa-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-          &lt;span class=&quot;screen-readers&quot;&gt;Email contact@womenandtech.com&lt;/span&gt;
+          &lt;span class=&quot;screen-readers&quot;&gt;Email interview&lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -157,7 +161,8 @@
 &lt;/header&gt;
 </code></pre>
     </section>
-    <!-- Interview Header -->
+    
+    <!-- Example: Interview Header -->
     <header class="border header-interview">
       <div class="wrapper-sm">
         <h2>Biying Miao</h2>
@@ -187,9 +192,13 @@
       </div>
     </header>
     
+    
+    
+    
     <!-- // Q & A -->
-    <section class="module-wrap" id="qa">
+    <section class="border module-info" id="qa">
       <h3>Q & A</h3>
+      <p>Use this snippet for each Q & A block. You can add as many paragraphs as required for the answer portion. Just be sure to keep the paragraphs enclosed within the <code>&lt;dd class=&quot;interview-a&quot;&gt;&lt;/dd&gt;</code> tags.</p>
 <pre><code>&#x3C;!-- // Q & A --&#x3E;
 &lt;dl class=&quot;border&quot;&gt;
   &#x3C;!-- // Question --&#x3E;
@@ -201,41 +210,48 @@
   &lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
     </section>
-    <!-- Q & A -->
+    
+    <!-- Example: Q & A -->    
     <dl class="border">
-      <dt class="interview-q wrapper-sm">Where did you grow up and what were you like as a child?</dt>
-      <dd class="interview-a wrapper-sm">
+      <dt class="interview-q">Where did you grow up and what were you like as a child?</dt>
+      <dd class="interview-a">
         <p>My family moved to Canada from Shanghai when I was in fourth grade, and I grew up in Toronto. I was a very creative child who loved drawing and making things with my hands. Coming from a Chinese family, I was encouraged to play music but gravitated toward freeform arts, so learning an instrument in the classical sense never became something that I honed. I actually wish that I had done that. My 3D printers sound like singing robots, so that’s the music I make now. I’m sure if I put the time in, I could remix it into a pretty sweet song.</p>
         <p>I was always a bit of an art and music geek so when it came time to choose a career path I leaned toward architecture because it was a mix of art, science, and technology; all things that are very much a part of who I am.</p>
       </dd>
     </dl>
     
+    
     <!-- // Pull quote -->
-    <section class="module-wrap" id="quote">
-      <h3>Pull Quote</h3>
+    <section class="border module-info">
+      <h3 id="quote">Pull Quote</h3>
+      <p>Use this code snippet for each pull quote.</p>
 <pre><code>&#x3C;!-- // Pull Quote --&#x3E;
 &lt;aside class=&quot;border pull-quote&quot;&gt;
   &lt;p&gt;Digital fabrication allows for a physical reality that&rsquo;s much more transient, dynamic, and customized by the individual.&lt;/p&gt;
 &lt;/aside&gt;</code></pre>
     </section>
-    <!-- Pull quote -->
+    
+    <!-- Example: Pull quote -->
     <aside class="border pull-quote">
-      <p class="wrapper-sm">Digital fabrication allows for a physical reality that’s much more transient, dynamic, and customized by the individual.</p>
+      <p>Digital fabrication allows for a physical reality that’s much more transient, dynamic, and customized by the individual.</p>
     </aside>
     
 
-    <!-- // Team Signature -->
-    <section class="module-wrap" id="team">
+
+    <section class="border module-info">
+      <h2 id="team">Team Related Content Modules</h2>
+      
+      <!-- // Team Signature -->
       <h3>Team Signature</h3>
-<pre><code>&#x3C;!-- // Team Signature --&#x3E;
-&lt;div class=&quot;border signature&quot;&gt;
+<pre><code>&lt;div class=&quot;border signature&quot;&gt;
   &lt;p&gt;
-    with &lt;i class=&quot;fa fa-heart-o theme-color&quot; aria-hidden=&quot;true&quot; title=&quot;love&quot;&gt;&lt;/i&gt;&lt;span class=&quot;screen-readers&quot;&gt;love&lt;/span&gt; 
+    with &lt;i class=&quot;fa fa-heart-o theme-color&quot; aria-hidden=&quot;true&quot; title=&quot;love&quot;&gt;&lt;/i&gt;&lt;span class=&quot;screen-readers&quot;&gt;love&lt;/span&gt;
     from &lt;span class=&quot;team theme-color&quot;&gt;the Women&amp;&amp;Tech team&lt;/span&gt;
   &lt;/p&gt;
 &lt;/div&gt;</code></pre>
     </section>
-    <!-- Team Signature -->
+    
+    <!-- Example: Team Signature -->
     <div class="border signature">
       <p>
         with <i class="fa fa-heart-o theme-color" aria-hidden="true" title="love"></i><span class="screen-readers">love</span> 
@@ -244,8 +260,8 @@
     </div>
     
     
-    <!-- // Team -->
-    <section class="module-wrap" id="team">
+    <!-- // Team Listing -->
+    <section class="border module-info" id="team">
       <h3>Team Listing</h3>
 <pre><code>&#x3C;!-- // Team Listing --&#x3E;
 &lt;aside class=&quot;border team-listing&quot;&gt;
@@ -270,7 +286,8 @@
   &lt;p class=&quot;thanks&quot;&gt;Special thanks to our founder Cassie McDaniel, past team members and supporters.&lt;/p&gt;
 &lt;/aside&gt;</code></pre>
     </section>
-    <!-- Team -->
+    
+    <!-- Example: Team -->
     <aside class="border team-listing">
       <ul>
         <li>
@@ -296,8 +313,8 @@
     
     
     <!-- // Image Modules // -->
-    <section class="module-wrap" id="images">
-      <h2>Interview Images</h2>
+    <section class="border module-info">
+      <h2 id="images">Interview Images</h2>
       
       <p>The static site uses PHP to load partial files. Be sure to include the PHP snippet for image paths, shown in the example code below.</p>
       
@@ -311,7 +328,8 @@
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
-    <!-- Featured Image -->
+    
+    <!-- Example: Featured Image -->
     <div class="border img-feature">
       <figure>
         <img src="assets/img/image-featured.jpg" alt="Biying Miao">
@@ -320,7 +338,7 @@
     
     
     <!-- // Side by Side Image -->
-    <section class="module-wrap">
+    <section class="border module-info">
       <h3>Side by Side Images</h3>
 <pre><code>&#x3C;!-- // Image - Left & Right --&#x3E;
 &lt;div class=&quot;border img-side-by-side&quot;&gt;
@@ -330,13 +348,14 @@
   &lt;figure&gt;
     &lt;img src=&quot;&#x3C;?php echo $path_img; ?&#x3E;right-biying-miao.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
     &lt;figcaption&gt;
-      Optional caption goes here.
+      Optional caption goes here. &lt;a href=&quot;#&quot;&gt;Links&lt;/a&gt; can also be included.
     &lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;/div&gt;
 </code></pre>
     </section>
-    <!-- Side by Side Image -->
+    
+    <!-- Example: Side by Side Image -->
     <div class="border img-side-by-side">
       <figure>
         <img src="assets/img/image-side-left.jpg" alt="Biying Miao">
@@ -344,13 +363,14 @@
       <figure>
         <img src="assets/img/image-side-right.jpg" alt="Biying Miao">
         <figcaption>
-          Optional caption goes <a href="#">here</a>.
+          Optional caption goes here. <a href="#">Links</a> can also be included.
         </figcaption>
       </figure>
     </div>
     
+    
     <!-- // Single Image - Portrait -->
-    <section class="module-wrap">
+    <section class="border module-info">
       <h3>Single Image - Portrait</h3>
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
 &#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
@@ -360,14 +380,17 @@
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
-    <!-- Single Image - Portrait -->
+    
+    <!-- Example: Single Image - Portrait -->
     <div class="border img-portrait">
       <figure>
         <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
       </figure>
     </div>
     
-    <section class="module-wrap">
+    
+    <!-- // Single Image with caption -->
+    <section class="border module-info">
       <h3>Single Image - Portrait with caption</h3>    
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
 &#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
@@ -380,6 +403,8 @@
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
+    
+    <!-- Example: Single image - Portrait -->
     <div class="border img-portrait">
       <figure>
         <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
@@ -389,8 +414,9 @@
       </figure>
     </div>
     
+    
     <!-- // Single Image - Landscape -->
-    <section class="module-wrap">
+    <section class="border module-info">
       <h3>Single Image - Landscape</h3>
 <pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
 &#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
@@ -400,14 +426,15 @@
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
-    <!-- Single Image - Landscape -->
+    
+    <!-- Example: Single Image - Landscape -->
     <div class="border img-landscape">
       <figure>
         <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
       </figure>
     </div>
     
-    <section class="module-wrap">
+    <section class="border module-info">
       <h3>Single Image - Landscape with caption</h3>
 <pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
 &#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
@@ -420,7 +447,8 @@
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
-    <!-- Single Image - Landscape -->
+    
+    <!-- Example: Single Image - Landscape with caption-->
     <div class="border img-landscape">
       <figure>
         <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
@@ -430,89 +458,71 @@
       </figure>
     </div>
     
-    <section class="module-wrap" id="footers">
-      <h3>Interview Footer with Credits</h3>
-<pre><code>&#x3C;footer class=&#x22;border credits&#x22;&#x3E;
-  &#x3C;ul&#x3E;
-    &#x3C;li&#x3E;Interview by &#x3C;a href=&#x22;#&#x22;&#x3E;Ruby Watson&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;Photography by &#x3C;a href=&#x22;#&#x22;&#x3E;Amanda Huang&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;Editing by &#x3C;a href=&#x22;#&#x22;&#x3E;Ruby Watson&#x3C;/a&#x3E; and &#x3C;a href=&#x22;#&#x22;&#x3E;Ivonne Karamoy&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;Art Direction by &#x3C;a href=&#x22;#&#x22;&#x3E;Cassie Kaiser&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;Design by &#x3C;a href=&#x22;#&#x22;&#x3E;Cassie Kaiser&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;Development by &#x3C;a href=&#x22;#&#x22;&#x3E;Audrey Kuo&#x3C;/a&#x3E; and &#x3C;a href=&#x22;#&#x22;&#x3E;Brett Bergmann&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;Transcriptions by &#x3C;a href=&#x22;#&#x22;&#x3E;Ruby Watson&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-  &#x3C;/ul&#x3E;
-  &#x3C;p&#x3E;This site uses Monotype's Avenir Next by Adrian Fruteger and Akira Kobayashi, Github, Cloudflare, and Windows Azure.&#x3C;/p&#x3E;
-&#x3C;/footer&#x3E;
-</code></pre>
+    <section class="border module-info" id="images">
+      <h2 id="misc">Misc Modules</h2>
+    
+      <!-- // Default page content -->
+      <h3>Default heading, paragraphs and links</h3>
+      <p>This is used used for non-interview pages such as an About page.</p>
+<pre><code>&#x3C;!-- // Default header content --&#x3E;
+&lt;article class=&quot;border&quot;&gt;
+  &lt;div class=&quot;wrapper-sm&quot;&gt;
+    &lt;h2&gt;Letter to our Readers&lt;/h2&gt;
+    &lt;p&gt;A fresh look for an important project. We&rsquo;ve redesigned and relaunched Women&amp;&amp;Tech, let us tell you why...&lt;/p&gt;
+    &lt;p&gt;This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded &lt;a href=&quot;#&quot;&gt;Women&amp;&amp;Tech&lt;/a&gt;, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&amp;&amp;Tech became a passion project for our entire team. &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
     </section>
-    
-    <footer class="border credits" style="padding-top: 30px;">
-      <ul>
-        <li>Interview by <a href="#">Ruby Watson</a></li>
-        <li>Photography by <a href="#">Amanda Huang</a></li>
-        <li>Editing by <a href="#">Ruby Watson</a> and <a href="#">Ivonne Karamoy</a></li>
-        <li>Art Direction by <a href="#">Cassie Kaiser</a></li>
-        <li>Design by <a href="#">Cassie Kaiser</a></li>
-        <li>Development by <a href="#">Audrey Kuo</a> and <a href="#">Brett Bergmann</a></li>
-        <li>Transcriptions by <a href="#">Ruby Watson</a></li>
-      </ul>
-      <p>Don't miss another interview, <a href="#subscribe">subscribe below</a>.</p>
-      <p class="italic">This site uses Monotype's Avenir Next by Adrian Fruteger and Akira Kobayashi, icon by Cathy Moser, Github, Cloudflare, and Windows Azure.</p>
-    </footer>
-    
-    
-    
-    <footer class="no-border footer-secondary">
-      <h2>Contact Us</h2>
-      <p>Follow us on <a class="white-links" href="http://twitter.com/WomenAndTech">Twitter</a>, <a href="http://www.facebook.com/womenandtech/">Facebook</a> and <a href="http://www.instagram.com/WomenAndTech/">Instagram</a>.</p>
-      <p>Don't hesitate to <a href="mailto:contact@womenandtech.com">email us</a>.</p>
-
-      <h2 class="spacer30">Want to help?</h2>
-
-      <p><a class="no-underline" href="https://www.patreon.com/WomenAndTech"><img class="spacer30-bottom" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px"></a></p>
-
-      <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
-      <p>We also welcome contributors, volunteers and sponsors.</p>
-      <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p>
-    </footer>
-    
+  
+    <!-- Example: Default heading, paragraphs and links -->
+    <article class="border">
+      <div class="wrapper-sm">
+        <h2>Letter to our Readers</h2>
+        <p>A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why...</p>
+        <p>This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded <a href="http://womenandtech.com">Women&&Tech</a>, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
+      </div>
+    </article>
+  
+  
     <!-- // Interview Cards // -->
-    <section class="module-wrap">
-      <h2>Past Interview Cards</h2>
-      <p><strong>Added as a global include file in the template.</strong> This is here for reference only.</p>
-<pre><code>&#x3C;aside class=&#x22;past-interviews wrapper&#x22;&#x3E;
-    &#x3C;h2&#x3E;Latest Interviews&#x3C;/h2&#x3E;
-    &#x3C;a class=&#x22;view-all&#x22; href=&#x22;/archive/&#x22;&#x3E;view all&#x3C;/a&#x3E;
-    &#x3C;div class=&#x22;grid-wrapper&#x22;&#x3E;
-      &#x3C;article class=&#x22;grid-3-1&#x22;&#x3E;
-        &#x3C;a href=&#x22;/interview/sara-hicks/&#x22; class=&#x22;no-underline&#x22;&#x3E;
-          &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-sara-hicks.png&#x22; alt=&#x22;Sara Hicks&#x22;&#x3E;
-          &#x3C;h3&#x3E;Sara Hicks&#x3C;/h3&#x3E;
-          &#x3C;p&#x3E;with Sophie He&#x3C;/p&#x3E;
-          &#x3C;p&#x3E;Cofounder and CEO of Reaction Commerce, an open-source ecommerce platform.&#x3C;/p&#x3E;
-        &#x3C;/a&#x3E;
-      &#x3C;/article&#x3E;
-      &#x3C;article class=&#x22;grid-3-1&#x22;&#x3E;
-        &#x3C;a href=&#x22;/interview/mitchell-baker/&#x22; class=&#x22;no-underline&#x22;&#x3E;
-          &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-mitchell-baker.png&#x22; alt=&#x22;Mitchell Baker&#x22;&#x3E;
-          &#x3C;h3&#x3E;Mitchell Baker&#x3C;/h3&#x3E;
-          &#x3C;p&#x3E;with Cassie McDaniel&#x3C;/p&#x3E;
-          &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&#x3C;/p&#x3E;
-        &#x3C;/a&#x3E;
-      &#x3C;/article&#x3E;
-      &#x3C;article class=&#x22;grid-3-1&#x22;&#x3E;
-        &#x3C;a href=&#x22;/interview/sandi-lin/&#x22; class=&#x22;no-underline&#x22;&#x3E;
-          &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;thumbnail-sandi-lin.png&#x22; alt=&#x22;Sandi Lin&#x22;&#x3E;
-          &#x3C;h3&#x3E;Sandi Lin&#x3C;/h3&#x3E;
-          &#x3C;p&#x3E;with Sarah Sutherland&#x3C;/p&#x3E;
-          &#x3C;p&#x3E;Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.&#x3C;/p&#x3E;
-        &#x3C;/a&#x3E;
-      &#x3C;/article&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/aside&#x3E;</code></pre>
+    <section class="border module-info">
+      <h3>Past Interview Cards</h3>
+      <p>This code snippet is here for reference only. The only changes that need to made is to the content, not the HTML markup.
+      <p>In the <strong>includes/latest-interviews.php</strong> file, update the URL to the interviews, thumbnail image file and interview details to update the three interviews to be featured.</p>
+<pre><code>&lt;aside class=&quot;interview-cards wrapper&quot;&gt;
+  &lt;h2&gt;Latest Interviews&lt;/h2&gt;
+  &lt;a class=&quot;view-all&quot; href=&quot;/archive/&quot;&gt;view all&lt;/a&gt;
+  &lt;div class=&quot;grid-wrapper&quot;&gt;
+    &lt;article class=&quot;grid-3-1&quot;&gt;
+      &lt;a href=&quot;/interview/aashni-shah/&quot; class=&quot;no-underline&quot;&gt;
+        &lt;img src=&quot;&lt;?php echo $path_img; ?&gt;thumbnail-aashni-shah.jpg&quot; alt=&quot;Aashni Shah&quot;&gt;
+        &lt;h3&gt;Aashni Shah&lt;/h3&gt;
+        &lt;p&gt;with Cassie Kaiser&lt;/p&gt;
+        &lt;p&gt;Computer Science student, organizer, leader and speaker within the tech community.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;grid-3-1&quot;&gt;
+      &lt;a href=&quot;/interview/sara-hicks/&quot; class=&quot;no-underline&quot;&gt;
+        &lt;img src=&quot;&lt;?php echo $path_img; ?&gt;thumbnail-sara-hicks.jpg&quot; alt=&quot;Sara Hicks&quot;&gt;
+        &lt;h3&gt;Sara Hicks&lt;/h3&gt;
+        &lt;p&gt;with Sophie He&lt;/p&gt;
+        &lt;p&gt;Co-founder and CEO of Reaction Commerce, an open-source ecommerce platform.
+          &lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;grid-3-1&quot;&gt;
+      &lt;a href=&quot;/interview/mitchell-baker/&quot; class=&quot;no-underline&quot;&gt;
+        &lt;img src=&quot;&lt;?php echo $path_img; ?&gt;thumbnail-mitchell-baker.jpg&quot; alt=&quot;Mitchell Baker&quot;&gt;
+        &lt;h3&gt;Mitchell Baker&lt;/h3&gt;
+        &lt;p&gt;with Cassie McDaniel&lt;/p&gt;
+        &lt;p&gt;Founder of the non-profit tech company Mozilla, creator of Firefox and champion of the open web.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;</code></pre>
     </section>
     
+    <!-- Example: Past interview cards -->
     <aside class="interview-cards wrapper">
       <h2>Latest Interviews</h2>
       <a class="view-all" href="/archive/">view all</a>
@@ -543,15 +553,109 @@
         </article>
       </div>
     </aside>
+    
+    <!-- // Footers // -->
+    <section class="border module-info" id="images">
+      <h2 id="footers">Footers</h2>
+
+      <!-- // Interview Footer with Credits -->
+      <h3>Interview Footer with Credits</h3>
+      
+      <p>This code snippet here is for reference only. It is already included in the interview <strong>base-template.php</strong> file and use PHP variables to pull in the appropriate date. If you don't need a specific credit, delete the whole <code>&lt;li&gt;</code>.</p>
+      <p>The site credits can be found in the <strong>includes/site-credits.php</strong> file.</p>
+<pre><code>&lt;footer class=&quot;border credits&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      Interview by &lt;a href=&quot;&lt;?php echo $interviewer_url; ?&gt;&quot;&gt;&lt;?php echo $interviewer; ?&gt;&lt;/a&gt;
+      &lt;?php if ($interviewer2): echo 'and &lt;a href=&quot;'.$interviewer_url2 .'&quot;&gt;'.$interviewer2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Photography by &lt;a href=&quot;&lt;?php echo $photos_url; ?&gt;&quot;&gt;&lt;?php echo $photos; ?&gt;&lt;/a&gt;
+      &lt;?php if ($photos2): echo 'and &lt;a href=&quot;'.$photos_url2 .'&quot;&gt;'.$photos2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Editing by &lt;a href=&quot;&lt;?php echo $editor_url; ?&gt;&quot;&gt;&lt;?php echo $editor; ?&gt;&lt;/a&gt;
+      &lt;?php if ($editor2): echo 'and &lt;a href=&quot;'.$editor_url2 .'&quot;&gt;'.$editor2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Art Direction by &lt;a href=&quot;&lt;?php echo $ad_url; ?&gt;&quot;&gt;&lt;?php echo $ad; ?&gt;&lt;/a&gt;
+      &lt;?php if ($ad2): echo 'and &lt;a href=&quot;'.$ad_url2 .'&quot;&gt;'.$ad2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Design by &lt;a href=&quot;&lt;?php echo $design_url; ?&gt;&quot;&gt;&lt;?php echo $design; ?&gt;&lt;/a&gt;
+      &lt;?php if ($design2): echo 'and &lt;a href=&quot;'.$design_url2 .'&quot;&gt;'.$design2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Development by &lt;a href=&quot;&lt;?php echo $dev_url; ?&gt;&quot;&gt;&lt;?php echo $dev; ?&gt;&lt;/a&gt;
+      &lt;?php if ($dev2): echo 'and &lt;a href=&quot;'.$dev_url2 .'&quot;&gt;'.$dev2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Transcriptions by &lt;a href=&quot;&lt;?php echo $transcribe_url; ?&gt;&quot;&gt;&lt;?php echo $transcribe; ?&gt;&lt;/a&gt;
+      &lt;?php if ($transcribe2): echo 'and &lt;a href=&quot;'.$transcribe_url2 .'&quot;&gt;'.$transcribe2.'&lt;/a&gt;';endif; ?&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;?php // Global site credits
+  include($path_inc.&quot;site-credits.php&quot;);
+  ?&gt;
+&lt;/footer&gt;
+</code></pre>
+    </section>
+    
+    <!-- Example: Interview footer with credits -->
+    <footer class="border credits">
+      <ul>
+        <li>Interview by <a href="#">Ruby Watson</a></li>
+        <li>Photography by <a href="#">Amanda Huang</a></li>
+        <li>Editing by <a href="#">Ruby Watson</a> and <a href="#">Ivonne Karamoy</a></li>
+        <li>Art Direction by <a href="#">Cassie Kaiser</a></li>
+        <li>Design by <a href="#">Cassie Kaiser</a></li>
+        <li>Development by <a href="#">Audrey Kuo</a> and <a href="#">Brett Bergmann</a></li>
+        <li>Transcriptions by <a href="#">Ruby Watson</a></li>
+      </ul>
+      <p>Don't miss another interview, <a href="#subscribe">subscribe below</a>.</p>
+      <p class="italic">This site uses Monotype's Avenir Next by Adrian Fruteger and Akira Kobayashi, icon by Cathy Moser, Github, Cloudflare, and Windows Azure.</p>
+    </footer>
+    
+    
+    <!-- // Secondary footer -->
+    <section class="border module-info">
+      <h3>Secondary Footer</h3>
+      <p>This module can be used for the main content footer. The only thing that is required is the markup shown in the example. Any kind of content can be added such as paragraphs, links or images.</p>
+<pre><code>code snippet here;
+</code></pre>
+    </section>
+    <footer class="no-border footer-secondary">
+      <h2>Contact Us</h2>
+      <p>Follow us on <a class="white-links" href="http://twitter.com/WomenAndTech">Twitter</a>, <a href="http://www.facebook.com/womenandtech/">Facebook</a> and <a href="http://www.instagram.com/WomenAndTech/">Instagram</a>.</p>
+      <p>Don't hesitate to <a href="mailto:contact@womenandtech.com">email us</a>.</p>
+
+      <h2 class="spacer30">Want to help?</h2>
+
+      <p><a class="no-underline" href="https://www.patreon.com/WomenAndTech"><img class="spacer30-bottom" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px"></a></p>
+
+      <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
+      <p>We also welcome contributors, volunteers and sponsors.</p>
+      <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p>
+    </footer>
+    
+    
+    
+    <!-- <h2>Contact Us</h2>
+    <p>Follow us on <a class="white-links" href="http://twitter.com/WomenAndTech">Twitter</a>, <a href="http://www.facebook.com/womenandtech/">Facebook</a> and <a href="http://www.instagram.com/WomenAndTech/">Instagram</a>.</p>
+    <p>Don't hesitate to <a href="mailto:contact@womenandtech.com">email us</a>.</p>
+
+    <h2 class="spacer30">Want to help?</h2>
+
+    <p><a class="no-underline" href="https://www.patreon.com/WomenAndTech"><img class="spacer30-bottom" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px"></a></p>
+
+    <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
+    <p>We also welcome contributors, volunteers and sponsors.</p>
+    <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p> -->
   </main>
   
   
-  <section class="module-wrap">
-    <h2>Global Page Footer</h2>
-    <p><strong>Added as a global include file in the template.</strong> This is here for reference only.</p>
-<pre><code>code here</code></pre>
-  </section>
-  <!-- // Primary Footer -->
+  
+  <!-- Global Primary Footer -->
   <footer class="footer-primary">
     <section>
       <p>&copy; 2012 - <span data-year></span> Women&&Tech. <span class="nowrap">Made in Toronto. All Rights Reserved.</span></p>
@@ -599,8 +703,11 @@
     </section>
   </footer>
 
+
+
+
   <!-- for testing only -->
-  <p style="position:fixed;bottom:20px;left:10px;color:black;background:white;padding:5px;"><span id="width"></span> x <span id="height"></span></p>
+  <p style="position:fixed;bottom:0px;left:10px;color:black;background:white;padding:5px;"><span id="width"></span> x <span id="height"></span> <span id="screen"></span></p>
 
   <!-- Global files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
@@ -614,7 +721,8 @@
   <script>
     // only used in style guide
     smoothScroll.init({
-      selectorHeader: '[data-scroll-header]'
+      selectorHeader: '[data-scroll-header]',
+      offset: 120
     });
   </script>
   <script src="assets/js/style-guide-min.js"></script>

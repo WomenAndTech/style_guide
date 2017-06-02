@@ -22,8 +22,7 @@
       @include underline-shadow(#fff, $color, $black);
     }
     // Black underline on white background
-    .border a,
-    .module-wrap a {
+    .border a {
       @include underline-shadow($black, #fff, $color);
     }
     // No underline
@@ -62,11 +61,12 @@
     }
     
     // Style guide page
-    .module-wrap h2:first-child {
-      border-bottom: 1px solid $color;
-    }
-    &.style-guide header:first-child {
+    &.style-guide > header {
       background: $color;
+    }
+    .module-info {
+      border-top: 2px solid $color;
+      // border-bottom: 2px solid $color;
     }
   }
   

@@ -153,6 +153,11 @@ figcaption {
   color: $gray-med;
 }
 
+// Feature image, always the first content block
+.img-feature.border {
+  padding-top: 20px;
+}
+
 // Single images
 .img-portrait figure,
 .img-portrait img {
