@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Women&amp;&amp;Tech Style Guide - Kitchen Sink</title>
+  <title>Style Guide | Women&amp;&amp;Tech</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/style-guide.css">
   
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@WomenAndTech">
+  <meta name="twitter:creator" content="@WomenAndTech">
+  <meta name="twitter:title" content="Wome&&Tech Style Guide">
+  <meta name="twitter:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
+  <meta name="twitter:image" content="">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:url" content="http://womenandtech.github.io/style_guide/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Wome&&Tech Style Guide">
+  <meta property="og:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
+  <meta property="og:image" content="">
+
+  <link rel="shortcut icon" href="assets/img/favicon-32x32.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Style guide only -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+  <link rel="stylesheet" href="assets/css/style-guide.css">
 </head>
 <body class="style-guide theme-coral">
   <header>
@@ -526,10 +544,13 @@
       </div>
     </aside>
   </main>
-
-  <!-- for testing only -->
-  <!-- <p style="position:fixed;bottom:20px;left:10px;color:black;background:white;padding:5px;"><span id="width"></span> x <span id="height"></span></p> -->
   
+  
+  <section class="module-wrap">
+    <h2>Global Page Footer</h2>
+    <p><strong>Added as a global include file in the template.</strong> This is here for reference only.</p>
+<pre><code>code here</code></pre>
+  </section>
   <!-- // Primary Footer -->
   <footer class="footer-primary">
     <section>
@@ -538,7 +559,7 @@
     <section id="mc_embed_signup">
       <form action="//womenandtech.us5.list-manage.com/subscribe/post?u=1370c4a70b43a1285e806a56d&amp;id=123c00728e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <label for="mce-EMAIL">Enter your email address to get updates:</label>
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input id="subscribe" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">&nbsp;
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
         <div id="mce-responses">
           <div class="response" id="mce-error-response" style="display:none"></div>
@@ -551,7 +572,7 @@
       <p>Connect with us: </p>
       <ul class="footer-links">
         <li>
-          <a href="//facebook.com" title="Facebook">
+          <a href="//facebook.com/womenandtech" title="Facebook">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <span class="screen-readers">Facebook</span>
           </a>
@@ -577,11 +598,17 @@
       </ul>
     </section>
   </footer>
-  
+
+  <!-- for testing only -->
+  <p style="position:fixed;bottom:20px;left:10px;color:black;background:white;padding:5px;"><span id="width"></span> x <span id="height"></span></p>
+
+  <!-- Global files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
   <script>!window.jQuery && document.write('<script src="assets/js/jquery-2.2.3.min.js"><\/script>')</script>
-    
-  <!-- Only used in style guide -->
+  <script src="assets/js/jquery.viewportchecker.min.js"></script>
+  <script src="assets/js/global-min.js"></script>
+  
+  <!-- Style guide only -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
   <script src="assets/js/smooth-scroll.min.js"></script>
   <script>
@@ -590,10 +617,7 @@
       selectorHeader: '[data-scroll-header]'
     });
   </script>
+  <script src="assets/js/style-guide-min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
-  <!-- Global files -->
-  <script src="assets/js/jquery.viewportchecker.min.js"></script>
-  <script src="assets/js/global-min.js"></script>
   </body>
 </html>
