@@ -136,9 +136,10 @@ dl.border {
   }
   &.border a {
     background: none;
+    color: #000000;
     
     &:hover {
-      color: #000000;
+      color: $gray-med;
     }
   }
 }

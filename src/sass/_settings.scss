@@ -105,7 +105,7 @@ $font-size-xsm:          1.4rem;
 // custom underline style
 @mixin underline-shadow($line-color, $shadow-color, $hover-color) {
   // adds underline
-  background: linear-gradient(top, $line-color 0, $line-color 100%) repeat-x 0 90% / 1px 1px;
+  background: linear-gradient(to top, $line-color 0, $line-color 100%) repeat-x 0 90% / 1px 1px;
   // adds bg on letters to go over the line
   text-shadow: 2px 0 $shadow-color, 1px 0 $shadow-color, -1px 0 $shadow-color, -2px 0 $shadow-color;
   
