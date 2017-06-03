@@ -55,18 +55,11 @@
     }
   }
   nav {
-    font-size: $font-size-xsm;
-    
-    .content:hover + .dropdown {
-      // display: block;
+    font-size: $font-size-sm;
+  
+    a {
+      padding: 10px;
     }
-    // .dropdown {
-    //   display: none;
-    //   text-align: right;
-    //   position: absolute;
-    //   right: 20px;
-    //   @include list-reset-inline;
-    // }
   }
 }
 .module-info {  

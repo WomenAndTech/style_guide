@@ -84,20 +84,27 @@
 }
 
 // Page headers
-section,
-article {
+// section,
+// article {
+.page-content {
   h2 {
     text-align: center;
     font-size: $font-size-heading;
     font-weight: $type-bold;
+    
+    @include min-width($screen-sm){
+      margin: 62px 0 42px;
+    }
+    @include max-width($screen-sm){
+      margin: 42px 0 22px;
+    }
   }
-} 
-article h2 {
-  @include min-width($screen-sm){
-    margin: 62px 0 42px;
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  @include max-width($screen-sm){
-    margin: 42px 0 22px;
+  p + h2 {
+    margin-top: 90px;
   }
 }
 
