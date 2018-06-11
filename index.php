@@ -1,37 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Style Guide | Women&amp;&amp;Tech</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Twitter cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@WomenAndTech">
-  <meta name="twitter:creator" content="@WomenAndTech">
-  <meta name="twitter:title" content="Wome&&Tech Style Guide">
-  <meta name="twitter:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
-  <meta name="twitter:image" content="">
+<?php 
+include ("includes/header.php");
+?>
 
-  <!-- Facebook Open Graph -->
-  <meta property="og:url" content="http://womenandtech.github.io/style_guide/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Wome&&Tech Style Guide">
-  <meta property="og:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
-  <meta property="og:image" content="">
-
-  <link rel="shortcut icon" href="assets/img/favicon-32x32.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- Style guide only -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-  <link rel="stylesheet" href="assets/css/style-guide.css">
-</head>
 <body class="style-guide theme-coral">
-  <header>
-    <img class="logo" src="assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">
-    <h1>Style Guide & Templates</h1>
-    
+  <header class="header-primary">
+    <a href="/" class="logo">
+      <img src="/assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">
+      <h1 class="screen-readers">Women && Tech</h1>
+    </a>
     <nav class="nav-primary" data-scroll-header>
       <a data-scroll href="#templates">Templates & Themes</a>
       <a data-scroll href="#headings">Headers</a>
@@ -43,68 +19,83 @@
       <a data-scroll href="#misc">Misc</a>
     </nav>
   </header>
-    
+  
   <main role="main">
-    <!-- // Page Templates // -->
-    <section class="border module-info">
-      <h2 id="templates">Templates</h2>
-      <ul>
-        <li><a href="base-template.html" target="_blank">Base Markup Template</a>
-          <ul>
-            <li>Base markup for all pages</li>
-            <li>Includes global header, footer and links to css & js files</li>
-            <li>Theme color classes should be added to the <code>&lt;body&gt;</code> tag</li>
-          </ul>
-        </li>
-        <li><a href="page-template.html" target="_blank">Page Example</a>
-          <ul>
-            <li>Use for static content (e.g. About)</li>
-          </ul>
-        </li>
-        <li>
-          <a href="interview-template.html" target="_blank">Interview Example</a>
-          <ul>
-            <li>Use for interview pages</li>
-          </ul>
-        </li>
-      </ul>
-      <p>Refer to the sections below for specific content module examples and code snippets.</p>
+    <!-- // Secondary Header -->
+    <header class="no-border header-secondary">
+      <h2>Style Guide & Component Library</h2>
+      <p>When we redesigned the W&&T website, we refreshed the design but also recreated the website architecture to make it easy to maintain and add new content. The goal was to keep the codebase as straightforward as possible, so all team members could add content without specialized or extensive development skills. We decided to follow a component based approach to be able to mix and match page elements to create different yet consistent page layouts.</p>
+    </header>
+    
+    <!-- // Page Templates -->
+    <section class="border module-info grid-wrapper">
+      <div class="grid-2-1">
+        <h2 id="templates">Templates</h2>
+        <ul>
+          <li><a href="base-template.php" target="_blank">Base Markup Template</a>
+            <ul>
+              <li>Base markup for all pages, for reference</li>
+              <li>Includes global header, footer and links to css & js files</li>
+              <li>Theme color classes should be added to the <code>&lt;body&gt;</code> tag</li>
+            </ul>
+          </li>
+          <li><a href="page-template.php" target="_blank">Page Template</a>
+            <ul>
+              <li>Use for non-interview content (e.g. About)</li>
+            </ul>
+          </li>
+          <li>
+            <a href="interview-template.php" target="_blank">Interview Template</a>
+            <ul>
+              <li>Use for interview pages</li>
+            </ul>
+          </li>
+          <li>
+            <a href="archive.php" target="_blank">Interview Archive Template</a>
+            <ul>
+              <li>Use for interview archive page</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Refer to the sections below for specific content module examples and code snippets.</p>
+      </div>
+      <div class="grid-2-1">
+        <h2 id="themes">Themes</h2>
+        
+        <button class="coral" data-theme="coral">.theme-coral</button>
+        <button class="purple" data-theme="purple">.theme-purple</button>
+        <button class="yellow" data-theme="yellow">.theme-yellow</button>
+        <button class="green" data-theme="green">.theme-green</button>
+        <button class="blue" data-theme="blue">.theme-blue</button>
+        <p>Select a button to view the theme color options. Theme changes include:</p>
+        <ul>
+          <li>page background</li>
+          <li>link colors, :hover and :focus</li>
+        </ul>
+        <p>Theme color classes are added to the <code>&lt;body&gt;</code> tag using one of five theme color codes.</p> 
+        <pre><code class="xml">&lt;body class="theme-coral"&gt;</code></pre> 
+        <p>In the static site, themes are added using PHP variables. Refer to the static site documentation for more info.</p>  
+      </div>
     </section>
-
-    <!-- // Themes & Colours // -->
-    <section class="border module-info">
-      <h2 id="themes">Themes</h2>
-      
-      <button class="coral" data-theme="coral">.theme-coral</button>
-      <button class="purple" data-theme="purple">.theme-purple</button>
-      <button class="yellow" data-theme="yellow">.theme-yellow</button>
-      <button class="green" data-theme="green">.theme-green</button>
-      <button class="blue" data-theme="blue">.theme-blue</button>
-      
-      <p>Select a button to view the theme color options. Theme changes include:</p>
-      <ul>
-        <li>page background</li>
-        <li>link colors, :hover and :focus</li>
-      </ul>
-      
-      <p>Theme color classes are added to the <code>&lt;body&gt;</code> tag. In the static site, themes are added using PHP variables. Refer to the static site documentation for more info.</p>  
-    </section>
-
-
 
     <!-- // Headers //-->
     <section class="border module-info">
       <h2 id="headings">Headers</h2>
-
       <!-- // Secondary Header -->
-      <h3>Secondary Header</h3>
-      <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
+      <div class="grid-wrapper">
+        <div class="grid-2-1">
+          <h3>Secondary Header</h3>
+          <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
+        </div>
+        <div class="grid-2-1">
 <pre><code class="xml">&#x3C;!-- // Secondary Header --&#x3E;
 &lt;header class=&quot;no-border header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
   &lt;p&gt;Our industry is filled with &lt;a href="#"&gt;smart, interesting women&lt;/a&gt; including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
 &lt;/header&gt;
 </code></pre>
+        </div>
+      </div>
     </section>
     
     <!-- Example: Secondary Header -->
@@ -115,9 +106,12 @@
     
     
     <!-- // Interview Header -->
-    <section class="border module-info">
-      <h3>Interview Header</h3>
-      <p>This header is used to begin all interview pages. PHP variables are used to automatically add the author name and social media information. Included in the <strong>base-template.php</strong> file in the static site repo.</p>
+    <section class="border module-info grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Interview Header</h3>
+        <p>This header is used to begin all interview pages. PHP variables are used to automatically add the author name and social media information. Included in the <strong>base-template.php</strong> file in the static site repo.</p>
+      </div>
+      <div class="grid-wide">
 <pre><code>&lt;header class=&quot;border header-interview&quot;&gt;
   &lt;div class=&quot;wrapper-sm&quot;&gt;
     &lt;h2&gt;Interviewee Name [update this]&lt;/h2&gt;
@@ -150,6 +144,7 @@
   &lt;/div&gt;
 &lt;/header&gt;
 </code></pre>
+      </div>
     </section>
     
     <!-- Example: Interview Header -->
