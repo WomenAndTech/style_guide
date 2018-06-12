@@ -79,13 +79,12 @@
     right: 20px;
   }
   .header-primary {
-    margin: 20px 20px 14px;
+    // margin: 20px 20px 14px;
+    padding: 20px 20px 14px;
   }
 }
 
 // Page headers
-// section,
-// article {
 .page-content {
   h2 {
     text-align: center;
@@ -118,8 +117,8 @@
     font-size: $font-size-sm;
   }
   @include min-width($screen-sm){
-    margin-top: 80px;
-    margin-bottom: 66px;
+    padding-top: 66px;
+    padding-bottom: 66px;
     
     h2 {
       margin-bottom: 40px;

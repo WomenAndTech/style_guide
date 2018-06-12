@@ -35,6 +35,30 @@
   flex-wrap: wrap;
 }
 
+// Use together to create a narrow and wide 2 column group
+.grid-narrow {
+  @include min-width($screen-sm){
+    width: 32%;
+    margin-right: 2%;
+  }
+}
+.grid-wide {
+  @include min-width($screen-sm){
+    width: 66%;
+  }
+}
+// goes from 2 columns to 1
+.grid-2-1 {
+  margin-bottom: 20px;
+  
+  @include min-width($screen-sm){
+    width: 49%;
+    
+    &:nth-of-type(2) {
+      margin-left: 2%;
+    }
+  }
+}
 // goes from 3 columns to 1
 .grid-3-1 {
   margin-bottom: 20px;
@@ -48,7 +72,6 @@
     }
   }
 }
-
 // goes from 4 columns to 2 to 1
 .grid-4-2-1 {
   margin-bottom: 20px;
