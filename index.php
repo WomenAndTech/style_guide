@@ -1,6 +1,4 @@
-<?php 
-include ("includes/header.php");
-?>
+<?php include ("includes/header.php"); ?>
 
 <body class="style-guide theme-coral">
   <header class="header-primary">
@@ -10,8 +8,7 @@ include ("includes/header.php");
     </a>
     <nav class="nav-primary" data-scroll-header>
       <a data-scroll href="#templates">Templates & Themes</a>
-      <a data-scroll href="#headings">Headers</a>
-      <a data-scroll href="#footers">Footers</a>
+      <a data-scroll href="#headings">Headers & Footers</a>
       <a data-scroll href="#images">Images</a>
       <a data-scroll href="#qa">Q&A</a>
       <a data-scroll href="#quote">Quote</a>
@@ -21,13 +18,12 @@ include ("includes/header.php");
   </header>
   
   <main role="main">
-    <!-- // Secondary Header -->
     <header class="no-border header-secondary">
       <h2>Style Guide & Component Library</h2>
       <p>When we redesigned the W&&T website, we refreshed the design but also recreated the website architecture to make it easy to maintain and add new content. The goal was to keep the codebase as straightforward as possible, so all team members could add content without specialized or extensive development skills. We decided to follow a component based approach to be able to mix and match page elements to create different yet consistent page layouts.</p>
     </header>
     
-    <!-- // Page Templates -->
+    <!-- PAGE TEMPLATES & THEMES -->
     <section class="border module-info grid-wrapper">
       <div class="grid-2-1">
         <h2 id="templates">Templates</h2>
@@ -79,12 +75,13 @@ include ("includes/header.php");
       </div>
     </section>
 
-    <!-- // Headers //-->
+    <!-- HEADERS -->
     <section class="border module-info">
-      <h2 id="headings">Headers</h2>
+      <h2 id="headings">Headers & Footers</h2>
+      
       <div class="grid-wrapper">
         <div class="grid-narrow">
-          <h3>Secondary Header Example</h3>
+          <h3>Secondary Header</h3>
           <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
         </div>
         <div class="grid-wide">
@@ -97,15 +94,11 @@ include ("includes/header.php");
         </div>
       </div>
     </section>
-    
-    <!-- Example: Secondary Header -->
-    <header class="no-border header-secondary">
-      <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
-      <p>Our industry is filled with <a href="#">smart, interesting women</a> including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
-    </header>
+    <!-- Example code: secondary header -->
+    <?php include ("includes/modules/header-secondary.php"); ?>
     
     
-    <!-- // Interview Header -->
+    <!-- Interview header -->
     <section class="border module-info grid-wrapper">
       <div class="grid-narrow">
         <h3>Interview Header</h3>
@@ -147,48 +140,38 @@ include ("includes/header.php");
       </div>
     </section>
     <hr>
-    
-    <!-- Example: Interview Header -->
-    <header class="border header-interview">
-      <div class="wrapper-sm">
-        <h2>Biying Miao</h2>
-        <p class="intro">Biying Miao is the co-founder of <a href="#">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="#">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
-        <p class="author">An interview with <a href="#">Ruby Watson</a></p>
-        
-        <ul class="social-share">
-          <li>
-            <a href="//facebook.com/WomenAndTech" title="Facebook @WomenAndTech">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <span class="screen-readers">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="//twitter.com/WomenAndTech" title="Twitter @WomenAndTech">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <span class="screen-readers">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:contact@womenandtech.com" title="Email contact@womenandtech.com">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span class="screen-readers">Email</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <!-- Example code: interview header -->
+    <?php include ("includes/modules/header-interview.php"); ?>
     
     
-    
-    <!-- // Footers // -->
+    <!-- Secondary footer -->
     <section class="border module-info">
-      <h2 id="footers">Footers</h2>
+      <h3>Secondary Footer</h3>
+      <p>This module can be used for the main content footer. The only thing that is required is the markup shown in the example. Any kind of content can be added such as paragraphs, links or images.</p>
+<pre><code>&lt;footer class=&quot;no-border footer-secondary&quot;&gt;
+  &lt;div class=wrapper-sm&gt;
+    &lt;h2&gt;Heading Example&lt;/h2&gt;
+    &lt;p&gt;Paragraph text with a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum corrupti eius labore cumque expedita dicta tenetur ut, accusantium, eaque eum, veritatis quam quae officiis assumenda? Voluptatum placeat eaque.&lt;/p&gt;
+  
+    &lt;img class=&quot;spacer30&quot; src=&quot;/assets/img/coffee-icon.png&quot; alt=&quot;Coffee&quot; width=&quot;50px&quot;&gt;
 
-      <!-- // Interview Footer with Credits -->
+    &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Donate&lt;/a&gt; a cup of coffee or tea and get first dibs on new content.&lt;/p&gt;
+    &lt;p&gt;We also welcome contributors, volunteers and sponsors.&lt;/p&gt;
+    &lt;p&gt;Check out our &lt;a href=&quot;#&quot;&gt;Contribute&lt;/a&gt; page for more information.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+    </section>
+    <!-- Example code: secondary footer -->
+    <?php include ("includes/modules/footer-secondary.php"); ?>
+    
+
+    <!-- Interview footer with credits -->
+    <section class="border module-info">
       <h3>Interview Footer with Credits</h3>
-      
-      <p>This code snippet here is for reference only. It is already included in the interview <strong>base-template.php</strong> file and use PHP variables to pull in the appropriate date. If you don't need a specific credit, delete the whole <code>&lt;li&gt;</code>.</p>
-      <p>The site credits can be found in the <strong>includes/site-credits.php</strong> file.</p>
+      <p>This code snippet is for reference only and is already included in the <strong>interview/base-template.php</strong> file in the <a href="https://github.com/WomenAndTech/static-site">static-site repo</a>. PHP variables are used to customize the credits.</p>
+      <p>If you don't need a specific credit, delete the whole list item (<code>&lt;li&gt;</code>).</p>
 <pre><code>&lt;footer class=&quot;border credits&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;
@@ -226,67 +209,16 @@ include ("includes/header.php");
 &lt;/footer&gt;
 </code></pre>
     </section>
-    
-    <!-- Example: Interview footer with credits -->
-    <footer class="border credits">
-      <ul>
-        <li>Interview by <a href="#">Ruby Watson</a></li>
-        <li>Photography by <a href="#">Amanda Huang</a></li>
-        <li>Editing by <a href="#">Ruby Watson</a> and <a href="#">Ivonne Karamoy</a></li>
-        <li>Art Direction by <a href="#">Cassie Kaiser</a></li>
-        <li>Design by <a href="#">Cassie Kaiser</a></li>
-        <li>Development by <a href="#">Audrey Kuo</a> and <a href="#">Brett Bergmann</a></li>
-        <li>Transcriptions by <a href="#">Ruby Watson</a></li>
-      </ul>
-      <p>Don't miss another interview, <a href="#subscribe">subscribe below</a>.</p>
-      <p class="italic">This site uses Monotype's Avenir Next by Adrian Fruteger and Akira Kobayashi, icon by Cathy Moser, Github, Cloudflare, and Windows Azure.</p>
-    </footer>
+    <!-- Example code: interview footer with credits -->
+    <?php include ("includes/modules/footer-credits.php"); ?>
     
     
-    <!-- // Secondary footer -->
-    <section class="border module-info">
-      <h3>Secondary Footer</h3>
-      <p>This module can be used for the main content footer. The only thing that is required is the markup shown in the example. Any kind of content can be added such as paragraphs, links or images.</p>
-<pre><code>&lt;footer class=&quot;no-border footer-secondary&quot;&gt;
-  &lt;div class=wrapper-sm&gt;
-    &lt;h2&gt;Heading Example&lt;/h2&gt;
-    &lt;p&gt;Paragraph text with a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum corrupti eius labore cumque expedita dicta tenetur ut, accusantium, eaque eum, veritatis quam quae officiis assumenda? Voluptatum placeat eaque.&lt;/p&gt;
-  
-    &lt;img class=&quot;spacer30&quot; src=&quot;/assets/img/coffee-icon.png&quot; alt=&quot;Coffee&quot; width=&quot;50px&quot;&gt;
-
-    &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Donate&lt;/a&gt; a cup of coffee or tea and get first dibs on new content.&lt;/p&gt;
-    &lt;p&gt;We also welcome contributors, volunteers and sponsors.&lt;/p&gt;
-    &lt;p&gt;Check out our &lt;a href=&quot;#&quot;&gt;Contribute&lt;/a&gt; page for more information.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/footer&gt;
-</code></pre>
-    </section>
-    
-    <footer class="no-border footer-secondary">
-      <div class=wrapper-sm>
-        <h2>Heading Example</h2>
-        <p>Paragraph text with a <a href="#">link</a>.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum corrupti eius labore cumque expedita dicta tenetur ut, accusantium, eaque eum, veritatis quam quae officiis assumenda? Voluptatum placeat eaque.</p>
-      
-        <img class="spacer30" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px">
-
-        <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
-        <p>We also welcome contributors, volunteers and sponsors.</p>
-        <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p>
-      </div>
-    </footer>
-
-    
-    
-    
-    <!-- // Image Modules // -->
+    <!-- IMAGE MODULES -->
     <section class="border module-info">
       <h2 id="images">Interview Images</h2>
-      
       <p>The static site uses PHP to load partial files. Be sure to include the PHP snippet for image paths, shown in the example code below.</p>
       
-      <!-- // Feature Image -->
+      <!-- Feature Image -->
       <h3>Feature Image</h3>
 <pre><code>&#x3C;!-- // Feature image --&#x3E;
 &#x3C;div class=&#x22;border img-feature&#x22;&#x3E;
@@ -296,16 +228,10 @@ include ("includes/header.php");
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
+    <!-- Example code: featured image -->
+    <?php include ("includes/modules/image-featured.php"); ?>
     
-    <!-- Example: Featured Image -->
-    <div class="border img-feature">
-      <figure>
-        <img src="assets/img/image-featured.jpg" alt="Biying Miao">
-      </figure>
-    </div>
-    
-    
-    <!-- // Side by Side Image -->
+    <!-- Side by side images -->
     <section class="border module-info">
       <h3>Side by Side Images</h3>
 <pre><code>&#x3C;!-- // Image - Left & Right --&#x3E;
@@ -322,22 +248,10 @@ include ("includes/header.php");
 &lt;/div&gt;
 </code></pre>
     </section>
+    <!-- Example code: side by side image -->
+    <?php include ("includes/modules/image-sidebyside.php"); ?>
     
-    <!-- Example: Side by Side Image -->
-    <div class="border img-side-by-side">
-      <figure>
-        <img src="assets/img/image-side-left.jpg" alt="Biying Miao">
-      </figure>
-      <figure>
-        <img src="assets/img/image-side-right.jpg" alt="Biying Miao">
-        <figcaption>
-          Optional caption goes here. <a href="#">Links</a> can also be included.
-        </figcaption>
-      </figure>
-    </div>
-    
-    
-    <!-- // Single Image - Portrait -->
+    <!-- Single image - portrait -->
     <section class="border module-info">
       <h3>Single Image - Portrait</h3>
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
@@ -348,16 +262,10 @@ include ("includes/header.php");
 &#x3C;/div&#x3E;
 </code></pre>
     </section>
+    <!-- Example code: single image - portrait -->
+    <?php include ("includes/modules/image-portrait.php"); ?>
     
-    <!-- Example: Single Image - Portrait -->
-    <div class="border img-portrait">
-      <figure>
-        <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
-      </figure>
-    </div>
-    
-    
-    <!-- // Single Image with caption -->
+    <!-- Single image with caption -->
     <section class="border module-info">
       <h3>Single Image - Portrait with caption</h3>    
 <pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
@@ -372,15 +280,8 @@ include ("includes/header.php");
 </code></pre>
     </section>
     
-    <!-- Example: Single image - Portrait -->
-    <div class="border img-portrait">
-      <figure>
-        <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
-        <figcaption>
-          Optional caption goes here.
-        </figcaption>
-      </figure>
-    </div>
+    <!-- Example code: single image - portrait with caption -->
+    <?php include ("includes/modules/image-portrait-caption.php"); ?>
     
     
     <!-- // Single Image - Landscape -->
@@ -396,11 +297,7 @@ include ("includes/header.php");
     </section>
     
     <!-- Example: Single Image - Landscape -->
-    <div class="border img-landscape">
-      <figure>
-        <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
-      </figure>
-    </div>
+    <?php include ("includes/modules/image-landscape.php"); ?>
     
     <section class="border module-info">
       <h3>Single Image - Landscape with caption</h3>
@@ -417,16 +314,7 @@ include ("includes/header.php");
     </section>
     
     <!-- Example: Single Image - Landscape with caption-->
-    <div class="border img-landscape">
-      <figure>
-        <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
-        <figcaption>
-          Optional caption goes here.
-        </figcaption>
-      </figure>
-    </div>
-
-
+    <?php include ("includes/modules/image-landscape-caption.php"); ?>
 
     
     <!-- // Q & A -->
@@ -444,21 +332,8 @@ include ("includes/header.php");
   &lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
     </section>
-    
     <!-- Example: Q & A -->    
-    <dl class="border">
-      <dt class="interview-q">Where did you grow up and what were you like as a child?</dt>
-      <dd class="interview-a">
-        <p>My family moved to Canada from Shanghai when I was in fourth grade, and I grew up in Toronto. I was a very creative child who loved drawing and making things with my hands. Coming from a Chinese family, I was encouraged to play music but gravitated toward freeform arts, so learning an instrument in the classical sense never became something that I honed. I actually wish that I had done that. My 3D printers sound like singing robots, so that’s the music I make now. I’m sure if I put the time in, I could remix it into a pretty sweet song.</p>
-        <p>I was always a bit of an art and music geek so when it came time to choose a career path I leaned toward architecture because it was a mix of art, science, and technology; all things that are very much a part of who I am.</p>
-      </dd>
-    </dl>
-    <dl class="border">
-      <dt class="interview-q">Another question?</dt>
-      <dd class="interview-a">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </dd>
-    </dl>
+    <?php include ("includes/modules/qa.php"); ?>
     
     
     <!-- // Pull quote -->
@@ -470,11 +345,8 @@ include ("includes/header.php");
   &lt;p&gt;Digital fabrication allows for a physical reality that&rsquo;s much more transient, dynamic, and customized by the individual.&lt;/p&gt;
 &lt;/aside&gt;</code></pre>
     </section>
-    
     <!-- Example: Pull quote -->
-    <aside class="border pull-quote">
-      <p>Digital fabrication allows for a physical reality that’s much more transient, dynamic, and customized by the individual.</p>
-    </aside>
+    <?php include ("includes/modules/pull-quote.php"); ?>
     
 
     
@@ -491,14 +363,8 @@ include ("includes/header.php");
   &lt;/p&gt;
 &lt;/div&gt;</code></pre>
     </section>
-    
     <!-- Example: Team Signature -->
-    <div class="border signature">
-      <p>
-        with <i class="fa fa-heart-o theme-color" aria-hidden="true" title="love"></i><span class="screen-readers">love</span> 
-        from <span class="team theme-color">the Women&&Tech team</span>
-      </p>
-    </div>
+    <?php include ("includes/modules/team-signature.php"); ?>
     
     
     <!-- // Team Listing -->
@@ -527,29 +393,8 @@ include ("includes/header.php");
   &lt;p class=&quot;thanks&quot;&gt;Special thanks to our founder Cassie McDaniel, past team members and supporters.&lt;/p&gt;
 &lt;/aside&gt;</code></pre>
     </section>
-    
-    <!-- Example: Team -->
-    <aside class="border team-listing">
-      <ul>
-        <li>
-          <p class="name"><a href="#">Cassie Kaiser</a></p>
-          <p class="role">Managing Coordinator</p>
-        </li>
-        <li>
-          <p class="name"><a href="#">Ivonne Karamoy</a></p>
-          <p class="role">Managing Director</p>
-        </li>
-        <li>
-          <p class="name"><a href="#">Christina Truong</a></p>
-          <p class="role">Lead Developer</p>
-        </li>
-        <li>
-          <p class="name"><a href="#">Ray Kao</a></p>
-          <p class="role">Tech Lead</p>
-        </li>
-      </ul>
-      <p class="thanks">Special thanks to our founder Cassie McDaniel, past team members and supporters.</p>
-    </aside>
+    <!-- Example code: team listing -->
+    <?php include ("includes/modules/team-listing.php"); ?>
     
     
     
@@ -572,7 +417,6 @@ include ("includes/header.php");
     &lt;p&gt;Pudding chupa chups lollipop. Marshmallow chocolate bar brownie caramels macaroon powder danish. Gingerbread sweet tiramisu sweet roll dessert fruitcake topping cupcake donut.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/section&gt;</code></pre>
-
     </section>
   
     <!-- Example: Default heading, paragraphs and links -->
@@ -629,36 +473,7 @@ include ("includes/header.php");
     </section>
     
     <!-- Example: Past interview cards -->
-    <aside class="interview-cards wrapper">
-      <h2>Latest Interviews</h2>
-      <a class="view-all" href="/archive/">view all</a>
-      <div class="grid-wrapper">
-        <article class="grid-3-1">
-          <a href="/interview/sara-hicks/" class="no-underline">
-            <img src="assets/img/thumbnail-sara-hicks.png" alt="Sara Hicks">
-            <h3>Sara Hicks</h3>
-            <p>with Sophie He</p>
-            <p>Cofounder and CEO of Reaction Commerce, an open-source ecommerce platform.</p>
-          </a>
-        </article>
-        <article class="grid-3-1">
-          <a href="/interview/mitchell-baker/" class="no-underline">
-            <img src="assets/img/thumbnail-mitchell-baker.png" alt="Mitchell Baker">
-            <h3>Mitchell Baker</h3>
-            <p>with Cassie McDaniel</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </a>
-        </article>
-        <article class="grid-3-1">
-          <a href="/interview/sandi-lin/" class="no-underline">
-            <img src="assets/img/thumbnail-sandi-lin.png" alt="Sandi Lin">
-            <h3>Sandi Lin</h3>
-            <p>with Sarah Sutherland</p>
-            <p>Co-founder and CEO of Seattle-based startup Skilljar, an online course delivery platform.</p>
-          </a>
-        </article>
-      </div>
-    </aside>
+    <?php include ("includes/modules/interview-cards.php"); ?>
     
     
     
@@ -726,29 +541,4 @@ include ("includes/header.php");
     </section>
   </footer>
 
-
-
-
-  <!-- for testing only -->
-  <p style="position:fixed;bottom:0px;left:10px;color:black;background:white;padding:5px;"><span id="width"></span> x <span id="height"></span> <span id="screen"></span></p>
-
-  <!-- Global files -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
-  <script>!window.jQuery && document.write('<script src="assets/js/jquery-2.2.3.min.js"><\/script>')</script>
-  <script src="assets/js/jquery.viewportchecker.min.js"></script>
-  <script src="assets/js/global-min.js"></script>
-  
-  <!-- Style guide only -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
-  <script src="assets/js/smooth-scroll.min.js"></script>
-  <script>
-    // only used in style guide
-    smoothScroll.init({
-      selectorHeader: '[data-scroll-header]',
-      offset: 120
-    });
-  </script>
-  <script src="assets/js/style-guide-min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  </body>
-</html>
+<?php include ("includes/footer.php"); ?>
