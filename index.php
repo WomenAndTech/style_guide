@@ -61,13 +61,14 @@ include ("includes/header.php");
       </div>
       <div class="grid-2-1">
         <h2 id="themes">Themes</h2>
-        
+        <p>Select a button to view the theme color options.</p>
         <button class="coral" data-theme="coral">.theme-coral</button>
         <button class="purple" data-theme="purple">.theme-purple</button>
         <button class="yellow" data-theme="yellow">.theme-yellow</button>
         <button class="green" data-theme="green">.theme-green</button>
         <button class="blue" data-theme="blue">.theme-blue</button>
-        <p>Select a button to view the theme color options. Theme changes include:</p>
+        
+        <p>Theme changes include:</p>
         <ul>
           <li>page background</li>
           <li>link colors, :hover and :focus</li>
@@ -81,19 +82,18 @@ include ("includes/header.php");
     <!-- // Headers //-->
     <section class="border module-info">
       <h2 id="headings">Headers</h2>
-      <!-- // Secondary Header -->
       <div class="grid-wrapper">
-        <div class="grid-2-1">
-          <h3>Secondary Header</h3>
+        <div class="grid-narrow">
+          <h3>Secondary Header Example</h3>
           <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
         </div>
-        <div class="grid-2-1">
-<pre><code class="xml">&#x3C;!-- // Secondary Header --&#x3E;
-&lt;header class=&quot;no-border header-secondary&quot;&gt;
+        <div class="grid-wide">
+  <pre><code class="xml">&#x3C;!-- // Secondary Header --&#x3E;
+  &lt;header class=&quot;no-border header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
   &lt;p&gt;Our industry is filled with &lt;a href="#"&gt;smart, interesting women&lt;/a&gt; including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
+  &lt;/header&gt;
+  </code></pre>
         </div>
       </div>
     </section>
@@ -146,6 +146,7 @@ include ("includes/header.php");
 </code></pre>
       </div>
     </section>
+    <hr>
     
     <!-- Example: Interview Header -->
     <header class="border header-interview">

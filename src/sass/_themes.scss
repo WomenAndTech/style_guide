@@ -64,10 +64,10 @@
     &.style-guide > header {
       background: $color;
     }
-    // .module-info {
-    //   border-top: 1px solid $color;
-    //   border-bottom: 1px solid $gray-light;
-    // }
+    .module-info {
+      border-top: 20px solid $color;
+      // border-bottom: 4px solid $color;
+    }
   }
   
   // Style guide page

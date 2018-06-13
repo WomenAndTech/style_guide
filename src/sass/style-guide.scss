@@ -9,11 +9,16 @@
 button {
   border: 0;
   border-radius: 2px;
-  padding: 8px;
+  padding: 8px 10px;
   cursor: pointer;
   color: white;
   font-size: $font-size-xsm;
   margin-bottom: 4px;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #F0F0F0;
+  margin: 0 20px;
 }
 
 .style-guide {
@@ -30,55 +35,26 @@ button {
     white-space: pre-wrap;
     font-size: $font-size-xsm;
     line-height: 1.5;
-    // margin-top: 0;
     margin: -30px -30px -30px 20px;
-    // padding-bottom: 50px;
-    // border-top: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
   
     code {
       padding: 30px 20px;
-      // font-size: 16px;
     }
-    // @include max-width($screen-xsm){
-    //   margin: 0 -12px -12px;
-    // 
-    //   code {
-    //     padding: 15px 12px;
-    //     font-size: 12px;
-    //   }
-    // }
   }
-  // nav {
-  //   font-size: $font-size-sm;
-  // 
-  //   a {
-  //     padding: 10px;
-  //   }
-  // }
 }
 .module-info {
   padding: 30px;
-  // border-top: 1px solid #F0F0F0;
-  border-bottom: 1px solid #F0F0F0;
   
   h2 {
-    // text-align: left;
-    // font-size: 3rem;
-    // font-weight: 400;
-    // margin-bottom: 20px;
-    // padding-top: 20px;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 0 30px 10px;
+    margin: 0 -30px 29px -30px;
+    border-bottom: 1px solid #F0F0F0;  
   }
-  // h3 {
-  //   padding-top: 10px;
-  // 
-  //   + p {
-  //     margin-top: -10px;
-  //   }
-  // }
-  // p, ul {
-  //   max-width: 900px;
-  // }
+  h3 {
+    padding-top: 10px;
+  }
 }
 
 
