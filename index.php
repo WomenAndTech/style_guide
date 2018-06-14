@@ -9,11 +9,11 @@
     <nav class="nav-primary" data-scroll-header>
       <a data-scroll href="#templates">Templates & Themes</a>
       <a data-scroll href="#headings">Headers & Footers</a>
-      <a data-scroll href="#images">Images</a>
-      <a data-scroll href="#qa">Q&A</a>
-      <a data-scroll href="#quote">Quote</a>
-      <a data-scroll href="#team">Team</a>
-      <a data-scroll href="#misc">Misc</a>
+      <a data-scroll href="#images">Images & Video</a>
+      <a data-scroll href="#qa">Content</a>
+      <!-- <a data-scroll href="#quote">Quote</a>
+      <a data-scroll href="#team">Team</a> -->
+      <a data-scroll href="#misc">Helpers</a>
     </nav>
   </header>
   
@@ -24,7 +24,7 @@
     </header>
     
     <!-- PAGE TEMPLATES & THEMES -->
-    <section class="border module-info grid-wrapper">
+    <section class="border module grid-wrapper">
       <div class="grid-2-1">
         <h2 id="templates">Templates</h2>
         <ul>
@@ -69,17 +69,17 @@
           <li>page background</li>
           <li>link colors, :hover and :focus</li>
         </ul>
-        <p>Theme color classes are added to the <code>&lt;body&gt;</code> tag using one of five theme color codes.</p> 
+        <p>Theme color classes are added to the <code>&lt;body&gt;</code> tag using one of five theme color codes.</p>
         <pre><code class="xml">&lt;body class="theme-coral"&gt;</code></pre> 
         <p>In the static site, themes are added using PHP variables. Refer to the static site documentation for more info.</p>  
       </div>
     </section>
 
     <!-- HEADERS -->
-    <section class="border module-info">
+    <section class="module">
       <h2 id="headings">Headers & Footers</h2>
-      
       <div class="grid-wrapper">
+        <!-- Secondary header -->
         <div class="grid-narrow">
           <h3>Secondary Header</h3>
           <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
@@ -99,7 +99,7 @@
     
     
     <!-- Interview header -->
-    <section class="border module-info grid-wrapper">
+    <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3>Interview Header</h3>
         <p>This header is used to begin all interview pages. PHP variables are used to automatically add the author name and social media information. Included in the <strong>base-template.php</strong> file in the static site repo.</p>
@@ -139,15 +139,17 @@
 </code></pre>
       </div>
     </section>
-    <hr>
     <!-- Example code: interview header -->
     <?php include ("includes/modules/header-interview.php"); ?>
     
     
     <!-- Secondary footer -->
-    <section class="border module-info">
-      <h3>Secondary Footer</h3>
-      <p>This module can be used for the main content footer. The only thing that is required is the markup shown in the example. Any kind of content can be added such as paragraphs, links or images.</p>
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Secondary Footer</h3>
+        <p>This module can be used for the main content footer. The only thing that is required is the markup shown in the example. Any kind of content can be added such as paragraphs, links or images.</p>
+      </div>
+      <div class="grid-wide">
 <pre><code>&lt;footer class=&quot;no-border footer-secondary&quot;&gt;
   &lt;div class=wrapper-sm&gt;
     &lt;h2&gt;Heading Example&lt;/h2&gt;
@@ -161,17 +163,21 @@
     &lt;p&gt;Check out our &lt;a href=&quot;#&quot;&gt;Contribute&lt;/a&gt; page for more information.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/footer&gt;
-</code></pre>
+</code></pre>        
+      </div>
     </section>
     <!-- Example code: secondary footer -->
     <?php include ("includes/modules/footer-secondary.php"); ?>
     
 
     <!-- Interview footer with credits -->
-    <section class="border module-info">
-      <h3>Interview Footer with Credits</h3>
-      <p>This code snippet is for reference only and is already included in the <strong>interview/base-template.php</strong> file in the <a href="https://github.com/WomenAndTech/static-site">static-site repo</a>. PHP variables are used to customize the credits.</p>
-      <p>If you don't need a specific credit, delete the whole list item (<code>&lt;li&gt;</code>).</p>
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Interview Footer with Credits</h3>
+        <p>This code snippet is for reference only and is already included in the <strong>interview/base-template.php</strong> file in the <a href="https://github.com/WomenAndTech/static-site">static-site repo</a>. PHP variables are used to customize the credits.</p>
+        <p>If you don't need a specific credit, delete the whole list item (<code>&lt;li&gt;</code>).</p>
+      </div>
+      <div class="grid-wide">
 <pre><code>&lt;footer class=&quot;border credits&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;
@@ -207,19 +213,25 @@
   include($path_inc.&quot;site-credits.php&quot;);
   ?&gt;
 &lt;/footer&gt;
-</code></pre>
+</code></pre>      
+      </div>
     </section>
     <!-- Example code: interview footer with credits -->
     <?php include ("includes/modules/footer-credits.php"); ?>
     
     
-    <!-- IMAGE MODULES -->
-    <section class="border module-info">
-      <h2 id="images">Interview Images</h2>
-      <p>The static site uses PHP to load partial files. Be sure to include the PHP snippet for image paths, shown in the example code below.</p>
+    <!-- IMAGE & VIDEO MODULES -->
+    <section class="module">
+      <h2 id="images">Images and Videos</h2>
+      <p>The static site uses PHP to customize the templates. Be sure to include the PHP snippet for image paths, shown in the example code below. View the documentation in the <a href="https://github.com/WomenAndTech/static-site">website repo</a> for more information about directory structures and file naming.</p>
       
-      <!-- Feature Image -->
-      <h3>Feature Image</h3>
+      <!-- Featured image -->
+      <div class="grid-wrapper">
+        <div class="grid-narrow">
+          <h3>Feature Image</h3>
+          <p>This image is used at the beginning of each interview.</p>
+        </div>
+        <div class="grid-wide">
 <pre><code>&#x3C;!-- // Feature image --&#x3E;
 &#x3C;div class=&#x22;border img-feature&#x22;&#x3E;
   &#x3C;figure&#x3E;
@@ -227,13 +239,20 @@
   &#x3C;/figure&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
+        </div>
+      </div>
     </section>
     <!-- Example code: featured image -->
     <?php include ("includes/modules/image-featured.php"); ?>
     
     <!-- Side by side images -->
-    <section class="border module-info">
-      <h3>Side by Side Images</h3>
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Side by Side Images</h3>
+        <p>This image style can be used throughout the interview to highlight the content and to visually break up the text.</p>
+        <p>Delete the &lt;figcaption&gt;&lt;/figcaption&gt; if you don't need to include a caption.</p>
+      </div>
+      <div class="grid-wide">
 <pre><code>&#x3C;!-- // Image - Left & Right --&#x3E;
 &lt;div class=&quot;border img-side-by-side&quot;&gt;
   &lt;figure&gt;
@@ -247,80 +266,68 @@
   &lt;/figure&gt;
 &lt;/div&gt;
 </code></pre>
+      </div>
     </section>
     <!-- Example code: side by side image -->
     <?php include ("includes/modules/image-sidebyside.php"); ?>
     
     <!-- Single image - portrait -->
-    <section class="border module-info">
-      <h3>Single Image - Portrait</h3>
-<pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Single Image: Portrait or Landscape</h3>
+        <p>If using a single image, you have the option to use a portait image or landscape image.</p>
+        <p>Delete the &lt;figcaption&gt;&lt;/figcaption&gt; if you don't need to include a caption.</p>
+      </div>
+      <div class="grid-wide">
+<pre><code>&#x3C;!-- // Single Image - Portrait --&#x3E;
 &#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
   &#x3C;figure&#x3E;
     &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;portrait-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;figcaption&#x3E;
+      Optional caption goes here.
+    &#x3C;/figcaption&#x3E;
   &#x3C;/figure&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
+<pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
+&#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
+  &#x3C;figure&#x3E;
+    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;landscape-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
+    &#x3C;figcaption&#x3E;
+      Optional caption goes here.
+    &#x3C;/figcaption&#x3E;
+  &#x3C;/figure&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
+      </div>
     </section>
     <!-- Example code: single image - portrait -->
-    <?php include ("includes/modules/image-portrait.php"); ?>
-    
-    <!-- Single image with caption -->
-    <section class="border module-info">
-      <h3>Single Image - Portrait with caption</h3>    
-<pre><code>&#x3C;!-- // Image - Portrait --&#x3E;
-&#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
-  &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;portrait-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
-    &#x3C;figcaption&#x3E;
-      Optional caption goes here.
-    &#x3C;/figcaption&#x3E;
-  &#x3C;/figure&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-    </section>
-    
-    <!-- Example code: single image - portrait with caption -->
-    <?php include ("includes/modules/image-portrait-caption.php"); ?>
-    
-    
-    <!-- // Single Image - Landscape -->
-    <section class="border module-info">
-      <h3>Single Image - Landscape</h3>
-<pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
-&#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
-  &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;landscape-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
-  &#x3C;/figure&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-    </section>
-    
-    <!-- Example: Single Image - Landscape -->
+    <?php include ("includes/modules/image-portrait.php"); ?>    
+    <!-- Example: Single Image - Landscape-->
     <?php include ("includes/modules/image-landscape.php"); ?>
-    
-    <section class="border module-info">
-      <h3>Single Image - Landscape with caption</h3>
-<pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
-&#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
-  &#x3C;figure&#x3E;
-    &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;landscape-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
-    &#x3C;figcaption&#x3E;
-      Optional caption goes here.
-    &#x3C;/figcaption&#x3E;
-  &#x3C;/figure&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
+
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3 id="images">Video</h3>
+        <p>To include a video, copy the video embed code from the platform (YouTube, Vimeo) and include it within the markup shown in the code snippet.</p>
+      </div>
+      <div class="grid-wide">
+        
+      </div>
     </section>
     
-    <!-- Example: Single Image - Landscape with caption-->
-    <?php include ("includes/modules/image-landscape-caption.php"); ?>
-
     
-    <!-- // Q & A -->
-    <section class="border module-info">
-      <h2 id="qa">Q & A</h2>
-      <p>Use this snippet for each Q & A block. You can add as many paragraphs as required for the answer portion. Just be sure to keep the paragraphs enclosed within the <code>&lt;dd class=&quot;interview-a&quot;&gt;&lt;/dd&gt;</code> tags.</p>
+    <!-- TEXT BASED CONTENT MODULES -->
+    <section class="module">
+      <h2>Content Modules</h2>
+      <p>Use the following content modules for your text-based content.</p>
+      <div class="grid-wrapper">
+        <!-- // Q & A -->
+        <div class="grid-narrow">
+          <h3>Q & A</h3>
+          <p>Use this snippet for each Q & A block. You can add as many paragraphs as required for the answer portion. Just be sure to keep the paragraphs enclosed within the <code>&lt;dd class=&quot;interview-a&quot;&gt;&lt;/dd&gt;</code> tags.</p>
+        </div>
+        <div class="grid-wide">
 <pre><code>&#x3C;!-- // Q & A --&#x3E;
 &lt;dl class=&quot;border&quot;&gt;
   &#x3C;!-- // Question --&#x3E;
@@ -331,76 +338,14 @@
     &lt;p&gt;I was always a bit of an art and music geek so when it came time to choose a career path I leaned toward architecture because it was a mix of art, science, and technology; all things that are very much a part of who I am.&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
+        </div> 
+      </div>     
     </section>
     <!-- Example: Q & A -->    
     <?php include ("includes/modules/qa.php"); ?>
     
-    
-    <!-- // Pull quote -->
-    <section class="border module-info">
-      <h2 id="quote">Pull Quote</h2>
-      <p>Use this code snippet for each pull quote.</p>
-<pre><code>&#x3C;!-- // Pull Quote --&#x3E;
-&lt;aside class=&quot;border pull-quote&quot;&gt;
-  &lt;p&gt;Digital fabrication allows for a physical reality that&rsquo;s much more transient, dynamic, and customized by the individual.&lt;/p&gt;
-&lt;/aside&gt;</code></pre>
-    </section>
-    <!-- Example: Pull quote -->
-    <?php include ("includes/modules/pull-quote.php"); ?>
-    
-
-    
-    <!-- // Team Related Content -->
-    <section class="border module-info">
-      <h2 id="team">Team Related Content</h2>
-      
-      <!-- // Team Signature -->
-      <h3>Team Signature</h3>
-<pre><code>&lt;div class=&quot;border signature&quot;&gt;
-  &lt;p&gt;
-    with &lt;i class=&quot;fa fa-heart-o theme-color&quot; aria-hidden=&quot;true&quot; title=&quot;love&quot;&gt;&lt;/i&gt;&lt;span class=&quot;screen-readers&quot;&gt;love&lt;/span&gt;
-    from &lt;span class=&quot;team theme-color&quot;&gt;the Women&amp;&amp;Tech team&lt;/span&gt;
-  &lt;/p&gt;
-&lt;/div&gt;</code></pre>
-    </section>
-    <!-- Example: Team Signature -->
-    <?php include ("includes/modules/team-signature.php"); ?>
-    
-    
-    <!-- // Team Listing -->
-    <section class="border module-info">
-      <h3>Team Listing</h3>
-<pre><code>&#x3C;!-- // Team Listing --&#x3E;
-&lt;aside class=&quot;border team-listing&quot;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Cassie Kaiser&lt;/a&gt;&lt;/p&gt;
-      &lt;p class=&quot;role&quot;&gt;Managing Coordinator&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ivonne Karamoy&lt;/a&gt;&lt;/p&gt;
-      &lt;p class=&quot;role&quot;&gt;Managing Director&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Christina Truong&lt;/a&gt;&lt;/p&gt;
-      &lt;p class=&quot;role&quot;&gt;Lead Developer&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ray Kao&lt;/a&gt;&lt;/p&gt;
-      &lt;p class=&quot;role&quot;&gt;Tech Lead&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;p class=&quot;thanks&quot;&gt;Special thanks to our founder Cassie McDaniel, past team members and supporters.&lt;/p&gt;
-&lt;/aside&gt;</code></pre>
-    </section>
-    <!-- Example code: team listing -->
-    <?php include ("includes/modules/team-listing.php"); ?>
-    
-    
-    
-    <!-- // Misc content styles // -->
-    <section class="border module-info">
-      <h2 id="misc">Misc</h2>
+    <section class="border module">
+      <h2 id="helpers">Helper Classes</h2>
     
       <!-- // Default page content -->
       <h3>Default headings, paragraphs and links</h3>
@@ -432,10 +377,80 @@
         <p>Pudding chupa chups lollipop. Marshmallow chocolate bar brownie caramels macaroon powder danish. Gingerbread sweet tiramisu sweet roll dessert fruitcake topping cupcake donut. Marshmallow sweet tiramisu pudding powder lollipop pie croissant cake. Tiramisu bear claw gummi bears jelly beans marshmallow jujubes bonbon. Icing soufflé bear claw cake dessert pastry marshmallow jujubes.</p>
       </div>
     </section>
-  
-  
+    
+    <!-- // Pull quote -->
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Pull Quote</h3>
+        <p>Use this code snippet for each pull quote.</p>
+      </div>
+      <div class="grid-wide">
+<pre><code>&#x3C;!-- // Pull Quote --&#x3E;
+&lt;aside class=&quot;border pull-quote&quot;&gt;
+  &lt;p&gt;Digital fabrication allows for a physical reality that&rsquo;s much more transient, dynamic, and customized by the individual.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+      </div>
+    </section>
+    <!-- Example: Pull quote -->
+    <?php include ("includes/modules/pull-quote.php"); ?>
+    
+
+    <!-- // Team Related Content -->
+    <section class="module">
+      <h3>Team Related Content</h3>
+      <div class="grid-wrapper">
+        <div class="grid-narrow">
+          <!-- // Team Signature -->
+          <h3>Team Signature</h3>
+        </div>
+        <div class="grid-wide">
+<pre><code>&lt;div class=&quot;border signature&quot;&gt;
+  &lt;p&gt;
+    with &lt;i class=&quot;fa fa-heart-o theme-color&quot; aria-hidden=&quot;true&quot; title=&quot;love&quot;&gt;&lt;/i&gt;&lt;span class=&quot;screen-readers&quot;&gt;love&lt;/span&gt;
+    from &lt;span class=&quot;team theme-color&quot;&gt;the Women&amp;&amp;Tech team&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </section>
+    <!-- Example: Team Signature -->
+    <?php include ("includes/modules/team-signature.php"); ?>
+    
+    
+    <!-- // Team Listing -->
+    <section class="module grid-wrapper">
+      <div class="grid-narrow">
+        <h3>Team Listing</h3>
+      </div>
+      <div class="grid-wide">
+<pre><code>&#x3C;!-- // Team Listing --&#x3E;
+&lt;aside class=&quot;border team-listing&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Cassie Kaiser&lt;/a&gt;&lt;/p&gt;
+      &lt;p class=&quot;role&quot;&gt;Managing Coordinator&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ivonne Karamoy&lt;/a&gt;&lt;/p&gt;
+      &lt;p class=&quot;role&quot;&gt;Managing Director&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Christina Truong&lt;/a&gt;&lt;/p&gt;
+      &lt;p class=&quot;role&quot;&gt;Lead Developer&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ray Kao&lt;/a&gt;&lt;/p&gt;
+      &lt;p class=&quot;role&quot;&gt;Tech Lead&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class=&quot;thanks&quot;&gt;Special thanks to our founder Cassie McDaniel, past team members and supporters.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+      </div>
+    </section>
+    <!-- Example code: team listing -->
+    <?php include ("includes/modules/team-listing.php"); ?>
     <!-- // Interview Cards // -->
-    <section class="border module-info">
+    <section class="border module">
       <h3>Past Interview Cards</h3>
       <p>This code snippet is here for reference only. The only changes that need to made is to the content, not the HTML markup.
       <p>In the <strong>includes/latest-interviews.php</strong> file, update the URL to the interviews, thumbnail image file and interview details to update the three interviews to be featured.</p>
@@ -474,6 +489,17 @@
     
     <!-- Example: Past interview cards -->
     <?php include ("includes/modules/interview-cards.php"); ?>
+    
+    
+    <!-- HELPER CLASSES -->
+    <section class="border module">
+      <h2 id="helpers">Helper Classes</h2>
+    </section>
+  
+
+  
+  
+    
     
     
     
