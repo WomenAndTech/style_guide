@@ -9,7 +9,7 @@
     <nav class="nav-primary" data-scroll-header>
       <a data-scroll href="#templates">Templates & Themes</a>
       <a data-scroll href="#headings">Headers & Footers</a>
-      <a data-scroll href="#images">Images & Video</a>
+      <a data-scroll href="#media">Media</a>
       <a data-scroll href="#content">Content</a>
       <a data-scroll href="#helpers">Helpers</a>
     </nav>
@@ -76,6 +76,7 @@
     <!-- HEADERS & FOOTERS -->
     <section class="module">
       <h2 id="headings">Headers & Footers</h2>
+      <p>These modules can be use at the beginning or end of a page or interview. The global site header and footer content are already included and does not need to be added.</p>
       <div class="grid-wrapper">
         <!-- Secondary header -->
         <div class="grid-narrow">
@@ -83,8 +84,8 @@
           <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
         </div>
         <div class="grid-wide">
-          <button class="btn-copy" data-clipboard-target="#h-secondary" data-copy>copy to clipboard</button>
-<pre><code class="xml" id="h-secondary">&lt;header class=&quot;no-border header-secondary&quot;&gt;
+          <button class="btn-copy" data-clipboard-target="#header-secondary" data-copy>copy to clipboard</button>
+<pre><code class="xml" id="header-secondary">&lt;header class=&quot;no-border header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
   &lt;p&gt;Our industry is filled with &lt;a href="#"&gt;smart, interesting women&lt;/a&gt; including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
 &lt;/header&gt;
@@ -92,7 +93,6 @@
         </div>
       </div>
     </section>
-
     <!-- Example code: secondary header -->
     <?php include ("includes/modules/header-secondary.php"); ?>
     
@@ -104,7 +104,8 @@
         <p>PHP variables are used to automatically add the author name and social media information. Refer to the <strong>base-template.php</strong> file in the static site repo for more information.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;header class=&quot;border header-interview&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#header-interview" data-copy>copy to clipboard</button>
+<pre><code id="header-interview">&lt;header class=&quot;border header-interview&quot;&gt;
   &lt;div class=&quot;wrapper-sm&quot;&gt;
     &lt;h2&gt;Interviewee Name&lt;/h2&gt;
     &lt;p class=&quot;intro&quot;&gt;Intro paragraph.&lt;/p&gt;
@@ -150,7 +151,8 @@
         <p>Refer to the <a href="#helpers">Helpers</a> section for additional content styles.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;footer class=&quot;no-border footer-secondary&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#footer-secondary" data-copy>copy to clipboard</button>
+<pre><code id="footer-secondary">&lt;footer class=&quot;no-border footer-secondary&quot;&gt;
   &lt;div class="wrapper-sm"&gt;
     &#x3C;!-- ADD CONTENT HERE --&#x3E;
     &lt;h2&gt;Heading Example&lt;/h2&gt;
@@ -173,7 +175,8 @@
         <p>If you don't need a specific credit, delete the whole list item (<code>&lt;li&gt;</code>).</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;footer class=&quot;border credits&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#footer-interview" data-copy>copy to clipboard</button>
+<pre><code id="footer-interview">&lt;footer class=&quot;border credits&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;
       Interview by &lt;a href=&quot;&lt;?php echo $interviewer_url; ?&gt;&quot;&gt;&lt;?php echo $interviewer; ?&gt;&lt;/a&gt;
@@ -227,7 +230,8 @@
           <p>This image is used at the beginning of each interview.</p>
         </div>
         <div class="grid-wide">
-<pre><code>&#x3C;div class=&#x22;border img-feature&#x22;&#x3E;
+          <button class="btn-copy" data-clipboard-target="#img-feature" data-copy>copy to clipboard</button>
+<pre><code id="img-feature">&#x3C;div class=&#x22;border img-feature&#x22;&#x3E;
   &#x3C;figure&#x3E;
     &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;featured-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
   &#x3C;/figure&#x3E;
@@ -247,7 +251,8 @@
         <p>Delete the &lt;figcaption&gt;&lt;/figcaption&gt; if you don't need to include a caption.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;div class=&quot;border img-side-by-side&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#img-sidebyside" data-copy>copy to clipboard</button>
+<pre><code id="img-sidebyside">&lt;div class=&quot;border img-side-by-side&quot;&gt;
   &lt;figure&gt;
     &lt;img src=&quot;&#x3C;?php echo $path_img; ?&#x3E;left-biying-miao.jpg&quot; alt=&quot;Biying Miao&quot;&gt;
   &lt;/figure&gt;
@@ -272,7 +277,8 @@
         <p>Delete the &lt;figcaption&gt;&lt;/figcaption&gt; if you don't need to include a caption.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&#x3C;!-- // Single Image - Portrait --&#x3E;
+        <button class="btn-copy" data-clipboard-target="#img-portrait" data-copy>copy to clipboard</button>
+<pre><code id="img-portrait">&#x3C;!-- // Single Image - Portrait --&#x3E;
 &#x3C;div class=&#x22;border img-portrait&#x22;&#x3E;
   &#x3C;figure&#x3E;
     &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;portrait-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
@@ -282,7 +288,9 @@
   &#x3C;/figure&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
-<pre><code>&#x3C;!-- Single Image - Landscape --&#x3E;
+<hr>
+<button class="btn-copy" data-clipboard-target="#img-landscape" data-copy>copy to clipboard</button>
+<pre><code id="img-landscape">&#x3C;!-- Single Image - Landscape --&#x3E;
 &#x3C;div class=&#x22;border img-landscape&#x22;&#x3E;
   &#x3C;figure&#x3E;
     &#x3C;img src=&#x22;&#x3C;?php echo $path_img; ?&#x3E;landscape-biying-miao.jpg&#x22; alt=&#x22;Biying Miao&#x22;&#x3E;
@@ -305,6 +313,7 @@
         <p>To include a video, copy the video embed code from the platform (YouTube, Vimeo) and include it within the markup shown in the code snippet.</p>
       </div>
       <div class="grid-wide">
+        <button class="btn-copy" data-clipboard-target="#" data-copy>copy to clipboard</button>
         
       </div>
     </section>
@@ -313,7 +322,7 @@
     <!-- TEXT BASED CONTENT MODULES -->
     <section class="module">
       <h2 id="content">Content Modules</h2>
-      <p>Use the following content modules for your text-based content.</p>
+      <p>Use the following modules for your text-based content.</p>
       <div class="grid-wrapper">
         <div class="grid-narrow">
           <h3>Default headings, paragraphs and links</h3>
@@ -321,7 +330,8 @@
           <p>This is used mainly for non-interview pages such as an About page.</p>
         </div>
         <div class="grid-wide">
-<pre><code>&lt;section class=&quot;border page-content&quot;&gt;
+          <button class="btn-copy" data-clipboard-target="#default" data-copy>copy to clipboard</button>
+<pre><code id="default">&lt;section class=&quot;border page-content&quot;&gt;
   &lt;div class=&quot;wrapper-sm&quot;&gt;
     &#x3C;!-- // ADD CONTENT HERE --&#x3E;
     &lt;h2&gt;h2 Heading&lt;/h2&gt;
@@ -344,7 +354,8 @@
         <p>Use this snippet for each Q & A block. You can add as many paragraphs as required for the answer portion. Just be sure to keep the paragraphs enclosed within the <code>&lt;dd class=&quot;interview-a&quot;&gt;&lt;/dd&gt;</code> tags.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;dl class=&quot;border&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#qa" data-copy>copy to clipboard</button>
+<pre><code id="qa">&lt;dl class=&quot;border&quot;&gt;
   &lt;dt class=&quot;interview-q&quot;&gt;Question?&lt;/dt&gt;
   &lt;dd class=&quot;interview-a&quot;&gt;
     &lt;p&gt;Answer&lt;/p&gt;
@@ -371,7 +382,8 @@
         <p>Highlight key points in the interview with pull quotes. Stick to one or two short sentences.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;aside class=&quot;border pull-quote&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#pullquote" data-copy>copy to clipboard</button>
+<pre><code id="pullquote">&lt;aside class=&quot;border pull-quote&quot;&gt;
   &lt;p&gt;Digital fabrication allows for a physical reality that&rsquo;s much more transient, dynamic, and customized by the individual.&lt;/p&gt;
 &lt;/aside&gt;</code></pre>
       </div>
@@ -387,7 +399,8 @@
         <h3>Team Signature</h3>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;div class=&quot;border signature&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#signature" data-copy>copy to clipboard</button>
+<pre><code id="signature">&lt;div class=&quot;border signature&quot;&gt;
 &lt;p&gt;
   with &lt;i class=&quot;fa fa-heart-o theme-color&quot; aria-hidden=&quot;true&quot; title=&quot;love&quot;&gt;&lt;/i&gt;&lt;span class=&quot;screen-readers&quot;&gt;love&lt;/span&gt;
   from &lt;span class=&quot;team theme-color&quot;&gt;the Women&amp;&amp;Tech team&lt;/span&gt;
@@ -405,7 +418,8 @@
         <h3>Team Listing</h3>
       </div>
       <div class="grid-wide">
-<pre><code>&#x3C;!-- // Team Listing --&#x3E;
+        <button class="btn-copy" data-clipboard-target="#team" data-copy>copy to clipboard</button>
+<pre><code id="team">&#x3C;!-- // Team Listing --&#x3E;
 &lt;aside class=&quot;border team-listing&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;
@@ -440,7 +454,8 @@
         <p>This code snippet is for reference and is already included in the <strong>includes/latest-interviews.php</strong> file. To update, revise the URL to the interviews, thumbnail image file and interview details. Only the latest three interviews are featured at a time.</p>
       </div>
       <div class="grid-wide">
-<pre><code>&lt;aside class=&quot;interview-cards wrapper&quot;&gt;
+        <button class="btn-copy" data-clipboard-target="#past-interviews" data-copy>copy to clipboard</button>
+<pre><code id="past-interviews">&lt;aside class=&quot;interview-cards wrapper&quot;&gt;
   &lt;h2&gt;Latest Interviews&lt;/h2&gt;
   &lt;a class=&quot;view-all&quot; href=&quot;/archive/&quot;&gt;view all&lt;/a&gt;
   &lt;div class=&quot;grid-wrapper&quot;&gt;

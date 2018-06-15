@@ -5,13 +5,8 @@
 // ---------------------------------------------------------
 // Styles for general page layout. Component & module styles
 // should not be overridden.
-* {
-  // border: 1px solid black;
-}
 hr {
   border: none;
-  border-bottom: 1px solid #F0F0F0;
-  margin: 0 20px;
 }
 pre {
   white-space: pre-wrap;
@@ -21,9 +16,6 @@ pre {
   .hljs {
     padding: 15px;
   }
-}
-p + pre {
-  margin: 0;
 }
 button:not(.btn-copy) {
   border: 0;
@@ -36,8 +28,10 @@ button:not(.btn-copy) {
 }
 .btn-copy {
   position: absolute;
-  top: -18px;
+  right: 0;
   border: 2px solid #F0F0F0;
+  cursor: pointer;
+  padding: 4px 6px 5px;
   
   &:focus {
     outline: none;
@@ -59,35 +53,31 @@ button:not(.btn-copy) {
   background: white;
   margin: 0 20px;
   font-size: $font-size-sm;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
   position: relative;
   
   h2 {
     font-size: 4rem;
     font-weight: 400;
-    border-bottom: 1px solid #F0F0F0;  
+    border-bottom: 1px solid #F0F0F0;
+    margin-bottom: 20px;
   }
-  
-  &:after {
-    // content: "Example";
-    // background: white;
-    // position: absolute;
-    // bottom: -40px;
-    // left: 0;
-    // padding: 5px 10px;
-    // border-right: 1px solid $coral;
-    // border-bottom: 1px solid $coral;
-    // font-size: $font-size-xsm;
+  h3 {
+    margin-top: 8px;
   }
   + .module {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   + .border {
     border-top: 1px solid #F0F0F0;
   }
 }
-.border + .module {
+.border + .module,
+.no-border + .module {
   margin-top: 20px;
+}
+p + .grid-wrapper {
+  margin-top: 60px;
 }
 
 
