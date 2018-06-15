@@ -5,8 +5,27 @@
 // ---------------------------------------------------------
 // Styles for general page layout. Component & module styles
 // should not be overridden.
-
-button {
+* {
+  // border: 1px solid black;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #F0F0F0;
+  margin: 0 20px;
+}
+pre {
+  white-space: pre-wrap;
+  font-size: $font-size-xsm;
+  margin: 0;
+  
+  .hljs {
+    padding: 15px;
+  }
+}
+p + pre {
+  margin: 0;
+}
+button:not(.btn-copy) {
   border: 0;
   border-radius: 2px;
   padding: 8px 10px;
@@ -15,46 +34,60 @@ button {
   font-size: $font-size-xsm;
   margin-bottom: 4px;
 }
-hr {
-  border: none;
-  border-bottom: 1px solid #F0F0F0;
-  margin: 0 20px;
+.btn-copy {
+  position: absolute;
+  top: -18px;
+  border: 2px solid #F0F0F0;
+  
+  &:focus {
+    outline: none;
+    border: 1px solid $coral;
+  }
 }
-
 .style-guide {
   .header-primary {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
   .header-secondary:first-of-type {
     margin-top: 118px;
   }
-
-  pre {
-    white-space: pre-wrap;
-    font-size: $font-size-xsm;
-    line-height: 1.5;
-    margin: -30px -30px -30px 20px;
-  
-    code {
-      padding: 30px 20px;
-    }
-  }
 }
-.module-info {
-  padding: 30px;
+.module {
+  background: white;
+  margin: 0 20px;
+  font-size: $font-size-sm;
+  padding: 20px 20px 0 20px;
+  position: relative;
   
   h2 {
     font-size: 4rem;
     font-weight: 400;
-    padding: 0 30px 10px;
-    margin: 0 -30px 29px -30px;
     border-bottom: 1px solid #F0F0F0;  
   }
-  h3 {
-    padding-top: 10px;
+  
+  &:after {
+    // content: "Example";
+    // background: white;
+    // position: absolute;
+    // bottom: -40px;
+    // left: 0;
+    // padding: 5px 10px;
+    // border-right: 1px solid $coral;
+    // border-bottom: 1px solid $coral;
+    // font-size: $font-size-xsm;
   }
+  + .module {
+    margin-top: 20px;
+  }
+  + .border {
+    border-top: 1px solid #F0F0F0;
+  }
+}
+.border + .module {
+  margin-top: 20px;
 }
 
 

@@ -43,6 +43,8 @@
   }
 }
 .grid-wide {
+  position: relative;
+  
   @include min-width($screen-sm){
     width: 66%;
   }
