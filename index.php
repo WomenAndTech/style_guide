@@ -22,7 +22,7 @@
     </header>
     
     <!-- TEMPLATES & THEMES -->
-    <section class="border module grid-wrapper">
+    <section class="module grid-wrapper">
       <div class="grid-2-1">
         <h2 id="templates">Templates</h2>
         <ul>
@@ -83,7 +83,8 @@
           <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
         </div>
         <div class="grid-wide">
-<pre><code class="xml">&lt;header class=&quot;no-border header-secondary&quot;&gt;
+          <button class="btn-copy" data-clipboard-target="#h-secondary" data-copy>copy to clipboard</button>
+<pre><code class="xml" id="h-secondary">&lt;header class=&quot;no-border header-secondary&quot;&gt;
   &lt;h2&gt;We&rsquo;re not endorsing the obvious. We&rsquo;re commending the awesome.&lt;/h2&gt;
   &lt;p&gt;Our industry is filled with &lt;a href="#"&gt;smart, interesting women&lt;/a&gt; including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.&lt;/p&gt;
 &lt;/header&gt;
@@ -91,9 +92,9 @@
         </div>
       </div>
     </section>
+
     <!-- Example code: secondary header -->
     <?php include ("includes/modules/header-secondary.php"); ?>
-    
     
     <!-- Interview header -->
     <section class="module grid-wrapper">
@@ -477,12 +478,10 @@
     
     
     <!-- HELPER CLASSES -->
-    <section class="border module">
+    <section class="module">
       <h2 id="helpers">Helper Classes [in progress]</h2>
       <p>To make customizations and isolated style addition outside of the default and module styles, see below references.</p>
     </section>
-
-    
     
     <!-- <img class="spacer30" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px">
 
