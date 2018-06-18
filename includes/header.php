@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Style Guide | Women&amp;&amp;Tech</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Twitter cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@WomenAndTech">
-  <meta name="twitter:creator" content="@WomenAndTech">
-  <meta name="twitter:title" content="Wome&&Tech Style Guide">
-  <meta name="twitter:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
-  <meta name="twitter:image" content="">
-
-  <!-- Facebook Open Graph -->
-  <meta property="og:url" content="http://womenandtech.github.io/style_guide/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Wome&&Tech Style Guide">
-  <meta property="og:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
-  <meta property="og:image" content="">
-
-  <link rel="shortcut icon" href="assets/img/favicon-32x32.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- Style guide only -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-  <link rel="stylesheet" href="assets/css/style-guide.css">
-</head>
+<header class="header-primary">
+  <a href="/" class="logo">
+    <img src="/assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">
+    <h1 class="screen-readers">Women && Tech</h1>
+  </a>
+  <nav class="nav-primary">
+    <a href="#">Interviews</a>
+    <a href="#">About Us</a>
+    <a href="#">Contribute</a>
+    <a href="https://docs.google.com/forms/d/1p_rLrRz3JezgW-tEjAKYN1XkyTbVudFuNYHIP0wLktM/edit?usp=drive_web">Nominate</a>
+  </nav>
+</header>

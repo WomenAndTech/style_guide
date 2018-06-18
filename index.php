@@ -1,4 +1,4 @@
-<?php include ("includes/header.php"); ?>
+<?php include ("includes/head.php"); ?>
 
 <body class="style-guide theme-coral">
   <header class="header-primary">
@@ -18,7 +18,7 @@
   <main role="main">
     <header class="no-border header-secondary">
       <h2>Style Guide & Component Library</h2>
-      <p>When we redesigned the W&&T website, we refreshed the design but also recreated the website architecture to make it easy to maintain and add new content. The goal was to keep the codebase as straightforward as possible, so all team members could add content without specialized or extensive development skills. We decided to follow a component based approach to be able to mix and match page elements to create different yet consistent page layouts.</p>
+      <p>When we redesigned the W&&T website, we refreshed the overall look and feel and also recreated the website architecture to make it easy to maintain and add new content. The goal was to keep the codebase as straightforward as possible, so all team members could add content without specialized or extensive development skills. We decided to follow a component based approach to be able to mix and match page elements to create different yet consistent page layouts.</p>
     </header>
     
     <!-- TEMPLATES & THEMES -->
@@ -28,26 +28,25 @@
         <ul>
           <li><a href="base-template.php" target="_blank">Base Markup Template</a>
             <ul>
-              <li>Base markup for all pages, for reference</li>
-              <li>Includes global header, footer and links to css & js files</li>
-              <li>Theme color classes should be added to the <code>&lt;body&gt;</code> tag</li>
+              <li>Base markup for all pages</li>
+              <li>Includes the global header, global footer and links to CSS & JS files</li>
             </ul>
           </li>
           <li><a href="page-template.php" target="_blank">Page Template</a>
             <ul>
-              <li>Use for non-interview content (e.g. About)</li>
+              <li>For non-interview content (e.g. About)</li>
             </ul>
           </li>
           <li>
             <a href="interview-template.php" target="_blank">Interview Template</a>
             <ul>
-              <li>Use for interview pages</li>
+              <li>For interview pages</li>
             </ul>
           </li>
           <li>
-            <a href="archive.php" target="_blank">Interview Archive Template</a>
+            <a href="archive-template.php" target="_blank">Archives Template</a>
             <ul>
-              <li>Use for interview archive page</li>
+              <li>For interview archives page</li>
             </ul>
           </li>
         </ul>
@@ -76,7 +75,7 @@
     <!-- HEADERS & FOOTERS -->
     <section class="module">
       <h2 id="headings">Headers & Footers</h2>
-      <p>These modules can be use at the beginning or end of a page or interview. The global site header and footer content are already included and does not need to be added.</p>
+      <p>These modules can be used at the beginning or end of the page or interview content. The global site header and footer content are already included and does not need to be added. Refer to the static site documentation for more info about adding content.</p>
       <div class="grid-wrapper">
         <!-- Secondary header -->
         <div class="grid-narrow">
@@ -101,7 +100,8 @@
       <div class="grid-narrow">
         <h3>Interview Header</h3>
         <p>This header is used at the beginning of all interviews.</p>
-        <p>PHP variables are used to automatically add the author name and social media information. Refer to the <strong>base-template.php</strong> file in the static site repo for more information.</p>
+        <p>PHP variables are used to customize the template to update the author name and social media information.</p>
+        <p>Refer to the <strong>interview/template.php</strong> file in the static site repo for more information.</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#header-interview" data-copy>copy to clipboard</button>
@@ -147,7 +147,7 @@
     <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3>Secondary Footer</h3>
-        <p>This module can be used for main content footers. Any kind of content can be added such as paragraphs, links or images.</p>
+        <p>This module can be used for page content footers. Any kind of content can be added such as paragraphs, links or images.</p>
         <p>Refer to the <a href="#helpers">Helpers</a> section for additional content styles.</p>
       </div>
       <div class="grid-wide">
@@ -155,7 +155,7 @@
 <pre><code id="footer-secondary">&lt;footer class=&quot;no-border footer-secondary&quot;&gt;
   &lt;div class="wrapper-sm"&gt;
     &#x3C;!-- ADD CONTENT HERE --&#x3E;
-    &lt;h2&gt;Heading Example&lt;/h2&gt;
+    &lt;h2&gt;Heading 2&lt;/h2&gt;
     &lt;p&gt;Paragraph text with a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum corrupti eius labore cumque expedita dicta tenetur ut, accusantium, eaque eum, veritatis quam quae officiis assumenda? Voluptatum placeat eaque.&lt;/p&gt;
   &lt;/div&gt;
@@ -171,8 +171,8 @@
     <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3>Interview Footer with Credits</h3>
-        <p>This code snippet is for reference only and is already included in the <strong>interview/base-template.php</strong> file in the <a href="https://github.com/WomenAndTech/static-site">static-site repo</a>. PHP variables are used to customize the credits.</p>
-        <p>If you don't need a specific credit, delete the whole list item (<code>&lt;li&gt;</code>).</p>
+        <p>This code snippet is for reference only and is already included in the <strong>interview/template.php</strong> file in the <a href="https://github.com/WomenAndTech/static-site">static-site repo</a>.</p>
+        <p>Update the PHP variables to customize the credits. If you don't need a specific credit, delete the whole list item (<code>&lt;li&gt;</code>).</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#footer-interview" data-copy>copy to clipboard</button>
@@ -221,7 +221,7 @@
     <!-- IMAGE & VIDEO MODULES -->
     <section class="module">
       <h2 id="images">Images and Videos</h2>
-      <p>The static site uses PHP to customize the templates. Be sure to include the PHP snippet for image paths, shown in the example code below. View the documentation in the <a href="https://github.com/WomenAndTech/static-site">website repo</a> for more information about directory structures and file naming.</p>
+      <p>The static site uses PHP to customize the templates so be sure to include the PHP snippet for image paths, shown in the example code below. View the documentation in the <a href="https://github.com/WomenAndTech/static-site">website repo</a> for more information about directory structures and file naming.</p>
       
       <!-- Featured image -->
       <div class="grid-wrapper">
@@ -352,6 +352,9 @@
       <div class="grid-narrow">
         <h3>Q & A</h3>
         <p>Use this snippet for each Q & A block. You can add as many paragraphs as required for the answer portion. Just be sure to keep the paragraphs enclosed within the <code>&lt;dd class=&quot;interview-a&quot;&gt;&lt;/dd&gt;</code> tags.</p>
+        
+        <!-- TODO: CHECK STYLES -->
+        <p class="credits">More about the <code>&lt;dl&gt;</code> element <a href="http://html5doctor.com/the-dl-element/">here</a>.</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#qa" data-copy>copy to clipboard</button>
@@ -517,54 +520,4 @@
     <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p> -->
   </main>
   
-  
-  
-  <!-- Global Primary Footer -->
-  <footer class="footer-primary">
-    <section>
-      <p>&copy; 2012 - <span data-year></span> Women&&Tech. <span class="nowrap">Made in Toronto. All Rights Reserved.</span></p>
-    </section>
-    <section id="mc_embed_signup">
-      <form action="//womenandtech.us5.list-manage.com/subscribe/post?u=1370c4a70b43a1285e806a56d&amp;id=123c00728e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <label for="mce-EMAIL">Enter your email address to get updates:</label>
-        <input id="subscribe" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">&nbsp;
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
-        <div id="mce-responses">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1370c4a70b43a1285e806a56d_123c00728e" tabindex="-1" value=""></div>
-      </form>
-    </section>
-    <section>
-      <p>Connect with us: </p>
-      <ul class="footer-links">
-        <li>
-          <a href="//facebook.com/womenandtech" title="Facebook">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <span class="screen-readers">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="//twitter.com/WomenAndTech" title="Twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <span class="screen-readers">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="//instagram.com/WomenAndTech" title="Instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <span class="screen-readers">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:contact@womenandtech.com" title="Email">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <span class="screen-readers">Email</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-  </footer>
-
 <?php include ("includes/footer.php"); ?>

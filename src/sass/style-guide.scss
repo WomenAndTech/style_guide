@@ -3,41 +3,9 @@
 // ---------------------------------------------------------
 // STYLE GUIDE
 // ---------------------------------------------------------
-// Styles for general page layout. Component & module styles
+// Styles only for page layout. Component & module styles
 // should not be overridden.
-hr {
-  border: none;
-}
-pre {
-  white-space: pre-wrap;
-  font-size: $font-size-xsm;
-  margin: 0;
-  
-  .hljs {
-    padding: 15px;
-  }
-}
-button:not(.btn-copy) {
-  border: 0;
-  border-radius: 2px;
-  padding: 8px 10px;
-  cursor: pointer;
-  color: white;
-  font-size: $font-size-xsm;
-  margin-bottom: 4px;
-}
-.btn-copy {
-  position: absolute;
-  right: 0;
-  border: 2px solid #F0F0F0;
-  cursor: pointer;
-  padding: 4px 6px 5px;
-  
-  &:focus {
-    outline: none;
-    border: 1px solid $coral;
-  }
-}
+
 .style-guide {
   .header-primary {
     position: fixed;
@@ -65,6 +33,9 @@ button:not(.btn-copy) {
   h3 {
     margin-top: 8px;
   }
+  a {
+    text-decoration: underline;
+  }
   + .module {
     margin-top: 40px;
   }
@@ -72,6 +43,8 @@ button:not(.btn-copy) {
     border-top: 1px solid #F0F0F0;
   }
 }
+
+// Spacing between blocks
 .border + .module,
 .no-border + .module {
   margin-top: 20px;
@@ -79,5 +52,40 @@ button:not(.btn-copy) {
 p + .grid-wrapper {
   margin-top: 60px;
 }
+hr {
+  border: none;
+}
 
+// Code snippets
+pre {
+  white-space: pre-wrap;
+  font-size: $font-size-xsm;
+  margin: -2px 0 0 0;
+  
+  .hljs {
+    padding: 15px;
+  }
+}
 
+// Buttons
+button:not(.btn-copy) {
+  border: 0;
+  border-radius: 2px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: $font-size-xsm;
+  margin-bottom: 4px;
+}
+.btn-copy {
+  border: 2px solid #F0F0F0;
+  cursor: pointer;
+  padding: 3px 5px 4px;
+  background: white;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid $coral;
+  }
+}

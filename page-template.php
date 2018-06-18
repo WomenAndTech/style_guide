@@ -33,7 +33,7 @@ include ("includes/header.php");
         <div class="wrapper-sm">
           <h2>Letter to our Readers</h2>
 
-          <p>A fresh look for an important project. We’ve redesigned and relaunched Women&&Tech, let us tell you why. This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded Women&&Tech, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
+          <p>A fresh <a href="#">look for an important project</a>. We’ve redesigned and relaunched Women&&Tech, let us tell you why. This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded Women&&Tech, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
           
           <h3>Subheading example</h3>
           <p>Looking back, we can point to particular issues, mistakes we made, things we didn’t do, issues on the back burner that never got addressed.</p>
@@ -164,5 +164,5 @@ include ("includes/header.php");
   <script>!window.jQuery && document.write('<script src="<?php echo $path_js; ?>jquery-2.2.3.min.js"><\/script>')</script>
   <script src="<?php echo $path_js; ?>jquery.viewportchecker.min.js"></script>
   <script src="<?php echo $path_js; ?>global-min.js"></script>
-  </body>
+</body>
 </html>
