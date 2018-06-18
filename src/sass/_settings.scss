@@ -35,13 +35,6 @@ $font-size-xsm:          1.4rem;
 // ---------------------------------------------------------
 // HELPER CLASSES
 // ---------------------------------------------------------
-.italic {
-  font-style: italic;
-}
-.nowrap {
-  white-space: nowrap;
-}
-
 // https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 .screen-readers {
   position: absolute !important;
@@ -50,7 +43,6 @@ $font-size-xsm:          1.4rem;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-
 .spacer30 {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -65,8 +57,14 @@ $font-size-xsm:          1.4rem;
   padding-top: 30px;
   margin-top: 0;
 }
+.nowrap {
+  white-space: nowrap;
+}
 .italics {
   font-style: italic;
+}
+.bold {
+  font-weight: bold;
 }
 .type-xsm {
   font-size: $font-size-xsm;

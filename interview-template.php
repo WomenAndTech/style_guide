@@ -1,113 +1,41 @@
 <?php 
-include ("includes/header.php");
+include ("includes/head.php");
 ?>
 
 <body class="theme-coral">
   <!-- Analytics tracking here via PHP in static site -->
     
   <!-- Global header -->
-  <header class="header-primary">
-    <a href="/" class="logo">
-      <img src="/assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">
-      <h1 class="screen-readers">Women && Tech</h1>
-    </a>
-    <nav class="nav-primary">
-      <a href="#">Interviews</a>
-      <a href="#">About Us</a>
-      <a href="#">Contribute</a>
-      <a href="https://docs.google.com/forms/d/1p_rLrRz3JezgW-tEjAKYN1XkyTbVudFuNYHIP0wLktM/edit?usp=drive_web">Nominate</a>
-    </nav>
-  </header>
+  <?php include ("includes/header.php"); ?>
     
-  <main role="main" data-interview>
+  <!-- <main role="main" data-interview> -->
+  <main role="main">
     
     <!-- // Featured image -->
-    <div class="border img-feature">
-      <figure>
-        <img src="assets/img/image-featured.jpg" alt="Biying Miao">
-      </figure>
-    </div>
+    <?php include ("includes/modules/image-featured.php"); ?>
     
     <!-- // Interview Header -->
-    <header class="border header-interview">
-      <div class="wrapper-sm">
-        <h2>Biying Miao</h2>
-        <p class="intro">Biying Miao is the co-founder of <a href="/">Hot Pop Factory</a>, a 3D Printing and Digital Fabrication Design Studio. The self- proclaimed art-geek has worked on projects exhibited at the Royal Ontario Museum, the <a href="/">Textile Museum of Canada</a> and the Art Gallery of Ontario.</p>
-        <p class="author">An interview with <a href="#">Ruby Watson</a></p>
-        
-        <ul class="social-share">
-          <li>
-            <a href="//facebook.com" title="Facebook">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <span class="screen-readers">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="//twitter.com/WomenAndTech" title="Twitter">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <span class="screen-readers">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:contact@womenandtech.com" title="Email">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span class="screen-readers">Email contact@womenandtech.com</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <?php include ("includes/modules/header-interview.php"); ?>
     
-    <dl class="border">
-      <dt class="interview-q">Where did you grow up and what were you like as a child?</dt>
-      <dd class="interview-a">
-        <p>My family moved to Canada from Shanghai when I was in fourth grade, and I grew up in Toronto. I was a very creative child who loved drawing and making things with my hands. Coming from a Chinese family, I was encouraged to play music but gravitated toward freeform arts, so learning an instrument in the classical sense never became something that I honed. I actually wish that I had done that. My 3D printers sound like singing robots, so that’s the music I make now. I’m sure if I put the time in, I could remix it into a pretty sweet song.</p>
-        <p>I was always a bit of an art and music geek so when it came time to choose a career path I leaned toward architecture because it was a mix of art, science, and technology; all things that are very much a part of who I am.</p>
-      </dd>
-    </dl>
+    <!-- // Q&A -->
+    <?php include ("includes/modules/qa.php"); ?>
     
-    <aside class="border pull-quote">
-      <p>Digital fabrication allows for a physical reality that’s much more transient, dynamic, and customized by the individual.</p>
-    </aside>
+    <!-- // Pull quote -->
+    <?php include ("includes/modules/pull-quote.php"); ?>
     
-    <dl class="border">
-      <dt class="interview-q">How do you explain your work to people who have never seen a 3D printer before and what do your parents think of Hot Pop Factory?</dt>
-      <dd class="interview-a">
-        <p>In order to teach people what do we began leading workshops. We encourage folks to come in, get their hands dirty with the technology, and see the printers in action.</p>
-        <p>Because digital fabrication has the capacity to realize a wide variety of ideas, our projects tend to range a lot in size, application, and industry - from designers, to brands, to hardware startups. I tell my parents that I make things with robots. That’s kind of a whimsical way of describing the nitty-gritty, but they’re always intrigued.</p>
-      </dd>
-    </dl>
+    <!-- // Q&A -->
+    <?php include ("includes/modules/qa.php"); ?>
     
-    <div class="border img-side-by-side">
-      <figure>
-        <img src="assets/img/image-side-left.jpg" alt="Biying Miao">
-      </figure>
-      <figure>
-        <img src="assets/img/image-side-right.jpg" alt="Biying Miao">
-        <figcaption>
-          Biying’s 3D printed jewelry, photo by Mauricio
-        </figcaption>
-      </figure>
-    </div>
+    <!-- // Image side by side -->
+    <?php include ("includes/modules/image-sidebyside.php"); ?>
     
-    <aside class="border pull-quote">
-      <p>Work/life balance is very difficult. There doesn’t seem to be a way to achieve it without making a compromise.</p>
-    </aside>
+    <!-- // Pull quote -->
+    <?php include ("includes/modules/pull-quote.php"); ?>
     
-    <dl class="border">
-      <dt class="interview-q">Not only do you work in an industry that is rapidly evolving, you’re an entrepreneur running a growing business. How is your work/life balance? Is there one?</dt>
-      <dd class="interview-a">
-        <p>Should I tell you the truth, or should I lie? [Laughs] Work/life balance is very difficult. There doesn’t seem to be a way to achieve it without making a compromise. I try to pick an extracurricular activity to do, especially in the summertime. I play beach volleyball every week, make sure to see friends as much as possible, and get out of the city.</p>
-      </dd>
-    </dl>
+    <!-- // Q&A -->
+    <?php include ("includes/modules/qa.php"); ?>
     
-    <dl class="border">
-      <dt class="interview-q">Not only do you work in an industry that is rapidly evolving, you’re an entrepreneur running a growing business. How is your work/life balance? Is there one?</dt>
-      <dd class="interview-a">
-        <p>Should I tell you the truth, or should I lie? [Laughs] Work/life balance is very difficult. There doesn’t seem to be a way to achieve it without making a compromise. I try to pick an extracurricular activity to do, especially in the summertime. I play beach volleyball every week, make sure to see friends as much as possible, and get out of the city.</p>
-      </dd>
-    </dl>
-    
+    <!-- TODO - ADD TO STYLEGUIDE -->
     <div class="border video-landscape widescreen">
       <div class="embed-container">
         <!-- <iframe src='https://www.youtube.com/embed/QILiHiTD3uc' frameborder='0' allowfullscreen></iframe> -->
@@ -126,12 +54,8 @@ include ("includes/header.php");
       </p>
     </div>
 
-    
-    <div class="border img-portrait">
-      <figure>
-        <img src="assets/img/image-single-portrait.jpg" alt="Biying Miao">
-      </figure>
-    </div>
+    <!-- // Image Portrait -->
+    <?php include ("includes/modules/image-portrait.php"); ?>
     
     <dl class="border">
       <dt class="interview-q">Not only do you work in an industry that is rapidly evolving, you’re an entrepreneur running a growing business. How is your work/life balance? Is there one?</dt>
@@ -140,26 +64,11 @@ include ("includes/header.php");
       </dd>
     </dl>
 
-  
-    <div class="border img-landscape">
-      <figure>
-        <img src="assets/img/image-single-landscape.jpg" alt="Biying Miao">
-      </figure>
-    </div>
-    
-    <footer class="border credits">
-      <ul>
-        <li>Interview by <a href="/">Ruby Watson</a></li>
-        <li>Photography by <a href="/">Amanda Huang</a></li>
-        <li>Editing by <a href="/">Ruby Watson</a> and <a href="/">Ivonne Karamoy</a></li>
-        <li>Art Direction by <a href="/">Cassie Kaiser</a></li>
-        <li>Design by <a href="/">Cassie Kaiser</a></li>
-        <li>Development by <a href="/">Audrey Kuo</a> and <a href="/">Brett Bergmann</a></li>
-        <li>Transcriptions by <a href="/">Ruby Watson</a></li>
-      </ul>
-      <p>Don't miss another interview, <strong><a href="#subscribe">subscribe below</a></strong>.</p>
-      <p class="italic">This site uses Monotype's Avenir Next by Adrian Fruteger and Akira Kobayashi, icon by Cathy Moser, Github, Cloudflare, and Windows Azure.</p>
-    </footer>
+    <!-- // Image Landscape -->
+    <?php include ("includes/modules/image-landscape.php"); ?>
+
+    <!-- // Interview footer w/credits -->
+    <?php include ("includes/modules/footer-credits.php"); ?>
     
     <aside class="interview-cards wrapper">
       <h2>Latest Interviews</h2>
