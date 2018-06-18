@@ -54,12 +54,22 @@ $font-size-xsm:          1.4rem;
 .spacer30 {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .spacer30-bottom {
   padding-bottom: 30px;
+  margin-bottom: 0;
 }
 .spacer30-top {
   padding-top: 30px;
+  margin-top: 0;
+}
+.italics {
+  font-style: italic;
+}
+.type-xsm {
+  font-size: $font-size-xsm;
 }
 
 

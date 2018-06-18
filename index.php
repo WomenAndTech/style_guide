@@ -325,21 +325,20 @@
       <p>Use the following modules for your text-based content.</p>
       <div class="grid-wrapper">
         <div class="grid-narrow">
-          <h3>Default headings, paragraphs and links</h3>
+          <h3>Default Text Styles</h3>
           <p>Example of default text styles. See below for more content modules.</p>
-          <p>This is used mainly for non-interview pages such as an About page.</p>
+          <p>This is used mainly for non-interview pages such as an About page. Any type of content (headings, paragraphs, links, etc.) can be added <em>between</em> the <code>.wrapper-sm</code> container.</p>
         </div>
         <div class="grid-wide">
           <button class="btn-copy" data-clipboard-target="#default" data-copy>copy to clipboard</button>
 <pre><code id="default">&lt;section class=&quot;border page-content&quot;&gt;
   &lt;div class=&quot;wrapper-sm&quot;&gt;
-    &#x3C;!-- // ADD CONTENT HERE --&#x3E;
+    &#x3C;!-- // ADD CONTENT BELOW --&#x3E;
     &lt;h2&gt;h2 Heading&lt;/h2&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.&lt;/p&gt;
-
     &lt;h3&gt;h3 Subheading&lt;/h3&gt;
     &lt;p&gt;Cupcake ipsum dolor. Sit amet biscuit drag&eacute;e cotton candy icing croissant toffee bonbon. Tootsie roll &lt;a href=&quot;#&quot;&gt;chocolate cake&lt;/a&gt; lollipop topping cake cake fruitcake. Halvah jelly beans pie muffin. Sweet roll cookie liquorice danish lemon drops pie apple pie donut lemon drops. Gingerbread gummies caramels. Oat cake sweet roll pie ice cream chocolate.&lt;/p&gt;
-  &lt;/div&gt;
+  &lt;/div&gt;&#x3C;!-- // close .wrapper-sm --&#x3E;
 &lt;/section&gt;</code></pre>
         </div> 
       </div>
@@ -454,7 +453,8 @@
     <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3>Past Interview Cards</h3>
-        <p>This code snippet is for reference and is already included in the <strong>includes/latest-interviews.php</strong> file. To update, revise the URL to the interviews, thumbnail image file and interview details. Only the latest three interviews are featured at a time.</p>
+        <p>This code snippet is for reference and is already included in the <strong>includes/latest-interviews.php</strong> file.</p>
+        <p>To update, revise the URL to the interviews, thumbnail image file and interview details. Only the latest three interviews are featured at a time.</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#past-interviews" data-copy>copy to clipboard</button>
@@ -501,6 +501,10 @@
       <p>To make customizations and isolated style addition outside of the default and module styles, see below references.</p>
     </section>
     
+    
+    <!-- spacer30
+    no-underline
+    white-links -->
     <!-- <img class="spacer30" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px">
 
     <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>

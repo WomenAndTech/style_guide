@@ -129,7 +129,9 @@ dl.border {
 
 // Images
 // ---------------------------------------------------------
-// Interview images are wrapped in a class with the -img prefix
+// Interview images are wrapped in a class with the img- prefix
+// When creating new classes, avoid using this prefix unless
+// it shares the same base styles.
 [class*="img-"] {
   img {
     width: 100%;
@@ -144,7 +146,7 @@ dl.border {
   }
 }
 figure {
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   font-size: 0; 
 }
 figcaption,
@@ -156,8 +158,12 @@ figcaption,
 }
 
 // Feature image, always the first content block
-.img-feature.border {
-  padding-top: 20px;
+.img-feature {
+  font-size: 0;
+  
+  &.border {
+    padding-top: 20px;
+  }
 }
 
 // Single images

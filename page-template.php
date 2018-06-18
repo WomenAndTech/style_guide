@@ -1,53 +1,31 @@
 <?php 
-include ("includes/header.php");
+include ("includes/head.php");
 ?>
 
-<body class="theme-coral"> 
+<body class="theme-purple"> 
   <!-- Analytics tracking here via PHP in static site -->
    
   <!-- Global header -->
-  <header class="header-primary">
-    <a href="/" class="logo">
-      <img src="/assets/img/W&&T-full-logo-outline.svg" alt="Women && Tech logo">
-      <h1 class="screen-readers">Women && Tech</h1>
-    </a>
-    <nav class="nav-primary">
-      <a href="#">Interviews</a>
-      <a href="#">About Us</a>
-      <a href="#">Contribute</a>
-      <a href="https://docs.google.com/forms/d/1p_rLrRz3JezgW-tEjAKYN1XkyTbVudFuNYHIP0wLktM/edit?usp=drive_web">Nominate</a>
-    </nav>
-  </header>
+  <?php include ("includes/header.php"); ?>
   
   <main role="main" data-page>
     <article>
       <!-- All content goes between these article tags. Delete this comment. -->
 
       <!-- // Secondary Header -->
-      <header class="no-border header-secondary">
-        <h2>We're not endorsing the obvious. We're commending the awesome.</h2>
-        <p>Our industry is filled with smart, interesting women including developers, designers, entrepreneurs, and tech leaders. These women are a big deal, and we think you should know about them. We highlight them not for their gender, but because they are awesome by any kind of measure.</p>
-      </header>
+      <?php include ("includes/modules/header-secondary.php"); ?>
 
-      <section class="border page-content">
-        <div class="wrapper-sm">
-          <h2>Letter to our Readers</h2>
-
-          <p>A fresh <a href="#">look for an important project</a>. We’ve redesigned and relaunched Women&&Tech, let us tell you why. This little project launched in 2012, a time when gender equality conversations was just gaining momentum. When we founded Women&&Tech, it was to challenge the ideas of tech as a male-dominated field. We wanted to share stories of women working in tech in order to showcase the wealth of talent that resides in our industry. Women&&Tech became a passion project for our entire team. </p>
+      <!-- // Default content -->
+      <?php include ("includes/modules/content-default.php"); ?>
+        
+      <!-- // Team Signature -->
+      <?php include ("includes/modules/team-signature.php"); ?>
+      
+      <!-- // Team Listing -->
+      <?php include ("includes/modules/team-listing.php"); ?>
           
-          <h3>Subheading example</h3>
-          <p>Looking back, we can point to particular issues, mistakes we made, things we didn’t do, issues on the back burner that never got addressed.</p>
-          <p>Our original architecture was built around the concept of complete customization. This meant each interview could be crafted, designed and molded to the individual interviewee. We wanted to really showcase these women as individuals with unique talents. We realized soon enough that customizing each interview design was too ambitious and more importantly, unnecessary. It was the stories people wanted to hear. The design was secondary to the stories we’re telling, the conversations we’re having, and the connections we’re making between women and within the industry as a whole.</p>
           
-          <h3>Subheading example</h3>
-          <p>Looking back, we can point to particular issues, mistakes we made, things we didn’t do, issues on the back burner that never got addressed.</p>
-          <p>Our original architecture was built around the concept of complete customization. This meant each interview could be crafted, designed and molded to the individual interviewee. We wanted to really showcase these women as individuals with unique talents. We realized soon enough that customizing each interview design was too ambitious and more importantly, unnecessary. It was the stories people wanted to hear. The design was secondary to the stories we’re telling, the conversations we’re having, and the connections we’re making between women and within the industry as a whole.</p>
-          
-          <h3>Subheading example</h3>
-          <p>Looking back, we can point to particular issues, mistakes we made, things we didn’t do, issues on the back burner that never got addressed.</p>
-          <p>Our original architecture was built around the concept of complete customization. This meant each interview could be crafted, designed and molded to the individual interviewee. We wanted to really showcase these women as individuals with unique talents. We realized soon enough that customizing each interview design was too ambitious and more importantly, unnecessary. It was the stories people wanted to hear. The design was secondary to the stories we’re telling, the conversations we’re having, and the connections we’re making between women and within the industry as a whole.</p>
-          
-          <h2>Supporters</h2>
+          <!-- <h2>Supporters</h2>
           <p>Our team does this project in our spare time, so support from our friends and community truly keeps us going. We mean it: Thank you!</p>
           
           <div class="supporter-logos no-underline">
@@ -56,50 +34,18 @@ include ("includes/header.php");
             <a href="http://www.ecentricarts.com/" class="no-underline"><img src="/assets/img/ecentricarts.png" alt="ecentricarts logo"></a>
             <a href="http://peopleandcode.com/" class="no-underline"></a><img src="/assets/img/peopleandcode.png" alt="People &amp; Code logo">
             <p>If you are interested in sponsoring a future interview, <a href="mailto:contact@womenandtech.com">contact us</a>.</p>
-          </div>
+          </div> -->
           
-          <!-- // Team Signature -->
-          <div class="border signature">
-            <p>
-              with <i class="fa fa-heart-o theme-color" aria-hidden="true" title="love"></i><span class="screen-readers">love</span>
-              from <span class="team theme-color">the Women&&Tech team</span>
-            </p>
-          </div>
-
-        </div>
-      </section>  
-      
-      <!-- // Team Listing -->
-      <aside class="border team-listing">
-        <ul>
-          <li>
-            <p class="name"><a href="#">Cassie Kaiser</a></p>
-            <p class="role">Managing Coordinator</p>
-          </li>
-          <li>
-            <p class="name"><a href="#">Ivonne Karamoy</a></p>
-            <p class="role">Managing Director</p>
-          </li>
-          <li>
-            <p class="name"><a href="#">Christina Truong</a></p>
-            <p class="role">Lead Developer</p>
-          </li>
-          <li>
-            <p class="name"><a href="#">Ray Kao</a></p>
-            <p class="role">Tech Lead</p>
-          </li>
-        </ul>
-        <p class="thanks">Special thanks to our founder Cassie McDaniel, past team members and supporters.</p>
-      </aside>
+        
       
       <footer class="no-border footer-secondary">
         <div class=wrapper-sm>
-          <h2>Heading Example</h2>
-          <p>Paragraph text with a <a href="#">link</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum corrupti eius labore cumque expedita dicta tenetur ut, accusantium, eaque eum, veritatis quam quae officiis assumenda? Voluptatum placeat eaque.</p>
-        
-          <img class="spacer30" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px">
-
+          <h2>Contact Us</h2>
+          <p>Follow us on Twitter, Facebook and Instagram.</p>
+          <p>Don't hesitate to email us.</p>
+          
+          <h2 class="spacer30">Want to help?</h2>
+          <img class="spacer30-bottom" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px">
           <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
           <p>We also welcome contributors, volunteers and sponsors.</p>
           <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p>
