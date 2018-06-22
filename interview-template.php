@@ -8,8 +8,7 @@ include ("includes/head.php");
   <!-- Global header -->
   <?php include ("includes/header.php"); ?>
     
-  <!-- <main role="main" data-interview> -->
-  <main role="main">
+  <main role="main" data-interview>
     
     <!-- // Featured image -->
     <?php include ("includes/modules/image-featured.php"); ?>
@@ -38,7 +37,6 @@ include ("includes/head.php");
     <!-- TODO - ADD TO STYLEGUIDE -->
     <div class="border video-landscape widescreen">
       <div class="embed-container">
-        <!-- <iframe src='https://www.youtube.com/embed/QILiHiTD3uc' frameborder='0' allowfullscreen></iframe> -->
         <iframe src="https://www.youtube.com/embed/Xoz2EERmZZ8?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <p class="caption">

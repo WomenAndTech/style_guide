@@ -219,8 +219,8 @@
     
     
     <!-- IMAGE & VIDEO MODULES -->
-    <section class="module">
-      <h2 id="images">Images and Videos</h2>
+    <section id="media" class="module">
+      <h2>Images and Videos</h2>
       <p>The static site uses PHP to customize the templates so be sure to include the PHP snippet for image paths, shown in the example code below. View the documentation in the <a href="https://github.com/WomenAndTech/static-site">website repo</a> for more information about directory structures and file naming.</p>
       
       <!-- Featured image -->
@@ -310,13 +310,37 @@
     <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3 id="images">Video [in progress]</h3>
-        <p>To include a video, copy the video embed code from the platform (YouTube, Vimeo) and include it within the markup shown in the code snippet.</p>
+        <p>To include a video, copy the video embed code, usually contained in an <code>&#x3C;iframe&#x3E;</code>, from the platform (YouTube, Vimeo) and include it within the <code>&#x3C;div class=&#x22;embed-container&#x22;&#x3E;</code> element, shown in the example code snippet.</p>
+        <p>The platform's embed code may include some markup that is not required such as <code>autoplay</code>, <code>width</code> or <code>height</code>. These extra attributes can be removed to match the example shown here.</p>
+        <p>Captions are addedin a paragraph tag below the embed container.</p>
+        <p>Add the "widescreen" class if the aspect ratio of the video is wide enough to stretch to the same width as the landscape image.</p>
       </div>
       <div class="grid-wide">
-        <button class="btn-copy" data-clipboard-target="#" data-copy>copy to clipboard</button>
-        
+        <button class="btn-copy" data-clipboard-target="#video" data-copy>copy to clipboard</button>      
+<pre><code id="video">&#x3C;div class=&#x22;border video&#x22;&#x3E;
+  &#x3C;div class=&#x22;embed-container&#x22;&#x3E;
+    &#x3C;iframe src=&#x22;https://player.vimeo.com/video/25608606&#x22; frameborder=&#x22;0&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;p class=&#x22;caption&#x22;&#x3E;
+    Example of a video embed.
+  &#x3C;/p&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+        <hr>
+        <button class="btn-copy" data-clipboard-target="#video-widescreen" data-copy>copy to clipboard</button> 
+<pre><code id="video-widescreen">&#x3C;div class=&#x22;border video widescreen&#x22;&#x3E;
+  &#x3C;div class=&#x22;embed-container&#x22;&#x3E;
+    &#x3C;iframe src=&#x22;https://www.youtube.com/embed/Xoz2EERmZZ8?rel=0&#x22; frameborder=&#x22;0&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;p class=&#x22;caption&#x22;&#x3E;
+    Example of a widescreen video embed.
+  &#x3C;/p&#x3E;
+&#x3C;/div&#x3E;</code></pre>
       </div>
     </section>
+    <!-- Example: Video embed -->
+    <?php include ("includes/modules/video.php"); ?>
+    <!-- Example: Video embed - widescreen -->
+    <?php include ("includes/modules/video-widescreen.php"); ?>
     
     
     <!-- TEXT BASED CONTENT MODULES -->
