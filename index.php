@@ -9,7 +9,8 @@
     <nav class="nav-primary" data-scroll-header>
       <a data-scroll href="#templates">Templates & Themes</a>
       <a data-scroll href="#headings">Headers & Footers</a>
-      <a data-scroll href="#media">Media</a>
+      <a data-scroll href="#images">Images</a>
+      <a data-scroll href="#video">Video</a>
       <a data-scroll href="#content">Content</a>
       <a data-scroll href="#helpers">Helpers</a>
     </nav>
@@ -18,7 +19,7 @@
   <main role="main">
     <header class="no-border header-secondary">
       <h2>Style Guide & Component Library</h2>
-      <p>When we redesigned the W&&T website, we refreshed the overall look and feel and also recreated the website architecture to make it easy to maintain and add new content. The goal was to keep the codebase as straightforward as possible, so all team members could add content without specialized or extensive development skills. We decided to follow a component based approach to be able to mix and match page elements to create different yet consistent page layouts.</p>
+      <p>When we redesigned the W&&T website, we refreshed the overall look and feel and also recreated the website architecture to make it easy to maintain and add new content. The goal was to keep the codebase as straightforward as possible, so all team members could add content without specialized or extensive development experience. We decided to follow a component based approach to be able to mix and match page elements to create different yet consistent page layouts.</p>
     </header>
     
     <!-- TEMPLATES & THEMES -->
@@ -54,7 +55,7 @@
       </div>
       <div class="grid-2-1">
         <h2 id="themes">Themes</h2>
-        <p>Select a button to view the theme color options.</p>
+        <p>Select a button to view the theme colors.</p>
         <button class="coral" data-theme="coral">.theme-coral</button>
         <button class="purple" data-theme="purple">.theme-purple</button>
         <button class="yellow" data-theme="yellow">.theme-yellow</button>
@@ -64,23 +65,24 @@
         <p>Theme changes include:</p>
         <ul>
           <li>page background</li>
-          <li>link colors, :hover and :focus</li>
+          <li>link, :hover and :focus colors</li>
         </ul>
         <p>Theme color classes are added to the <code>&lt;body&gt;</code> tag using one of five theme color codes.</p>
         <pre><code class="xml">&lt;body class="theme-coral"&gt;</code></pre> 
-        <p>In the static site, themes are added using PHP variables. Refer to the static site documentation for more info.</p>  
+        <p>In the live website files, themes are added using PHP variables. Refer to the <a href="https://github.com/WomenAndTech/static-site">static site documentation</a> for more info.</p>  
       </div>
     </section>
 
     <!-- HEADERS & FOOTERS -->
     <section class="module">
       <h2 id="headings">Headers & Footers</h2>
-      <p>These modules can be used at the beginning or end of the page or interview content. The global site header and footer content are already included and does not need to be added. Refer to the static site documentation for more info about adding content.</p>
+      <p>These modules can be used at the beginning or end of a page or interview template.</p>
+      <p>The global header and footer content are included in the base template and does not need to be added when creating a new page. Refer to the <a href="https://github.com/WomenAndTech/static-site">static site documentation</a> for more info about using templates and adding content.</p>
       <div class="grid-wrapper">
         <!-- Secondary header -->
         <div class="grid-narrow">
           <h3>Secondary Header</h3>
-          <p>The secondary header is used for pages that require introductory information to be presented before the main content.</p>
+          <p>The secondary header is used for pages that require introductory information before the main content.</p>
         </div>
         <div class="grid-wide">
           <button class="btn-copy" data-clipboard-target="#header-secondary" data-copy>copy to clipboard</button>
@@ -99,9 +101,8 @@
     <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3>Interview Header</h3>
-        <p>This header is used at the beginning of all interviews.</p>
-        <p>PHP variables are used to customize the template to update the author name and social media information.</p>
-        <p>Refer to the <strong>interview/template.php</strong> file in the static site repo for more information.</p>
+        <p>This header is used at the beginning of all interviews. This code snippet is for reference only and is already included in the <strong>interview/template.php</strong> file in the static-site repo.</p>
+        <p>PHP variables are used to customize the template to update the author name and social media information. Use this template when adding new interviews and follow the customization instructions included in the file.</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#header-interview" data-copy>copy to clipboard</button>
@@ -147,8 +148,8 @@
     <section class="module grid-wrapper">
       <div class="grid-narrow">
         <h3>Secondary Footer</h3>
-        <p>This module can be used for page content footers. Any kind of content can be added such as paragraphs, links or images.</p>
-        <p>Refer to the <a href="#helpers">Helpers</a> section for additional content styles.</p>
+        <p>This module may be be used for page content footers. Any kind of content can be added such as headings, paragraphs, links or images.</p>
+        <p>Refer to the <a href="#helpers">Helpers</a> section for additional content styles such as spacing and text styles.</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#footer-secondary" data-copy>copy to clipboard</button>
@@ -218,9 +219,9 @@
     <?php include ("includes/modules/footer-credits.php"); ?>
     
     
-    <!-- IMAGE & VIDEO MODULES -->
-    <section id="media" class="module">
-      <h2>Images and Videos</h2>
+    <!-- IMAGE MODULES -->
+    <section id="images" class="module">
+      <h2>Images</h2>
       <p>The static site uses PHP to customize the templates so be sure to include the PHP snippet for image paths, shown in the example code below. View the documentation in the <a href="https://github.com/WomenAndTech/static-site">website repo</a> for more information about directory structures and file naming.</p>
       
       <!-- Featured image -->
@@ -306,35 +307,38 @@
     <?php include ("includes/modules/image-portrait.php"); ?>    
     <!-- Example: Single Image - Landscape-->
     <?php include ("includes/modules/image-landscape.php"); ?>
-
-    <section class="module grid-wrapper">
-      <div class="grid-narrow">
-        <h3 id="images">Video [in progress]</h3>
-        <p>To include a video, copy the video embed code, usually contained in an <code>&#x3C;iframe&#x3E;</code>, from the platform (YouTube, Vimeo) and include it within the <code>&#x3C;div class=&#x22;embed-container&#x22;&#x3E;</code> element, shown in the example code snippet.</p>
-        <p>The platform's embed code may include some markup that is not required such as <code>autoplay</code>, <code>width</code> or <code>height</code>. These extra attributes can be removed to match the example shown here.</p>
-        <p>Captions are addedin a paragraph tag below the embed container.</p>
-        <p>Add the "widescreen" class if the aspect ratio of the video is wide enough to stretch to the same width as the landscape image.</p>
-      </div>
-      <div class="grid-wide">
-        <button class="btn-copy" data-clipboard-target="#video" data-copy>copy to clipboard</button>      
-<pre><code id="video">&#x3C;div class=&#x22;border video&#x22;&#x3E;
-  &#x3C;div class=&#x22;embed-container&#x22;&#x3E;
-    &#x3C;iframe src=&#x22;https://player.vimeo.com/video/25608606&#x22; frameborder=&#x22;0&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
-  &#x3C;/div&#x3E;
-  &#x3C;p class=&#x22;caption&#x22;&#x3E;
-    Example of a video embed.
-  &#x3C;/p&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-        <hr>
-        <button class="btn-copy" data-clipboard-target="#video-widescreen" data-copy>copy to clipboard</button> 
-<pre><code id="video-widescreen">&#x3C;div class=&#x22;border video widescreen&#x22;&#x3E;
-  &#x3C;div class=&#x22;embed-container&#x22;&#x3E;
-    &#x3C;iframe src=&#x22;https://www.youtube.com/embed/Xoz2EERmZZ8?rel=0&#x22; frameborder=&#x22;0&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
-  &#x3C;/div&#x3E;
-  &#x3C;p class=&#x22;caption&#x22;&#x3E;
-    Example of a widescreen video embed.
-  &#x3C;/p&#x3E;
-&#x3C;/div&#x3E;</code></pre>
+    
+    <!-- VIDEO MODULES -->
+    <section class="module">
+      <h2 id="video">Video</h2>
+      <div class="grid-wrapper">
+        <div class="grid-narrow">
+          <p>To include a video, copy the video embed code from the platform (YouTube, Vimeo, etc.) and include it within the <code>&#x3C;div class=&#x22;embed-container&#x22;&#x3E;</code> element, shown in the example code snippet.</p>
+          <p>The platform's embed code may include some markup that is not required such as <code>autoplay</code>, <code>width</code> or <code>height</code>. These extra attributes can be removed to match the example shown here.</p>
+          <p>Captions are addedin a paragraph tag below the embed container. Add the "widescreen" class if the aspect ratio of the video is wide enough to stretch to the same width as the landscape image.</p>
+        </div>
+        <div class="grid-wide">
+          <button class="btn-copy" data-clipboard-target="#video" data-copy>copy to clipboard</button>      
+  <pre><code id="video">&#x3C;div class=&#x22;border video&#x22;&#x3E;
+    &#x3C;div class=&#x22;embed-container&#x22;&#x3E;
+      &#x3C;!-- // Add video embed here --&#x3E;
+      &#x3C;iframe src=&#x22;https://player.vimeo.com/video/25608606&#x22; frameborder=&#x22;0&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;p class=&#x22;caption&#x22;&#x3E;
+      Optional caption for video embed.
+    &#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;</code></pre>
+          <hr>
+          <button class="btn-copy" data-clipboard-target="#video-widescreen" data-copy>copy to clipboard</button> 
+  <pre><code id="video-widescreen">&#x3C;div class=&#x22;border video widescreen&#x22;&#x3E;
+    &#x3C;div class=&#x22;embed-container&#x22;&#x3E;
+      &#x3C;iframe src=&#x22;https://www.youtube.com/embed/Xoz2EERmZZ8?rel=0&#x22; frameborder=&#x22;0&#x22; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;p class=&#x22;caption&#x22;&#x3E;
+      Optional caption for widescreen video.
+    &#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;</code></pre>
+        </div>
       </div>
     </section>
     <!-- Example: Video embed -->
@@ -522,30 +526,50 @@
     <!-- HELPER CLASSES -->
     <section class="module">
       <h2 id="helpers">Helper Classes [in progress]</h2>
-      <p>To make customizations and isolated style addition outside of the default and module styles, see below references.</p>
+      <p>To make customizations and isolated style additions outside of the default and module styles, see below options.</p>
+      <div class="grid-wrapper">
+        <div class="grid-narrow">
+          <h3>Links</h3>
+          <p>Add a "no-underline" class to remove the underline style of links.</p>
+          <p>This class can be used for text or image links.</p>
+          <p>If you want to remove the underline for multiple elements, add the class to the parent element.</p>
+        </div>
+        <div class="grid-wide">
+          <button class="btn-copy" data-clipboard-target="#text-link" data-copy>copy to clipboard</button>
+<pre><code id="text-link">&lt;a href="#" class="no-underline"&gt;link&lt;/a&gt;</code></pre>
+          <hr>
+          <button class="btn-copy" data-clipboard-target="#img-link" data-copy>copy to clipboard</button>
+<pre><code id="img-link">&lt;a href="#" class="no-underline"&gt;
+  &lt;img src="image.png" alt="image description"&gt;
+&lt;/a&gt;</code></pre>
+          <hr>
+          <button class="btn-copy" data-clipboard-target="#multiple-links" data-copy>copy to clipboard</button>
+<pre><code id="multiple-links">&lt;div class="no-underline"&gt;
+  &lt;a href="#"&gt;link 1&lt;/a&gt;
+  &lt;a href="#"&gt;link 2&lt;/a&gt;
+  &lt;a href="#"&gt;link 3&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
     </section>
+    <!-- 
+      <p>The class can be added to the  &lt;a&gt; a&lt;/a&gt;</p>
+    type-sm
+    italics
+    <p class="type-xsm italics">Special thanks to our founder Cassie McDaniel, our founding team members, past team members and supporters.</p>
     
+    spacer30 - contributing
+    no-underline - about
+    add: italics - andrea
     
-    <!-- spacer30
-    no-underline
-    white-links -->
+    -->
     <!-- <img class="spacer30" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px">
 
     <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
     <p>We also welcome contributors, volunteers and sponsors.</p>
     <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p> -->
     
-    <!-- <h2>Contact Us</h2>
-    <p>Follow us on <a class="white-links" href="http://twitter.com/WomenAndTech">Twitter</a>, <a href="http://www.facebook.com/womenandtech/">Facebook</a> and <a href="http://www.instagram.com/WomenAndTech/">Instagram</a>.</p>
-    <p>Don't hesitate to <a href="mailto:contact@womenandtech.com">email us</a>.</p>
-
-    <h2 class="spacer30">Want to help?</h2>
-
-    <p><a class="no-underline" href="https://www.patreon.com/WomenAndTech"><img class="spacer30-bottom" src="/assets/img/coffee-icon.png" alt="Coffee" width="50px"></a></p>
-
-    <p><a href="https://www.patreon.com/WomenAndTech">Donate</a> a cup of coffee or tea and get first dibs on new content.</p>
-    <p>We also welcome contributors, volunteers and sponsors.</p>
-    <p>Check out our <a href="http://womenandtech.com/contributor-guidelines/">Contribute</a> page for more information.</p> -->
   </main>
   
 <?php include ("includes/footer.php"); ?>

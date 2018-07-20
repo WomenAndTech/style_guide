@@ -3,8 +3,8 @@
 // ---------------------------------------------------------
 // STYLE GUIDE
 // ---------------------------------------------------------
-// Styles only for page layout. Component & module styles
-// should not be overridden.
+// Styles only for page layout and code snippets. 
+// Component & module styles should not be overridden.
 
 .style-guide {
   .header-primary {
@@ -62,7 +62,7 @@ hr {
 // Code snippets
 pre {
   white-space: pre-wrap;
-  font-size: $font-size-xsm;
+  font-size: $font-size-sm;
   margin: -2px 0 0 0;
   
   .hljs {
