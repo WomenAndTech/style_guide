@@ -3,83 +3,92 @@
 // ---------------------------------------------------------
 // STYLE GUIDE
 // ---------------------------------------------------------
-// Styles for general page layout. Component & module styles
-// should not be overridden.
+// Styles only for page layout and code snippets. 
+// Component & module styles should not be overridden.
 
 .style-guide {
-  header:first-child {
-    color: white;
-    margin: 0 auto;
-    padding: 20px;
+  .header-primary {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-
-    img {
-      max-width: 300px;
-      vertical-align: middle;
-      margin-right: 15px;
-    }
   }
-  h1 {
-    font-weight: 400;
-    margin: 10px 4px 0;
+  .header-secondary:first-of-type {
+    margin-top: 118px;
   }
-  main {
-    margin-top: 185px;
-  }
-  button {
-    color: white;
-    margin-bottom: 10px;
-  }
-  pre {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    white-space: pre-wrap;
-    margin: 0 -20px -20px;
-    line-height: 1.5;
-    padding-bottom: 50px;
-    
-    code {
-      padding: 25px 30px;
-      font-size: 16px;
-    }
-    @include max-width($screen-xsm){
-      margin: 0 -12px -12px;
-      
-      code {
-        padding: 15px 12px;
-        font-size: 12px;
-      }
-    }
-  }
-  nav {
-    font-size: $font-size-sm;
-  
-    a {
-      padding: 10px;
-    }
+  .interview-cards {
+    margin-bottom: 30px;
   }
 }
-.module-info {  
+.module {
+  background: white;
+  margin: 0 20px;
+  font-size: $font-size-sm;
+  padding: 20px;
+  position: relative;
+  
   h2 {
-    text-align: left;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
+    border-bottom: 1px solid #F0F0F0;
     margin-bottom: 20px;
-    padding-top: 10px;
   }
   h3 {
-    padding-top: 10px;
-    
-    + p {
-      margin-top: -10px;
-    }
+    margin-top: 8px;
   }
-  p, ul {
-    max-width: 900px;
+  a {
+    text-decoration: underline;
+  }
+  + .module {
+    margin-top: 40px;
+  }
+  + .border {
+    border-top: 1px solid #F0F0F0;
   }
 }
 
+// Spacing between blocks
+.border + .module,
+.no-border + .module {
+  margin-top: 20px;
+}
+p + .grid-wrapper {
+  margin-top: 60px;
+}
+hr {
+  border: none;
+}
 
+// Code snippets
+pre {
+  white-space: pre-wrap;
+  font-size: $font-size-sm;
+  margin: -2px 0 0 0;
+  
+  .hljs {
+    padding: 15px;
+  }
+}
+
+// Buttons
+button:not(.btn-copy) {
+  border: 0;
+  border-radius: 2px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: $font-size-xsm;
+  margin-bottom: 4px;
+}
+.btn-copy {
+  border: 2px solid #F0F0F0;
+  cursor: pointer;
+  padding: 3px 5px 4px;
+  background: white;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid $coral;
+  }
+}

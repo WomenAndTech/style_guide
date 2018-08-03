@@ -35,30 +35,40 @@ $font-size-xsm:          1.4rem;
 // ---------------------------------------------------------
 // HELPER CLASSES
 // ---------------------------------------------------------
-.italic {
-  font-style: italic;
+// https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.screen-readers {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.spacer30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.spacer30-bottom {
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+.spacer30-top {
+  padding-top: 30px;
+  margin-top: 0;
 }
 .nowrap {
   white-space: nowrap;
 }
-
-// Adds text for screen readers but hides it for visual users
-.screen-readers {
-  text-indent: -9999px;
-  display: inline-block;
+.italic {
+  font-style: italic;
 }
-
-.spacer30 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.bold {
+  font-weight: bold;
 }
-.spacer30-bottom {
-  padding-bottom: 30px;
+.type-xsm {
+  font-size: $font-size-xsm;
 }
-.spacer30-top {
-  padding-top: 30px;
-}
-
 
 // ---------------------------------------------------------
 // MIXINS
