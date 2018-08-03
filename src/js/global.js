@@ -9,7 +9,7 @@
   // Fade in content
   // https://github.com/dirkgroenen/jQuery-viewport-checker
   var $fadeInInterview = $('[data-interview]').find('.border:not(:first-child) > *');
-  var $fadeInPage = $('[data-page]').find('.wrapper-sm > *:not(h2):not(p:first-of-type)');
+  var $fadeInPage = $('[data-page]').find('.wrapper-sm > *');
   function fadeIn(obj) {
     obj.addClass("hidden").viewportChecker({
       classToAdd: 'visible fade-in',

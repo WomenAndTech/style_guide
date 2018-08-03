@@ -34,4 +34,6 @@ $(function() {
     $navLink.removeClass("active");
     $(this).addClass("active");
   });
+  
+  new ClipboardJS('[data-copy]');
 });
