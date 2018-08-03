@@ -103,6 +103,7 @@
         <h3>Interview Header</h3>
         <p>This header is used at the beginning of all interviews. This code snippet is for reference only and is already included in the <strong>interview/template.php</strong> file in the static-site repo.</p>
         <p>PHP variables are used to customize the template to update the author name and social media information. Use this template when adding new interviews and follow the customization instructions included in the file.</p>
+        <p>If you need to add additional information in the header, use the "italic" class, shown in the example, after the intro paragraph.</p>
       </div>
       <div class="grid-wide">
         <button class="btn-copy" data-clipboard-target="#header-interview" data-copy>copy to clipboard</button>
@@ -110,6 +111,7 @@
   &lt;div class=&quot;wrapper-sm&quot;&gt;
     &lt;h2&gt;Interviewee Name&lt;/h2&gt;
     &lt;p class=&quot;intro&quot;&gt;Intro paragraph.&lt;/p&gt;
+    &lt;p class=&quot;italic&quot;&gt;Optional footnote to add extra info.&lt;/p&gt;
 
     &lt;?php // Don't update. Using the same info as in Interview Credits. ?&gt;
     &lt;p class=&quot;author&quot;&gt;An interview with &lt;a href=&quot;&lt;?php echo $interviewer_url; ?&gt;&quot;&gt;&lt;?php echo $interviewer; ?&gt;&lt;/a&gt;&lt;/p&gt;
@@ -531,8 +533,8 @@
         <div class="grid-narrow">
           <h3>Links</h3>
           <p>Add a "no-underline" class to remove the underline style of links.</p>
-          <p>This class can be used for text or image links.</p>
-          <p>If you want to remove the underline for multiple elements, add the class to the parent element.</p>
+          <p>This class can be used for text or image links. (Example 1 and 2)</p>
+          <p>If you want to remove the underline for multiple elements, add the class to the parent element. (Example 3)</p>
         </div>
         <div class="grid-wide">
           <button class="btn-copy" data-clipboard-target="#text-link" data-copy>copy to clipboard</button>

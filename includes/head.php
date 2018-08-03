@@ -11,14 +11,15 @@
   <meta name="twitter:creator" content="@WomenAndTech">
   <meta name="twitter:title" content="Wome&&Tech Style Guide">
   <meta name="twitter:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
-  <meta name="twitter:image" content="">
+  <meta name="twitter:image" content="assets/img/w&&t-styleguide.png">
+  
 
   <!-- Facebook Open Graph -->
   <meta property="og:url" content="http://womenandtech.github.io/style_guide/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Wome&&Tech Style Guide">
   <meta property="og:description" content="This style guide provides the markup and CSS for the components used on http://womenandtech.com. These modules can be used to create full page layouts that are consistent and simple to put together.">
-  <meta property="og:image" content="">
+  <meta property="og:image" content="assets/img/w&&t-styleguide.png">
 
   <link rel="shortcut icon" href="assets/img/favicon-32x32.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">

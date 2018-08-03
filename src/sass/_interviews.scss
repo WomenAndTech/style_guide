@@ -52,6 +52,7 @@
 }
 
 .author,
+.publish-date,
 .credits ul {
   font-size: $font-size-xsm;
   
@@ -59,6 +60,12 @@
     font-weight: $type-bold;
     text-transform: uppercase;
   }
+}
+.author {
+  margin-bottom: 0;
+}
+.publish-date {
+  margin-top: 0;
 }
 
 .credits {

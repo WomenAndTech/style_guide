@@ -60,7 +60,7 @@ $font-size-xsm:          1.4rem;
 .nowrap {
   white-space: nowrap;
 }
-.italics {
+.italic {
   font-style: italic;
 }
 .bold {
@@ -69,7 +69,6 @@ $font-size-xsm:          1.4rem;
 .type-xsm {
   font-size: $font-size-xsm;
 }
-
 
 // ---------------------------------------------------------
 // MIXINS

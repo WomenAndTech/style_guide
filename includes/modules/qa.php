@@ -5,6 +5,9 @@
     <p>I was always a bit of an art and music geek so when it came time to choose a career path I leaned toward architecture because it was a mix of art, science, and technology; all things that are very much a part of who I am.</p>
   </dd>
 </dl>
+<div class="border">
+  <p class="wrapper-sm italic">[Optional note] For adding additional info within the interview. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 <dl class="border">
   <dt class="interview-q">Another question?</dt>
   <dd class="interview-a">
